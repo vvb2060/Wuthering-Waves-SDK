@@ -14484,7 +14484,7 @@ static_assert(offsetof(UAvoidanceManager, HeightCheckMargin) == 0x000050, "Membe
 
 // Class Engine.BakedBoneInstanceDataAsset
 // 0x0000 (0x0038 - 0x0038)
-class UBakedBoneInstanceDataAsset : public UPrimaryDataAsset
+class UBakedBoneInstanceDataAsset final : public UPrimaryDataAsset
 {
 public:
 	static class UClass* StaticClass()
@@ -14576,7 +14576,7 @@ static_assert(offsetof(UEdGraphNode_Documentation, Excerpt) == 0x0000B0, "Member
 
 // Class Engine.BakedBoneMeshActor
 // 0x0018 (0x02C8 - 0x02B0)
-class ABakedBoneMeshActor : public AActor
+class ABakedBoneMeshActor final : public AActor
 {
 public:
 	float                                         InstanceScale;                                     // 0x02B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)

@@ -42,30 +42,20 @@ void UTsTaskBattleWander_C::ExecuteUbergraph_TsTaskBattleWander(int32 EntryPoint
 }
 
 
-// Function TsTaskBattleWander.TsTaskBattleWander_C.ReceiveTickAI
-// (Native, Event, Public, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AAIController*                    OwnerController                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function TsTaskBattleWander.TsTaskBattleWander_C.InitTsVariables
+// (Native, Public, BlueprintCallable, BlueprintEvent)
 
-void UTsTaskBattleWander_C::ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds)
+void UTsTaskBattleWander_C::InitTsVariables()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("TsTaskBattleWander_C", "ReceiveTickAI");
-
-	Params::TsTaskBattleWander_C_ReceiveTickAI Parms{};
-
-	Parms.OwnerController = OwnerController;
-	Parms.ControlledPawn = ControlledPawn;
-	Parms.DeltaSeconds = DeltaSeconds;
+		Func = Class->GetFunction("TsTaskBattleWander_C", "InitTsVariables");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -98,20 +88,30 @@ void UTsTaskBattleWander_C::ReceiveExecuteAI(class AAIController* OwnerControlle
 }
 
 
-// Function TsTaskBattleWander.TsTaskBattleWander_C.InitTsVariables
-// (Native, Public, BlueprintCallable, BlueprintEvent)
+// Function TsTaskBattleWander.TsTaskBattleWander_C.ReceiveTickAI
+// (Native, Event, Public, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AAIController*                    OwnerController                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UTsTaskBattleWander_C::InitTsVariables()
+void UTsTaskBattleWander_C::ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("TsTaskBattleWander_C", "InitTsVariables");
+		Func = Class->GetFunction("TsTaskBattleWander_C", "ReceiveTickAI");
+
+	Params::TsTaskBattleWander_C_ReceiveTickAI Parms{};
+
+	Parms.OwnerController = OwnerController;
+	Parms.ControlledPawn = ControlledPawn;
+	Parms.DeltaSeconds = DeltaSeconds;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }

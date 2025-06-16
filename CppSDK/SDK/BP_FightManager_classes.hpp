@@ -12,8 +12,8 @@
 
 #include "BP_ManagerBase_classes.hpp"
 #include "Engine_structs.hpp"
-#include "ECamp_structs.hpp"
 #include "ERelation_structs.hpp"
+#include "ECamp_structs.hpp"
 
 
 namespace SDK

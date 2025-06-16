@@ -34,12 +34,12 @@ public:
 	float                                         DistanceStart;                                     // 0x02FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SpotLightFunction();
-	void UserConstructionScript();
-	void ReceiveBeginPlay();
-	void ReceiveTick(float DeltaSeconds);
-	void TimerEvent();
 	void ExecuteUbergraph_BP_VolumetricFogFalloff_SpotLight(int32 EntryPoint);
+	void TimerEvent();
+	void ReceiveTick(float DeltaSeconds);
+	void ReceiveBeginPlay();
+	void UserConstructionScript();
+	void SpotLightFunction();
 
 public:
 	static class UClass* StaticClass()

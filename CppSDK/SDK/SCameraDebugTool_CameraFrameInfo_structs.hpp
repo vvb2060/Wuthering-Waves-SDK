@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "SCameraDebugTool_ControllerModification_structs.hpp"
-#include "SCameraDebugTool_CameraModeInfo_structs.hpp"
 #include "SCameraDebugTool_SubCameraModification_structs.hpp"
+#include "SCameraDebugTool_CameraModeInfo_structs.hpp"
 
 
 namespace SDK

@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "SD_KuroTraceCloudData_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "KuroRenderingRuntimeBPPlugin_structs.hpp"
 #include "KuroRenderingRuntimeBPPlugin_classes.hpp"
+#include "SD_KuroTraceCloudData_structs.hpp"
+#include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -22,7 +22,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_KuroVolumeCloud_Global.BP_KuroVolumeCloud_Global_C
 // 0x01E8 (0x0498 - 0x02B0)
-class ABP_KuroVolumeCloud_Global_C : public AUKuroCustomCookActor
+class ABP_KuroVolumeCloud_Global_C final : public AUKuroCustomCookActor
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02B0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
@@ -57,20 +57,20 @@ public:
 	bool                                          bUseGlobalSpeed;                                   // 0x0490(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
+	void UserConstructionScript();
+	void EditorTick();
+	void ReceiveTick(float DeltaSeconds);
+	void BeforeCookForMobile();
+	void BeforeCookForPC();
+	void CleanMID();
 	void CheckNeed_Update();
 	void Update();
 	void GetLerpGIData(float Time, struct FSD_KuroTraceCloudData* LerpData_0);
 	void UpdateCloudLighting();
-	void CleanMID();
-	void BeforeCookForMobile();
-	void UpdateCloudTransform();
-	void UserConstructionScript();
-	void BeforeCookForPC();
-	void EditorTick();
-	void ReceiveTick(float DeltaSeconds);
-	void ExecuteUbergraph_BP_KuroVolumeCloud_Global(int32 EntryPoint);
 	void BeforeSave();
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_KuroVolumeCloud_Global(int32 EntryPoint);
+	void UpdateCloudTransform();
 
 public:
 	static class UClass* StaticClass()

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "EFollowTargetType_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "EFollowTargetType_structs.hpp"
 
 
 namespace SDK

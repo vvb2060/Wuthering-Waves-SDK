@@ -17,134 +17,6 @@
 namespace SDK
 {
 
-// Function GA_Born_Vision.GA_Born_Vision_C.获取幻象数据
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// int32                                   幻象ID                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FSVisionData*                    幻象数据                                               (Parm, OutParm, ContainsInstancedReference, HasGetValueTypeHash)
-
-void UGA_Born_Vision_C::获取幻象数据(int32 幻象ID, struct FSVisionData* 幻象数据)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Born_Vision_C", "获取幻象数据");
-
-	Params::GA_Born_Vision_C_获取幻象数据 Parms{};
-
-	Parms.幻象ID = 幻象ID;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (幻象数据 != nullptr)
-		*幻象数据 = std::move(Parms.幻象数据);
-}
-
-
-// Function GA_Born_Vision.GA_Born_Vision_C.EventReceived_18B59F5945020DB23C42FD889881D7F7
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGameplayEventData&        Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UGA_Born_Vision_C::EventReceived_18B59F5945020DB23C42FD889881D7F7(const struct FGameplayEventData& Payload)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Born_Vision_C", "EventReceived_18B59F5945020DB23C42FD889881D7F7");
-
-	Params::GA_Born_Vision_C_EventReceived_18B59F5945020DB23C42FD889881D7F7 Parms{};
-
-	Parms.Payload = std::move(Payload);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function GA_Born_Vision.GA_Born_Vision_C.OnTick_5D118C384AE61F1C80292E81F2255DE9
-// (BlueprintCallable, BlueprintEvent)
-
-void UGA_Born_Vision_C::OnTick_5D118C384AE61F1C80292E81F2255DE9()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Born_Vision_C", "OnTick_5D118C384AE61F1C80292E81F2255DE9");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function GA_Born_Vision.GA_Born_Vision_C.OnCancelled_5D118C384AE61F1C80292E81F2255DE9
-// (BlueprintCallable, BlueprintEvent)
-
-void UGA_Born_Vision_C::OnCancelled_5D118C384AE61F1C80292E81F2255DE9()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Born_Vision_C", "OnCancelled_5D118C384AE61F1C80292E81F2255DE9");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function GA_Born_Vision.GA_Born_Vision_C.OnInterrupted_5D118C384AE61F1C80292E81F2255DE9
-// (BlueprintCallable, BlueprintEvent)
-
-void UGA_Born_Vision_C::OnInterrupted_5D118C384AE61F1C80292E81F2255DE9()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Born_Vision_C", "OnInterrupted_5D118C384AE61F1C80292E81F2255DE9");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function GA_Born_Vision.GA_Born_Vision_C.OnBlendOut_5D118C384AE61F1C80292E81F2255DE9
-// (BlueprintCallable, BlueprintEvent)
-
-void UGA_Born_Vision_C::OnBlendOut_5D118C384AE61F1C80292E81F2255DE9()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Born_Vision_C", "OnBlendOut_5D118C384AE61F1C80292E81F2255DE9");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function GA_Born_Vision.GA_Born_Vision_C.OnCompleted_5D118C384AE61F1C80292E81F2255DE9
-// (BlueprintCallable, BlueprintEvent)
-
-void UGA_Born_Vision_C::OnCompleted_5D118C384AE61F1C80292E81F2255DE9()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Born_Vision_C", "OnCompleted_5D118C384AE61F1C80292E81F2255DE9");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function GA_Born_Vision.GA_Born_Vision_C.K2_ActivateAbility
-// (Event, Protected, BlueprintEvent)
-
-void UGA_Born_Vision_C::K2_ActivateAbility()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Born_Vision_C", "K2_ActivateAbility");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function GA_Born_Vision.GA_Born_Vision_C.ExecuteUbergraph_GA_Born_Vision
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -182,6 +54,134 @@ void UGA_Born_Vision_C::K2_OnEndAbility(bool bWasCancelled)
 	Parms.bWasCancelled = bWasCancelled;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function GA_Born_Vision.GA_Born_Vision_C.K2_ActivateAbility
+// (Event, Protected, BlueprintEvent)
+
+void UGA_Born_Vision_C::K2_ActivateAbility()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GA_Born_Vision_C", "K2_ActivateAbility");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function GA_Born_Vision.GA_Born_Vision_C.OnCompleted_5D118C384AE61F1C80292E81F2255DE9
+// (BlueprintCallable, BlueprintEvent)
+
+void UGA_Born_Vision_C::OnCompleted_5D118C384AE61F1C80292E81F2255DE9()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GA_Born_Vision_C", "OnCompleted_5D118C384AE61F1C80292E81F2255DE9");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function GA_Born_Vision.GA_Born_Vision_C.OnBlendOut_5D118C384AE61F1C80292E81F2255DE9
+// (BlueprintCallable, BlueprintEvent)
+
+void UGA_Born_Vision_C::OnBlendOut_5D118C384AE61F1C80292E81F2255DE9()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GA_Born_Vision_C", "OnBlendOut_5D118C384AE61F1C80292E81F2255DE9");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function GA_Born_Vision.GA_Born_Vision_C.OnInterrupted_5D118C384AE61F1C80292E81F2255DE9
+// (BlueprintCallable, BlueprintEvent)
+
+void UGA_Born_Vision_C::OnInterrupted_5D118C384AE61F1C80292E81F2255DE9()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GA_Born_Vision_C", "OnInterrupted_5D118C384AE61F1C80292E81F2255DE9");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function GA_Born_Vision.GA_Born_Vision_C.OnCancelled_5D118C384AE61F1C80292E81F2255DE9
+// (BlueprintCallable, BlueprintEvent)
+
+void UGA_Born_Vision_C::OnCancelled_5D118C384AE61F1C80292E81F2255DE9()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GA_Born_Vision_C", "OnCancelled_5D118C384AE61F1C80292E81F2255DE9");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function GA_Born_Vision.GA_Born_Vision_C.OnTick_5D118C384AE61F1C80292E81F2255DE9
+// (BlueprintCallable, BlueprintEvent)
+
+void UGA_Born_Vision_C::OnTick_5D118C384AE61F1C80292E81F2255DE9()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GA_Born_Vision_C", "OnTick_5D118C384AE61F1C80292E81F2255DE9");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function GA_Born_Vision.GA_Born_Vision_C.EventReceived_18B59F5945020DB23C42FD889881D7F7
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGameplayEventData&        Payload                                                (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UGA_Born_Vision_C::EventReceived_18B59F5945020DB23C42FD889881D7F7(const struct FGameplayEventData& Payload)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GA_Born_Vision_C", "EventReceived_18B59F5945020DB23C42FD889881D7F7");
+
+	Params::GA_Born_Vision_C_EventReceived_18B59F5945020DB23C42FD889881D7F7 Parms{};
+
+	Parms.Payload = std::move(Payload);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function GA_Born_Vision.GA_Born_Vision_C.获取幻象数据
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// int32                                   幻象ID                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FSVisionData*                    幻象数据                                               (Parm, OutParm, ContainsInstancedReference, HasGetValueTypeHash)
+
+void UGA_Born_Vision_C::获取幻象数据(int32 幻象ID, struct FSVisionData* 幻象数据)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GA_Born_Vision_C", "获取幻象数据");
+
+	Params::GA_Born_Vision_C_获取幻象数据 Parms{};
+
+	Parms.幻象ID = 幻象ID;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (幻象数据 != nullptr)
+		*幻象数据 = std::move(Parms.幻象数据);
 }
 
 }

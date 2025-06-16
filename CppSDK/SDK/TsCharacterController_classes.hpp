@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "TsBasePlayerController_classes.hpp"
 #include "Engine_structs.hpp"
+#include "TsBasePlayerController_classes.hpp"
 
 
 namespace SDK

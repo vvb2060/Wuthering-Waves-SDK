@@ -33,16 +33,16 @@ public:
 	int32                                         TalkID_SP;                                         // 0x03F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void GetABPC_Body_V2(class UABPC_Seq_Body_V2_C** ABPC_Body_V2_0);
-	bool GetAnimDataFloat(TArray<struct FNamedCurveValue>* FloatCurveData);
-	bool GetAnimDataVector(TMap<class FName, struct FVector>* VectorCurveData);
-	TArray<class FName> GetSupportGroupNames();
-	bool SetAnimDataFloat(const TArray<struct FNamedCurveValue>& FloatCurveData);
-	bool SetAnimDataVector(const TMap<class FName, struct FVector>& VectorCurveData);
-	void UpdateNpcByDa();
-	void UserConstructionScript();
-	void ReceiveTick(float DeltaSeconds);
 	void ExecuteUbergraph_BP_SeqNPC(int32 EntryPoint);
+	void ReceiveTick(float DeltaSeconds);
+	void UserConstructionScript();
+	void UpdateNpcByDa();
+	bool SetAnimDataVector(const TMap<class FName, struct FVector>& VectorCurveData);
+	bool SetAnimDataFloat(const TArray<struct FNamedCurveValue>& FloatCurveData);
+	TArray<class FName> GetSupportGroupNames();
+	bool GetAnimDataVector(TMap<class FName, struct FVector>* VectorCurveData);
+	bool GetAnimDataFloat(TArray<struct FNamedCurveValue>* FloatCurveData);
+	void GetABPC_Body_V2(class UABPC_Seq_Body_V2_C** ABPC_Body_V2_0);
 
 public:
 	static class UClass* StaticClass()

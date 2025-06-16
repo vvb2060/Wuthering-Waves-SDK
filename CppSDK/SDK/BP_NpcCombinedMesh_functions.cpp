@@ -17,173 +17,106 @@
 namespace SDK
 {
 
-// Function BP_NpcCombinedMesh.BP_NpcCombinedMesh_C.SetSkeletalMeshMaterial
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_NpcCombinedMesh.BP_NpcCombinedMesh_C.SetupNpcMesh
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UMaterialInterface*               ReplaceMaterial                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USkeletalMeshComponent*           SkeletalMeshComp                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             ParamName01                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             ParamName02                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             SkinColorName                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NumSlots                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   MaterialIndex                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPD_NpcSetupData_C*               Data                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIgnoreSockets                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   IsSuc                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// TArray<class USkeletalMeshComponent*>*  SkleMain                                               (Parm, OutParm, ContainsInstancedReference)
 
-void ABP_NpcCombinedMesh_C::SetSkeletalMeshMaterial(class UMaterialInterface* ReplaceMaterial, class USkeletalMeshComponent* SkeletalMeshComp, class FName ParamName01, class FName ParamName02, class FName SkinColorName, int32 NumSlots, int32 MaterialIndex)
+void ABP_NpcCombinedMesh_C::SetupNpcMesh(class UPD_NpcSetupData_C* Data, bool bIgnoreSockets, bool* IsSuc, TArray<class USkeletalMeshComponent*>* SkleMain)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NpcCombinedMesh_C", "SetSkeletalMeshMaterial");
+		Func = Class->GetFunction("BP_NpcCombinedMesh_C", "SetupNpcMesh");
 
-	Params::BP_NpcCombinedMesh_C_SetSkeletalMeshMaterial Parms{};
+	Params::BP_NpcCombinedMesh_C_SetupNpcMesh Parms{};
 
-	Parms.ReplaceMaterial = ReplaceMaterial;
-	Parms.SkeletalMeshComp = SkeletalMeshComp;
-	Parms.ParamName01 = ParamName01;
-	Parms.ParamName02 = ParamName02;
-	Parms.SkinColorName = SkinColorName;
-	Parms.NumSlots = NumSlots;
-	Parms.MaterialIndex = MaterialIndex;
+	Parms.Data = Data;
+	Parms.bIgnoreSockets = bIgnoreSockets;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (IsSuc != nullptr)
+		*IsSuc = Parms.IsSuc;
+
+	if (SkleMain != nullptr)
+		*SkleMain = std::move(Parms.SkleMain);
 }
 
 
-// Function BP_NpcCombinedMesh.BP_NpcCombinedMesh_C.预览MorphTarget
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_NpcCombinedMesh.BP_NpcCombinedMesh_C.ResetNpcMesh
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_NpcCombinedMesh_C::预览MorphTarget()
+void ABP_NpcCombinedMesh_C::ResetNpcMesh()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NpcCombinedMesh_C", "预览MorphTarget");
+		Func = Class->GetFunction("BP_NpcCombinedMesh_C", "ResetNpcMesh");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_NpcCombinedMesh.BP_NpcCombinedMesh_C.Test
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_NpcCombinedMesh.BP_NpcCombinedMesh_C.SetupSkeletalMeshComponents
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USkeletalMeshComponent*           SKMesh                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UMaterialInstance*                MI                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Suc                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ABP_NpcCombinedMesh_C::Test(class USkeletalMeshComponent* SKMesh, class UMaterialInstance* MI)
+void ABP_NpcCombinedMesh_C::SetupSkeletalMeshComponents(bool* Suc)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NpcCombinedMesh_C", "Test");
+		Func = Class->GetFunction("BP_NpcCombinedMesh_C", "SetupSkeletalMeshComponents");
 
-	Params::BP_NpcCombinedMesh_C_Test Parms{};
-
-	Parms.SKMesh = SKMesh;
-	Parms.MI = MI;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_NpcCombinedMesh.BP_NpcCombinedMesh_C.GetHeadTransform
-// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FTransform&                InTransform                                            (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FTransform*                      OutTransform                                           (Parm, OutParm, IsPlainOldData, NoDestructor)
-
-void ABP_NpcCombinedMesh_C::GetHeadTransform(const struct FTransform& InTransform, int32 Index_0, struct FTransform* OutTransform)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NpcCombinedMesh_C", "GetHeadTransform");
-
-	Params::BP_NpcCombinedMesh_C_GetHeadTransform Parms{};
-
-	Parms.InTransform = std::move(InTransform);
-	Parms.Index_0 = Index_0;
+	Params::BP_NpcCombinedMesh_C_SetupSkeletalMeshComponents Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (OutTransform != nullptr)
-		*OutTransform = std::move(Parms.OutTransform);
+	if (Suc != nullptr)
+		*Suc = Parms.Suc;
 }
 
 
-// Function BP_NpcCombinedMesh.BP_NpcCombinedMesh_C.SetSkeletonMeshDI
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USkeletalMeshComponent*           SKMesh                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             ParamName01                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             ParamName02                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EBodyPartName                           BodyType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             SkinColorName                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UMaterialInterface*>&      Materials                                              (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void ABP_NpcCombinedMesh_C::SetSkeletonMeshDI(class USkeletalMeshComponent* SKMesh, class FName ParamName01, class FName ParamName02, EBodyPartName BodyType, class FName SkinColorName, TArray<class UMaterialInterface*>& Materials)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NpcCombinedMesh_C", "SetSkeletonMeshDI");
-
-	Params::BP_NpcCombinedMesh_C_SetSkeletonMeshDI Parms{};
-
-	Parms.SKMesh = SKMesh;
-	Parms.ParamName01 = ParamName01;
-	Parms.ParamName02 = ParamName02;
-	Parms.BodyType = BodyType;
-	Parms.SkinColorName = SkinColorName;
-	Parms.Materials = std::move(Materials);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Materials = std::move(Parms.Materials);
-}
-
-
-// Function BP_NpcCombinedMesh.BP_NpcCombinedMesh_C.AddSkeletalComponent
+// Function BP_NpcCombinedMesh.BP_NpcCombinedMesh_C.SetupSockets
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             Name_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USkeletalMeshComponent*           SkeletalComp                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_NpcCombinedMesh_C::AddSkeletalComponent(class FName Name_0, class USkeletalMeshComponent* SkeletalComp)
+void ABP_NpcCombinedMesh_C::SetupSockets()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NpcCombinedMesh_C", "AddSkeletalComponent");
+		Func = Class->GetFunction("BP_NpcCombinedMesh_C", "SetupSockets");
 
-	Params::BP_NpcCombinedMesh_C_AddSkeletalComponent Parms{};
-
-	Parms.Name_0 = Name_0;
-	Parms.SkeletalComp = SkeletalComp;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_NpcCombinedMesh.BP_NpcCombinedMesh_C.SetupSkeletalMeshComponent
+// Function BP_NpcCombinedMesh.BP_NpcCombinedMesh_C.SetupSocket
 // (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USkeletalMesh*                    InSkeletalMesh                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EBodyPartName                           BodyType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             SocketName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FTransform&                Transform                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// class USkeletalMesh*                    SkeletalMesh                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool*                                   Suc                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class USkeletalMeshComponent**          SkeletalComp                                           (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_NpcCombinedMesh_C::SetupSkeletalMeshComponent(class USkeletalMesh* InSkeletalMesh, EBodyPartName BodyType, bool* Suc, class USkeletalMeshComponent** SkeletalComp)
+void ABP_NpcCombinedMesh_C::SetupSocket(class FName SocketName, const struct FTransform& Transform, class USkeletalMesh* SkeletalMesh, bool* Suc, class USkeletalMeshComponent** SkeletalComp)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NpcCombinedMesh_C", "SetupSkeletalMeshComponent");
+		Func = Class->GetFunction("BP_NpcCombinedMesh_C", "SetupSocket");
 
-	Params::BP_NpcCombinedMesh_C_SetupSkeletalMeshComponent Parms{};
+	Params::BP_NpcCombinedMesh_C_SetupSocket Parms{};
 
-	Parms.InSkeletalMesh = InSkeletalMesh;
-	Parms.BodyType = BodyType;
+	Parms.SocketName = SocketName;
+	Parms.Transform = std::move(Transform);
+	Parms.SkeletalMesh = SkeletalMesh;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -195,73 +128,21 @@ void ABP_NpcCombinedMesh_C::SetupSkeletalMeshComponent(class USkeletalMesh* InSk
 }
 
 
-// Function BP_NpcCombinedMesh.BP_NpcCombinedMesh_C.GetWaistTransform
+// Function BP_NpcCombinedMesh.BP_NpcCombinedMesh_C.GetArmTransform
 // (Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const struct FTransform&                InTransform                                            (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 // int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FTransform*                      OutTransform                                           (Parm, OutParm, IsPlainOldData, NoDestructor)
 
-void ABP_NpcCombinedMesh_C::GetWaistTransform(const struct FTransform& InTransform, int32 Index_0, struct FTransform* OutTransform)
+void ABP_NpcCombinedMesh_C::GetArmTransform(const struct FTransform& InTransform, int32 Index_0, struct FTransform* OutTransform)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NpcCombinedMesh_C", "GetWaistTransform");
+		Func = Class->GetFunction("BP_NpcCombinedMesh_C", "GetArmTransform");
 
-	Params::BP_NpcCombinedMesh_C_GetWaistTransform Parms{};
-
-	Parms.InTransform = std::move(InTransform);
-	Parms.Index_0 = Index_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (OutTransform != nullptr)
-		*OutTransform = std::move(Parms.OutTransform);
-}
-
-
-// Function BP_NpcCombinedMesh.BP_NpcCombinedMesh_C.GetBackTransform
-// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FTransform&                InTransform                                            (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FTransform*                      OutTransform                                           (Parm, OutParm, IsPlainOldData, NoDestructor)
-
-void ABP_NpcCombinedMesh_C::GetBackTransform(const struct FTransform& InTransform, int32 Index_0, struct FTransform* OutTransform)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NpcCombinedMesh_C", "GetBackTransform");
-
-	Params::BP_NpcCombinedMesh_C_GetBackTransform Parms{};
-
-	Parms.InTransform = std::move(InTransform);
-	Parms.Index_0 = Index_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (OutTransform != nullptr)
-		*OutTransform = std::move(Parms.OutTransform);
-}
-
-
-// Function BP_NpcCombinedMesh.BP_NpcCombinedMesh_C.GetLegTransform
-// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FTransform&                InTransform                                            (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FTransform*                      OutTransform                                           (Parm, OutParm, IsPlainOldData, NoDestructor)
-
-void ABP_NpcCombinedMesh_C::GetLegTransform(const struct FTransform& InTransform, int32 Index_0, struct FTransform* OutTransform)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NpcCombinedMesh_C", "GetLegTransform");
-
-	Params::BP_NpcCombinedMesh_C_GetLegTransform Parms{};
+	Params::BP_NpcCombinedMesh_C_GetArmTransform Parms{};
 
 	Parms.InTransform = std::move(InTransform);
 	Parms.Index_0 = Index_0;
@@ -299,21 +180,21 @@ void ABP_NpcCombinedMesh_C::GetWeaponTransform(const struct FTransform& InTransf
 }
 
 
-// Function BP_NpcCombinedMesh.BP_NpcCombinedMesh_C.GetArmTransform
+// Function BP_NpcCombinedMesh.BP_NpcCombinedMesh_C.GetLegTransform
 // (Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const struct FTransform&                InTransform                                            (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 // int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FTransform*                      OutTransform                                           (Parm, OutParm, IsPlainOldData, NoDestructor)
 
-void ABP_NpcCombinedMesh_C::GetArmTransform(const struct FTransform& InTransform, int32 Index_0, struct FTransform* OutTransform)
+void ABP_NpcCombinedMesh_C::GetLegTransform(const struct FTransform& InTransform, int32 Index_0, struct FTransform* OutTransform)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NpcCombinedMesh_C", "GetArmTransform");
+		Func = Class->GetFunction("BP_NpcCombinedMesh_C", "GetLegTransform");
 
-	Params::BP_NpcCombinedMesh_C_GetArmTransform Parms{};
+	Params::BP_NpcCombinedMesh_C_GetLegTransform Parms{};
 
 	Parms.InTransform = std::move(InTransform);
 	Parms.Index_0 = Index_0;
@@ -325,27 +206,77 @@ void ABP_NpcCombinedMesh_C::GetArmTransform(const struct FTransform& InTransform
 }
 
 
-// Function BP_NpcCombinedMesh.BP_NpcCombinedMesh_C.SetupSocket
-// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_NpcCombinedMesh.BP_NpcCombinedMesh_C.GetBackTransform
+// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             SocketName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FTransform&                Transform                                              (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// class USkeletalMesh*                    SkeletalMesh                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Suc                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class USkeletalMeshComponent**          SkeletalComp                                           (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FTransform&                InTransform                                            (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FTransform*                      OutTransform                                           (Parm, OutParm, IsPlainOldData, NoDestructor)
 
-void ABP_NpcCombinedMesh_C::SetupSocket(class FName SocketName, const struct FTransform& Transform, class USkeletalMesh* SkeletalMesh, bool* Suc, class USkeletalMeshComponent** SkeletalComp)
+void ABP_NpcCombinedMesh_C::GetBackTransform(const struct FTransform& InTransform, int32 Index_0, struct FTransform* OutTransform)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NpcCombinedMesh_C", "SetupSocket");
+		Func = Class->GetFunction("BP_NpcCombinedMesh_C", "GetBackTransform");
 
-	Params::BP_NpcCombinedMesh_C_SetupSocket Parms{};
+	Params::BP_NpcCombinedMesh_C_GetBackTransform Parms{};
 
-	Parms.SocketName = SocketName;
-	Parms.Transform = std::move(Transform);
-	Parms.SkeletalMesh = SkeletalMesh;
+	Parms.InTransform = std::move(InTransform);
+	Parms.Index_0 = Index_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutTransform != nullptr)
+		*OutTransform = std::move(Parms.OutTransform);
+}
+
+
+// Function BP_NpcCombinedMesh.BP_NpcCombinedMesh_C.GetWaistTransform
+// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FTransform&                InTransform                                            (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FTransform*                      OutTransform                                           (Parm, OutParm, IsPlainOldData, NoDestructor)
+
+void ABP_NpcCombinedMesh_C::GetWaistTransform(const struct FTransform& InTransform, int32 Index_0, struct FTransform* OutTransform)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NpcCombinedMesh_C", "GetWaistTransform");
+
+	Params::BP_NpcCombinedMesh_C_GetWaistTransform Parms{};
+
+	Parms.InTransform = std::move(InTransform);
+	Parms.Index_0 = Index_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutTransform != nullptr)
+		*OutTransform = std::move(Parms.OutTransform);
+}
+
+
+// Function BP_NpcCombinedMesh.BP_NpcCombinedMesh_C.SetupSkeletalMeshComponent
+// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USkeletalMesh*                    InSkeletalMesh                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EBodyPartName                           BodyType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Suc                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USkeletalMeshComponent**          SkeletalComp                                           (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_NpcCombinedMesh_C::SetupSkeletalMeshComponent(class USkeletalMesh* InSkeletalMesh, EBodyPartName BodyType, bool* Suc, class USkeletalMeshComponent** SkeletalComp)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NpcCombinedMesh_C", "SetupSkeletalMeshComponent");
+
+	Params::BP_NpcCombinedMesh_C_SetupSkeletalMeshComponent Parms{};
+
+	Parms.InSkeletalMesh = InSkeletalMesh;
+	Parms.BodyType = BodyType;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -357,82 +288,151 @@ void ABP_NpcCombinedMesh_C::SetupSocket(class FName SocketName, const struct FTr
 }
 
 
-// Function BP_NpcCombinedMesh.BP_NpcCombinedMesh_C.SetupSockets
+// Function BP_NpcCombinedMesh.BP_NpcCombinedMesh_C.AddSkeletalComponent
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             Name_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USkeletalMeshComponent*           SkeletalComp                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_NpcCombinedMesh_C::SetupSockets()
+void ABP_NpcCombinedMesh_C::AddSkeletalComponent(class FName Name_0, class USkeletalMeshComponent* SkeletalComp)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NpcCombinedMesh_C", "SetupSockets");
+		Func = Class->GetFunction("BP_NpcCombinedMesh_C", "AddSkeletalComponent");
+
+	Params::BP_NpcCombinedMesh_C_AddSkeletalComponent Parms{};
+
+	Parms.Name_0 = Name_0;
+	Parms.SkeletalComp = SkeletalComp;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_NpcCombinedMesh.BP_NpcCombinedMesh_C.SetSkeletonMeshDI
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USkeletalMeshComponent*           SKMesh                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ParamName01                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ParamName02                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EBodyPartName                           BodyType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             SkinColorName                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<class UMaterialInterface*>&      Materials                                              (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void ABP_NpcCombinedMesh_C::SetSkeletonMeshDI(class USkeletalMeshComponent* SKMesh, class FName ParamName01, class FName ParamName02, EBodyPartName BodyType, class FName SkinColorName, TArray<class UMaterialInterface*>& Materials)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NpcCombinedMesh_C", "SetSkeletonMeshDI");
+
+	Params::BP_NpcCombinedMesh_C_SetSkeletonMeshDI Parms{};
+
+	Parms.SKMesh = SKMesh;
+	Parms.ParamName01 = ParamName01;
+	Parms.ParamName02 = ParamName02;
+	Parms.BodyType = BodyType;
+	Parms.SkinColorName = SkinColorName;
+	Parms.Materials = std::move(Materials);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Materials = std::move(Parms.Materials);
+}
+
+
+// Function BP_NpcCombinedMesh.BP_NpcCombinedMesh_C.GetHeadTransform
+// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FTransform&                InTransform                                            (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FTransform*                      OutTransform                                           (Parm, OutParm, IsPlainOldData, NoDestructor)
+
+void ABP_NpcCombinedMesh_C::GetHeadTransform(const struct FTransform& InTransform, int32 Index_0, struct FTransform* OutTransform)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NpcCombinedMesh_C", "GetHeadTransform");
+
+	Params::BP_NpcCombinedMesh_C_GetHeadTransform Parms{};
+
+	Parms.InTransform = std::move(InTransform);
+	Parms.Index_0 = Index_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutTransform != nullptr)
+		*OutTransform = std::move(Parms.OutTransform);
+}
+
+
+// Function BP_NpcCombinedMesh.BP_NpcCombinedMesh_C.Test
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USkeletalMeshComponent*           SKMesh                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UMaterialInstance*                MI                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_NpcCombinedMesh_C::Test(class USkeletalMeshComponent* SKMesh, class UMaterialInstance* MI)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NpcCombinedMesh_C", "Test");
+
+	Params::BP_NpcCombinedMesh_C_Test Parms{};
+
+	Parms.SKMesh = SKMesh;
+	Parms.MI = MI;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_NpcCombinedMesh.BP_NpcCombinedMesh_C.预览MorphTarget
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_NpcCombinedMesh_C::预览MorphTarget()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NpcCombinedMesh_C", "预览MorphTarget");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_NpcCombinedMesh.BP_NpcCombinedMesh_C.SetupSkeletalMeshComponents
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   Suc                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ABP_NpcCombinedMesh_C::SetupSkeletalMeshComponents(bool* Suc)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NpcCombinedMesh_C", "SetupSkeletalMeshComponents");
-
-	Params::BP_NpcCombinedMesh_C_SetupSkeletalMeshComponents Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Suc != nullptr)
-		*Suc = Parms.Suc;
-}
-
-
-// Function BP_NpcCombinedMesh.BP_NpcCombinedMesh_C.ResetNpcMesh
+// Function BP_NpcCombinedMesh.BP_NpcCombinedMesh_C.SetSkeletalMeshMaterial
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_NpcCombinedMesh_C::ResetNpcMesh()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NpcCombinedMesh_C", "ResetNpcMesh");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_NpcCombinedMesh.BP_NpcCombinedMesh_C.SetupNpcMesh
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPD_NpcSetupData_C*               Data                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIgnoreSockets                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool*                                   IsSuc                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// TArray<class USkeletalMeshComponent*>*  SkleMain                                               (Parm, OutParm, ContainsInstancedReference)
+// class UMaterialInterface*               ReplaceMaterial                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USkeletalMeshComponent*           SkeletalMeshComp                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ParamName01                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ParamName02                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             SkinColorName                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NumSlots                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   MaterialIndex                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_NpcCombinedMesh_C::SetupNpcMesh(class UPD_NpcSetupData_C* Data, bool bIgnoreSockets, bool* IsSuc, TArray<class USkeletalMeshComponent*>* SkleMain)
+void ABP_NpcCombinedMesh_C::SetSkeletalMeshMaterial(class UMaterialInterface* ReplaceMaterial, class USkeletalMeshComponent* SkeletalMeshComp, class FName ParamName01, class FName ParamName02, class FName SkinColorName, int32 NumSlots, int32 MaterialIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NpcCombinedMesh_C", "SetupNpcMesh");
+		Func = Class->GetFunction("BP_NpcCombinedMesh_C", "SetSkeletalMeshMaterial");
 
-	Params::BP_NpcCombinedMesh_C_SetupNpcMesh Parms{};
+	Params::BP_NpcCombinedMesh_C_SetSkeletalMeshMaterial Parms{};
 
-	Parms.Data = Data;
-	Parms.bIgnoreSockets = bIgnoreSockets;
+	Parms.ReplaceMaterial = ReplaceMaterial;
+	Parms.SkeletalMeshComp = SkeletalMeshComp;
+	Parms.ParamName01 = ParamName01;
+	Parms.ParamName02 = ParamName02;
+	Parms.SkinColorName = SkinColorName;
+	Parms.NumSlots = NumSlots;
+	Parms.MaterialIndex = MaterialIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (IsSuc != nullptr)
-		*IsSuc = Parms.IsSuc;
-
-	if (SkleMain != nullptr)
-		*SkleMain = std::move(Parms.SkleMain);
 }
 
 }

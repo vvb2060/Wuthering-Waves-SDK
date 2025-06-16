@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "SInputHoldConfig_structs.hpp"
-#include "sInputCommand_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "SInputCaches_structs.hpp"
 #include "Engine_structs.hpp"
+#include "SInputCaches_structs.hpp"
+#include "sInputCommand_structs.hpp"
+#include "SInputHoldConfig_structs.hpp"
 
 
 namespace SDK::Params

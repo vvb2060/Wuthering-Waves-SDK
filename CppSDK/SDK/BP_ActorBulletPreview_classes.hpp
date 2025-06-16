@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_classes.hpp"
 #include "SReBulletDataMain_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_classes.hpp"
 #include "EBulletShape_structs.hpp"
 
 
@@ -35,11 +35,11 @@ public:
 	class FName                                   材质路径;                                          // 0x0A90(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void 中心位置偏移();
-	void OnTick();
-	void 初始化(const struct FSReBulletDataMain& 配置_0, class AActor* 发射者_0);
-	void 形状初始化(EBulletShape 形状);
 	void 开始(class USkeletalMeshComponent* meshComp);
+	void 形状初始化(EBulletShape 形状);
+	void 初始化(const struct FSReBulletDataMain& 配置_0, class AActor* 发射者_0);
+	void OnTick();
+	void 中心位置偏移();
 
 public:
 	static class UClass* StaticClass()

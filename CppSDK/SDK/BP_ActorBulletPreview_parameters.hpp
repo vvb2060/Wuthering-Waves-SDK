@@ -10,64 +10,40 @@
 
 #include "Basic.hpp"
 
-#include "SReBulletDataMain_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "EBulletShape_structs.hpp"
+#include "SReBulletDataMain_structs.hpp"
 #include "ProceduralMeshComponent_structs.hpp"
+#include "EBulletShape_structs.hpp"
 
 
 namespace SDK::Params
 {
 
-// Function BP_ActorBulletPreview.BP_ActorBulletPreview_C.中心位置偏移
-// 0x0094 (0x0094 - 0x0000)
-struct BP_ActorBulletPreview_C_中心位置偏移 final
+// Function BP_ActorBulletPreview.BP_ActorBulletPreview_C.开始
+// 0x00D8 (0x00D8 - 0x0000)
+struct BP_ActorBulletPreview_C_开始 final
 {
 public:
-	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0000(0x0094)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class USkeletalMeshComponent*                 meshComp;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVectorDouble                          CallFunc_CalcBulletInitLocation_ReturnValue;       // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_D_K2_SetActorLocation_SweepHitResult;     // 0x0020(0x0094)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_D_K2_SetActorLocation_ReturnValue;        // 0x00B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_B5[0x3];                                       // 0x00B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRotator                               CallFunc_CalcBulletInitRotator_ReturnValue;        // 0x00B8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_C4[0x4];                                       // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x00C8(0x0008)(NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_K2_SetActorRotation_ReturnValue;          // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_ActorBulletPreview_C_中心位置偏移) == 0x000004, "Wrong alignment on BP_ActorBulletPreview_C_中心位置偏移");
-static_assert(sizeof(BP_ActorBulletPreview_C_中心位置偏移) == 0x000094, "Wrong size on BP_ActorBulletPreview_C_中心位置偏移");
-static_assert(offsetof(BP_ActorBulletPreview_C_中心位置偏移, CallFunc_K2_SetRelativeLocation_SweepHitResult) == 0x000000, "Member 'BP_ActorBulletPreview_C_中心位置偏移::CallFunc_K2_SetRelativeLocation_SweepHitResult' has a wrong offset!");
-
-// Function BP_ActorBulletPreview.BP_ActorBulletPreview_C.OnTick
-// 0x00C8 (0x00C8 - 0x0000)
-struct BP_ActorBulletPreview_C_OnTick final
-{
-public:
-	struct FVectorDouble                          CallFunc_CalcBulletLocation_ReturnValue;           // 0x0000(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_D_K2_SetActorLocation_SweepHitResult;     // 0x0018(0x0094)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_D_K2_SetActorLocation_ReturnValue;        // 0x00AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_AD[0x3];                                       // 0x00AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRotator                               CallFunc_CalcBulletRotator_ReturnValue;            // 0x00B0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_K2_SetActorRotation_ReturnValue;          // 0x00BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x00BD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_BE[0x2];                                       // 0x00BE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_ActorBulletPreview_C_OnTick) == 0x000008, "Wrong alignment on BP_ActorBulletPreview_C_OnTick");
-static_assert(sizeof(BP_ActorBulletPreview_C_OnTick) == 0x0000C8, "Wrong size on BP_ActorBulletPreview_C_OnTick");
-static_assert(offsetof(BP_ActorBulletPreview_C_OnTick, CallFunc_CalcBulletLocation_ReturnValue) == 0x000000, "Member 'BP_ActorBulletPreview_C_OnTick::CallFunc_CalcBulletLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ActorBulletPreview_C_OnTick, CallFunc_D_K2_SetActorLocation_SweepHitResult) == 0x000018, "Member 'BP_ActorBulletPreview_C_OnTick::CallFunc_D_K2_SetActorLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_ActorBulletPreview_C_OnTick, CallFunc_D_K2_SetActorLocation_ReturnValue) == 0x0000AC, "Member 'BP_ActorBulletPreview_C_OnTick::CallFunc_D_K2_SetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ActorBulletPreview_C_OnTick, CallFunc_CalcBulletRotator_ReturnValue) == 0x0000B0, "Member 'BP_ActorBulletPreview_C_OnTick::CallFunc_CalcBulletRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ActorBulletPreview_C_OnTick, CallFunc_K2_SetActorRotation_ReturnValue) == 0x0000BC, "Member 'BP_ActorBulletPreview_C_OnTick::CallFunc_K2_SetActorRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ActorBulletPreview_C_OnTick, CallFunc_Less_FloatFloat_ReturnValue) == 0x0000BD, "Member 'BP_ActorBulletPreview_C_OnTick::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ActorBulletPreview_C_OnTick, CallFunc_Add_FloatFloat_ReturnValue) == 0x0000C0, "Member 'BP_ActorBulletPreview_C_OnTick::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-
-// Function BP_ActorBulletPreview.BP_ActorBulletPreview_C.初始化
-// 0x07B8 (0x07B8 - 0x0000)
-struct BP_ActorBulletPreview_C_初始化 final
-{
-public:
-	struct FSReBulletDataMain                     配置_0;                                            // 0x0000(0x07B0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	class AActor*                                 发射者_0;                                          // 0x07B0(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_ActorBulletPreview_C_初始化) == 0x000008, "Wrong alignment on BP_ActorBulletPreview_C_初始化");
-static_assert(sizeof(BP_ActorBulletPreview_C_初始化) == 0x0007B8, "Wrong size on BP_ActorBulletPreview_C_初始化");
-static_assert(offsetof(BP_ActorBulletPreview_C_初始化, 配置_0) == 0x000000, "Member 'BP_ActorBulletPreview_C_初始化::配置_0' has a wrong offset!");
-static_assert(offsetof(BP_ActorBulletPreview_C_初始化, 发射者_0) == 0x0007B0, "Member 'BP_ActorBulletPreview_C_初始化::发射者_0' has a wrong offset!");
+static_assert(alignof(BP_ActorBulletPreview_C_开始) == 0x000008, "Wrong alignment on BP_ActorBulletPreview_C_开始");
+static_assert(sizeof(BP_ActorBulletPreview_C_开始) == 0x0000D8, "Wrong size on BP_ActorBulletPreview_C_开始");
+static_assert(offsetof(BP_ActorBulletPreview_C_开始, meshComp) == 0x000000, "Member 'BP_ActorBulletPreview_C_开始::meshComp' has a wrong offset!");
+static_assert(offsetof(BP_ActorBulletPreview_C_开始, CallFunc_CalcBulletInitLocation_ReturnValue) == 0x000008, "Member 'BP_ActorBulletPreview_C_开始::CallFunc_CalcBulletInitLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ActorBulletPreview_C_开始, CallFunc_D_K2_SetActorLocation_SweepHitResult) == 0x000020, "Member 'BP_ActorBulletPreview_C_开始::CallFunc_D_K2_SetActorLocation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(BP_ActorBulletPreview_C_开始, CallFunc_D_K2_SetActorLocation_ReturnValue) == 0x0000B4, "Member 'BP_ActorBulletPreview_C_开始::CallFunc_D_K2_SetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ActorBulletPreview_C_开始, CallFunc_CalcBulletInitRotator_ReturnValue) == 0x0000B8, "Member 'BP_ActorBulletPreview_C_开始::CallFunc_CalcBulletInitRotator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ActorBulletPreview_C_开始, CallFunc_K2_SetTimer_ReturnValue) == 0x0000C8, "Member 'BP_ActorBulletPreview_C_开始::CallFunc_K2_SetTimer_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ActorBulletPreview_C_开始, CallFunc_K2_SetActorRotation_ReturnValue) == 0x0000D0, "Member 'BP_ActorBulletPreview_C_开始::CallFunc_K2_SetActorRotation_ReturnValue' has a wrong offset!");
 
 // Function BP_ActorBulletPreview.BP_ActorBulletPreview_C.形状初始化
 // 0x03C0 (0x03C0 - 0x0000)
@@ -191,30 +167,54 @@ static_assert(offsetof(BP_ActorBulletPreview_C_形状初始化, CallFunc_Conv_Ve
 static_assert(offsetof(BP_ActorBulletPreview_C_形状初始化, CallFunc_GetActorForwardVector_ReturnValue_1) == 0x000398, "Member 'BP_ActorBulletPreview_C_形状初始化::CallFunc_GetActorForwardVector_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(BP_ActorBulletPreview_C_形状初始化, ___struct_Variable_13) == 0x0003A8, "Member 'BP_ActorBulletPreview_C_形状初始化::___struct_Variable_13' has a wrong offset!");
 
-// Function BP_ActorBulletPreview.BP_ActorBulletPreview_C.开始
-// 0x00D8 (0x00D8 - 0x0000)
-struct BP_ActorBulletPreview_C_开始 final
+// Function BP_ActorBulletPreview.BP_ActorBulletPreview_C.初始化
+// 0x07B8 (0x07B8 - 0x0000)
+struct BP_ActorBulletPreview_C_初始化 final
 {
 public:
-	class USkeletalMeshComponent*                 meshComp;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVectorDouble                          CallFunc_CalcBulletInitLocation_ReturnValue;       // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_D_K2_SetActorLocation_SweepHitResult;     // 0x0020(0x0094)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_D_K2_SetActorLocation_ReturnValue;        // 0x00B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B5[0x3];                                       // 0x00B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRotator                               CallFunc_CalcBulletInitRotator_ReturnValue;        // 0x00B8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C4[0x4];                                       // 0x00C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue;                  // 0x00C8(0x0008)(NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_SetActorRotation_ReturnValue;          // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FSReBulletDataMain                     配置_0;                                            // 0x0000(0x07B0)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	class AActor*                                 发射者_0;                                          // 0x07B0(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_ActorBulletPreview_C_开始) == 0x000008, "Wrong alignment on BP_ActorBulletPreview_C_开始");
-static_assert(sizeof(BP_ActorBulletPreview_C_开始) == 0x0000D8, "Wrong size on BP_ActorBulletPreview_C_开始");
-static_assert(offsetof(BP_ActorBulletPreview_C_开始, meshComp) == 0x000000, "Member 'BP_ActorBulletPreview_C_开始::meshComp' has a wrong offset!");
-static_assert(offsetof(BP_ActorBulletPreview_C_开始, CallFunc_CalcBulletInitLocation_ReturnValue) == 0x000008, "Member 'BP_ActorBulletPreview_C_开始::CallFunc_CalcBulletInitLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ActorBulletPreview_C_开始, CallFunc_D_K2_SetActorLocation_SweepHitResult) == 0x000020, "Member 'BP_ActorBulletPreview_C_开始::CallFunc_D_K2_SetActorLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_ActorBulletPreview_C_开始, CallFunc_D_K2_SetActorLocation_ReturnValue) == 0x0000B4, "Member 'BP_ActorBulletPreview_C_开始::CallFunc_D_K2_SetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ActorBulletPreview_C_开始, CallFunc_CalcBulletInitRotator_ReturnValue) == 0x0000B8, "Member 'BP_ActorBulletPreview_C_开始::CallFunc_CalcBulletInitRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ActorBulletPreview_C_开始, CallFunc_K2_SetTimer_ReturnValue) == 0x0000C8, "Member 'BP_ActorBulletPreview_C_开始::CallFunc_K2_SetTimer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ActorBulletPreview_C_开始, CallFunc_K2_SetActorRotation_ReturnValue) == 0x0000D0, "Member 'BP_ActorBulletPreview_C_开始::CallFunc_K2_SetActorRotation_ReturnValue' has a wrong offset!");
+static_assert(alignof(BP_ActorBulletPreview_C_初始化) == 0x000008, "Wrong alignment on BP_ActorBulletPreview_C_初始化");
+static_assert(sizeof(BP_ActorBulletPreview_C_初始化) == 0x0007B8, "Wrong size on BP_ActorBulletPreview_C_初始化");
+static_assert(offsetof(BP_ActorBulletPreview_C_初始化, 配置_0) == 0x000000, "Member 'BP_ActorBulletPreview_C_初始化::配置_0' has a wrong offset!");
+static_assert(offsetof(BP_ActorBulletPreview_C_初始化, 发射者_0) == 0x0007B0, "Member 'BP_ActorBulletPreview_C_初始化::发射者_0' has a wrong offset!");
+
+// Function BP_ActorBulletPreview.BP_ActorBulletPreview_C.OnTick
+// 0x00C8 (0x00C8 - 0x0000)
+struct BP_ActorBulletPreview_C_OnTick final
+{
+public:
+	struct FVectorDouble                          CallFunc_CalcBulletLocation_ReturnValue;           // 0x0000(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_D_K2_SetActorLocation_SweepHitResult;     // 0x0018(0x0094)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_D_K2_SetActorLocation_ReturnValue;        // 0x00AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_AD[0x3];                                       // 0x00AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRotator                               CallFunc_CalcBulletRotator_ReturnValue;            // 0x00B0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_K2_SetActorRotation_ReturnValue;          // 0x00BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x00BD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_BE[0x2];                                       // 0x00BE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_ActorBulletPreview_C_OnTick) == 0x000008, "Wrong alignment on BP_ActorBulletPreview_C_OnTick");
+static_assert(sizeof(BP_ActorBulletPreview_C_OnTick) == 0x0000C8, "Wrong size on BP_ActorBulletPreview_C_OnTick");
+static_assert(offsetof(BP_ActorBulletPreview_C_OnTick, CallFunc_CalcBulletLocation_ReturnValue) == 0x000000, "Member 'BP_ActorBulletPreview_C_OnTick::CallFunc_CalcBulletLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ActorBulletPreview_C_OnTick, CallFunc_D_K2_SetActorLocation_SweepHitResult) == 0x000018, "Member 'BP_ActorBulletPreview_C_OnTick::CallFunc_D_K2_SetActorLocation_SweepHitResult' has a wrong offset!");
+static_assert(offsetof(BP_ActorBulletPreview_C_OnTick, CallFunc_D_K2_SetActorLocation_ReturnValue) == 0x0000AC, "Member 'BP_ActorBulletPreview_C_OnTick::CallFunc_D_K2_SetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ActorBulletPreview_C_OnTick, CallFunc_CalcBulletRotator_ReturnValue) == 0x0000B0, "Member 'BP_ActorBulletPreview_C_OnTick::CallFunc_CalcBulletRotator_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ActorBulletPreview_C_OnTick, CallFunc_K2_SetActorRotation_ReturnValue) == 0x0000BC, "Member 'BP_ActorBulletPreview_C_OnTick::CallFunc_K2_SetActorRotation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ActorBulletPreview_C_OnTick, CallFunc_Less_FloatFloat_ReturnValue) == 0x0000BD, "Member 'BP_ActorBulletPreview_C_OnTick::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_ActorBulletPreview_C_OnTick, CallFunc_Add_FloatFloat_ReturnValue) == 0x0000C0, "Member 'BP_ActorBulletPreview_C_OnTick::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
+
+// Function BP_ActorBulletPreview.BP_ActorBulletPreview_C.中心位置偏移
+// 0x0094 (0x0094 - 0x0000)
+struct BP_ActorBulletPreview_C_中心位置偏移 final
+{
+public:
+	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0000(0x0094)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+static_assert(alignof(BP_ActorBulletPreview_C_中心位置偏移) == 0x000004, "Wrong alignment on BP_ActorBulletPreview_C_中心位置偏移");
+static_assert(sizeof(BP_ActorBulletPreview_C_中心位置偏移) == 0x000094, "Wrong size on BP_ActorBulletPreview_C_中心位置偏移");
+static_assert(offsetof(BP_ActorBulletPreview_C_中心位置偏移, CallFunc_K2_SetRelativeLocation_SweepHitResult) == 0x000000, "Member 'BP_ActorBulletPreview_C_中心位置偏移::CallFunc_K2_SetRelativeLocation_SweepHitResult' has a wrong offset!");
 
 }
 

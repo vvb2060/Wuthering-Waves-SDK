@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "GameplayTags_structs.hpp"
-#include "SConDitionGroupType_structs.hpp"
 #include "AIModule_classes.hpp"
+#include "SConDitionGroupType_structs.hpp"
 
 
 namespace SDK

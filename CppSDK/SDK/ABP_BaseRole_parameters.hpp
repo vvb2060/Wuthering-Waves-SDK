@@ -20,6 +20,707 @@
 namespace SDK::Params
 {
 
+// Function ABP_BaseRole.ABP_BaseRole_C.InterfaceJumpPressed
+// 0x0020 (0x0020 - 0x0000)
+struct ABP_BaseRole_C_InterfaceJumpPressed final
+{
+public:
+	float                                         Speed;                                             // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc__________;                                // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetVelocity_ReturnValue;                  // 0x000C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VSize_ReturnValue;                        // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(ABP_BaseRole_C_InterfaceJumpPressed) == 0x000004, "Wrong alignment on ABP_BaseRole_C_InterfaceJumpPressed");
+static_assert(sizeof(ABP_BaseRole_C_InterfaceJumpPressed) == 0x000020, "Wrong size on ABP_BaseRole_C_InterfaceJumpPressed");
+static_assert(offsetof(ABP_BaseRole_C_InterfaceJumpPressed, Speed) == 0x000000, "Member 'ABP_BaseRole_C_InterfaceJumpPressed::Speed' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_InterfaceJumpPressed, CallFunc__________) == 0x000004, "Member 'ABP_BaseRole_C_InterfaceJumpPressed::CallFunc__________' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_InterfaceJumpPressed, CallFunc_Not_PreBool_ReturnValue) == 0x000008, "Member 'ABP_BaseRole_C_InterfaceJumpPressed::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_InterfaceJumpPressed, CallFunc_BooleanAND_ReturnValue) == 0x000009, "Member 'ABP_BaseRole_C_InterfaceJumpPressed::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_InterfaceJumpPressed, CallFunc_GetVelocity_ReturnValue) == 0x00000C, "Member 'ABP_BaseRole_C_InterfaceJumpPressed::CallFunc_GetVelocity_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_InterfaceJumpPressed, CallFunc_VSize_ReturnValue) == 0x000018, "Member 'ABP_BaseRole_C_InterfaceJumpPressed::CallFunc_VSize_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_InterfaceJumpPressed, CallFunc_Add_FloatFloat_ReturnValue) == 0x00001C, "Member 'ABP_BaseRole_C_InterfaceJumpPressed::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
+
+// Function ABP_BaseRole.ABP_BaseRole_C.修型层
+// 0x0020 (0x0020 - 0x0000)
+struct ABP_BaseRole_C_修型层 final
+{
+public:
+	struct FPoseLink                              InPose_0;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              修型层_0;                                          // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
+};
+static_assert(alignof(ABP_BaseRole_C_修型层) == 0x000008, "Wrong alignment on ABP_BaseRole_C_修型层");
+static_assert(sizeof(ABP_BaseRole_C_修型层) == 0x000020, "Wrong size on ABP_BaseRole_C_修型层");
+static_assert(offsetof(ABP_BaseRole_C_修型层, InPose_0) == 0x000000, "Member 'ABP_BaseRole_C_修型层::InPose_0' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_修型层, 修型层_0) == 0x000010, "Member 'ABP_BaseRole_C_修型层::修型层_0' has a wrong offset!");
+
+// Function ABP_BaseRole.ABP_BaseRole_C.演出层
+// 0x0020 (0x0020 - 0x0000)
+struct ABP_BaseRole_C_演出层 final
+{
+public:
+	struct FPoseLink                              InPose;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              演出层_0;                                          // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
+};
+static_assert(alignof(ABP_BaseRole_C_演出层) == 0x000008, "Wrong alignment on ABP_BaseRole_C_演出层");
+static_assert(sizeof(ABP_BaseRole_C_演出层) == 0x000020, "Wrong size on ABP_BaseRole_C_演出层");
+static_assert(offsetof(ABP_BaseRole_C_演出层, InPose) == 0x000000, "Member 'ABP_BaseRole_C_演出层::InPose' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_演出层, 演出层_0) == 0x000010, "Member 'ABP_BaseRole_C_演出层::演出层_0' has a wrong offset!");
+
+// Function ABP_BaseRole.ABP_BaseRole_C.地面站立循环混合层2
+// 0x0080 (0x0080 - 0x0000)
+struct ABP_BaseRole_C_地面站立循环混合层2 final
+{
+public:
+	struct FPoseLink                              前_走跑;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              后_走跑;                                           // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              左前_走跑;                                         // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              右前_走跑;                                         // 0x0030(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              左后_走跑;                                         // 0x0040(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              右后_走跑;                                         // 0x0050(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              前_冲刺;                                           // 0x0060(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              地面站立循环混合层2_0;                             // 0x0070(0x0010)(Parm, OutParm, NoDestructor)
+};
+static_assert(alignof(ABP_BaseRole_C_地面站立循环混合层2) == 0x000008, "Wrong alignment on ABP_BaseRole_C_地面站立循环混合层2");
+static_assert(sizeof(ABP_BaseRole_C_地面站立循环混合层2) == 0x000080, "Wrong size on ABP_BaseRole_C_地面站立循环混合层2");
+static_assert(offsetof(ABP_BaseRole_C_地面站立循环混合层2, 前_走跑) == 0x000000, "Member 'ABP_BaseRole_C_地面站立循环混合层2::前_走跑' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_地面站立循环混合层2, 后_走跑) == 0x000010, "Member 'ABP_BaseRole_C_地面站立循环混合层2::后_走跑' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_地面站立循环混合层2, 左前_走跑) == 0x000020, "Member 'ABP_BaseRole_C_地面站立循环混合层2::左前_走跑' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_地面站立循环混合层2, 右前_走跑) == 0x000030, "Member 'ABP_BaseRole_C_地面站立循环混合层2::右前_走跑' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_地面站立循环混合层2, 左后_走跑) == 0x000040, "Member 'ABP_BaseRole_C_地面站立循环混合层2::左后_走跑' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_地面站立循环混合层2, 右后_走跑) == 0x000050, "Member 'ABP_BaseRole_C_地面站立循环混合层2::右后_走跑' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_地面站立循环混合层2, 前_冲刺) == 0x000060, "Member 'ABP_BaseRole_C_地面站立循环混合层2::前_冲刺' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_地面站立循环混合层2, 地面站立循环混合层2_0) == 0x000070, "Member 'ABP_BaseRole_C_地面站立循环混合层2::地面站立循环混合层2_0' has a wrong offset!");
+
+// Function ABP_BaseRole.ABP_BaseRole_C.空中射击层
+// 0x0040 (0x0040 - 0x0000)
+struct ABP_BaseRole_C_空中射击层 final
+{
+public:
+	struct FPoseLink                              空中瞄准;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              空中射击;                                          // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              空中射击BasePose;                                  // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              空中射击层_0;                                      // 0x0030(0x0010)(Parm, OutParm, NoDestructor)
+};
+static_assert(alignof(ABP_BaseRole_C_空中射击层) == 0x000008, "Wrong alignment on ABP_BaseRole_C_空中射击层");
+static_assert(sizeof(ABP_BaseRole_C_空中射击层) == 0x000040, "Wrong size on ABP_BaseRole_C_空中射击层");
+static_assert(offsetof(ABP_BaseRole_C_空中射击层, 空中瞄准) == 0x000000, "Member 'ABP_BaseRole_C_空中射击层::空中瞄准' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_空中射击层, 空中射击) == 0x000010, "Member 'ABP_BaseRole_C_空中射击层::空中射击' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_空中射击层, 空中射击BasePose) == 0x000020, "Member 'ABP_BaseRole_C_空中射击层::空中射击BasePose' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_空中射击层, 空中射击层_0) == 0x000030, "Member 'ABP_BaseRole_C_空中射击层::空中射击层_0' has a wrong offset!");
+
+// Function ABP_BaseRole.ABP_BaseRole_C.后处理层
+// 0x0020 (0x0020 - 0x0000)
+struct ABP_BaseRole_C_后处理层 final
+{
+public:
+	struct FPoseLink                              InPose_0;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              后处理层_0;                                        // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
+};
+static_assert(alignof(ABP_BaseRole_C_后处理层) == 0x000008, "Wrong alignment on ABP_BaseRole_C_后处理层");
+static_assert(sizeof(ABP_BaseRole_C_后处理层) == 0x000020, "Wrong size on ABP_BaseRole_C_后处理层");
+static_assert(offsetof(ABP_BaseRole_C_后处理层, InPose_0) == 0x000000, "Member 'ABP_BaseRole_C_后处理层::InPose_0' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_后处理层, 后处理层_0) == 0x000010, "Member 'ABP_BaseRole_C_后处理层::后处理层_0' has a wrong offset!");
+
+// Function ABP_BaseRole.ABP_BaseRole_C.地面站立循环混合层
+// 0x0080 (0x0080 - 0x0000)
+struct ABP_BaseRole_C_地面站立循环混合层 final
+{
+public:
+	struct FPoseLink                              前;                                                // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              后;                                                // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              左前;                                              // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              左后;                                              // 0x0030(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              右前;                                              // 0x0040(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              右后;                                              // 0x0050(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              冲刺;                                              // 0x0060(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              地面站立循环混合层_0;                              // 0x0070(0x0010)(Parm, OutParm, NoDestructor)
+};
+static_assert(alignof(ABP_BaseRole_C_地面站立循环混合层) == 0x000008, "Wrong alignment on ABP_BaseRole_C_地面站立循环混合层");
+static_assert(sizeof(ABP_BaseRole_C_地面站立循环混合层) == 0x000080, "Wrong size on ABP_BaseRole_C_地面站立循环混合层");
+static_assert(offsetof(ABP_BaseRole_C_地面站立循环混合层, 前) == 0x000000, "Member 'ABP_BaseRole_C_地面站立循环混合层::前' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_地面站立循环混合层, 后) == 0x000010, "Member 'ABP_BaseRole_C_地面站立循环混合层::后' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_地面站立循环混合层, 左前) == 0x000020, "Member 'ABP_BaseRole_C_地面站立循环混合层::左前' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_地面站立循环混合层, 左后) == 0x000030, "Member 'ABP_BaseRole_C_地面站立循环混合层::左后' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_地面站立循环混合层, 右前) == 0x000040, "Member 'ABP_BaseRole_C_地面站立循环混合层::右前' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_地面站立循环混合层, 右后) == 0x000050, "Member 'ABP_BaseRole_C_地面站立循环混合层::右后' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_地面站立循环混合层, 冲刺) == 0x000060, "Member 'ABP_BaseRole_C_地面站立循环混合层::冲刺' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_地面站立循环混合层, 地面站立循环混合层_0) == 0x000070, "Member 'ABP_BaseRole_C_地面站立循环混合层::地面站立循环混合层_0' has a wrong offset!");
+
+// Function ABP_BaseRole.ABP_BaseRole_C.混合层
+// 0x0040 (0x0040 - 0x0000)
+struct ABP_BaseRole_C_混合层 final
+{
+public:
+	struct FPoseLink                              基础层输入;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              叠加层输入;                                        // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              姿势层输入;                                        // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              混合层_0;                                          // 0x0030(0x0010)(Parm, OutParm, NoDestructor)
+};
+static_assert(alignof(ABP_BaseRole_C_混合层) == 0x000008, "Wrong alignment on ABP_BaseRole_C_混合层");
+static_assert(sizeof(ABP_BaseRole_C_混合层) == 0x000040, "Wrong size on ABP_BaseRole_C_混合层");
+static_assert(offsetof(ABP_BaseRole_C_混合层, 基础层输入) == 0x000000, "Member 'ABP_BaseRole_C_混合层::基础层输入' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_混合层, 叠加层输入) == 0x000010, "Member 'ABP_BaseRole_C_混合层::叠加层输入' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_混合层, 姿势层输入) == 0x000020, "Member 'ABP_BaseRole_C_混合层::姿势层输入' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_混合层, 混合层_0) == 0x000030, "Member 'ABP_BaseRole_C_混合层::混合层_0' has a wrong offset!");
+
+// Function ABP_BaseRole.ABP_BaseRole_C.骨骼混合叠加层
+// 0x0040 (0x0040 - 0x0000)
+struct ABP_BaseRole_C_骨骼混合叠加层 final
+{
+public:
+	struct FPoseLink                              BaseLayer;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              OverlayLayer;                                      // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              BasePose;                                          // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              骨骼混合叠加层_0;                                  // 0x0030(0x0010)(Parm, OutParm, NoDestructor)
+};
+static_assert(alignof(ABP_BaseRole_C_骨骼混合叠加层) == 0x000008, "Wrong alignment on ABP_BaseRole_C_骨骼混合叠加层");
+static_assert(sizeof(ABP_BaseRole_C_骨骼混合叠加层) == 0x000040, "Wrong size on ABP_BaseRole_C_骨骼混合叠加层");
+static_assert(offsetof(ABP_BaseRole_C_骨骼混合叠加层, BaseLayer) == 0x000000, "Member 'ABP_BaseRole_C_骨骼混合叠加层::BaseLayer' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_骨骼混合叠加层, OverlayLayer) == 0x000010, "Member 'ABP_BaseRole_C_骨骼混合叠加层::OverlayLayer' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_骨骼混合叠加层, BasePose) == 0x000020, "Member 'ABP_BaseRole_C_骨骼混合叠加层::BasePose' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_骨骼混合叠加层, 骨骼混合叠加层_0) == 0x000030, "Member 'ABP_BaseRole_C_骨骼混合叠加层::骨骼混合叠加层_0' has a wrong offset!");
+
+// Function ABP_BaseRole.ABP_BaseRole_C.基础姿势层
+// 0x0010 (0x0010 - 0x0000)
+struct ABP_BaseRole_C_基础姿势层 final
+{
+public:
+	struct FPoseLink                              基础姿势层_0;                                      // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
+};
+static_assert(alignof(ABP_BaseRole_C_基础姿势层) == 0x000008, "Wrong alignment on ABP_BaseRole_C_基础姿势层");
+static_assert(sizeof(ABP_BaseRole_C_基础姿势层) == 0x000010, "Wrong size on ABP_BaseRole_C_基础姿势层");
+static_assert(offsetof(ABP_BaseRole_C_基础姿势层, 基础姿势层_0) == 0x000000, "Member 'ABP_BaseRole_C_基础姿势层::基础姿势层_0' has a wrong offset!");
+
+// Function ABP_BaseRole.ABP_BaseRole_C.叠加层
+// 0x0020 (0x0020 - 0x0000)
+struct ABP_BaseRole_C_叠加层 final
+{
+public:
+	struct FPoseLink                              角色特定动作;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              叠加层_0;                                          // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
+};
+static_assert(alignof(ABP_BaseRole_C_叠加层) == 0x000008, "Wrong alignment on ABP_BaseRole_C_叠加层");
+static_assert(sizeof(ABP_BaseRole_C_叠加层) == 0x000020, "Wrong size on ABP_BaseRole_C_叠加层");
+static_assert(offsetof(ABP_BaseRole_C_叠加层, 角色特定动作) == 0x000000, "Member 'ABP_BaseRole_C_叠加层::角色特定动作' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_叠加层, 叠加层_0) == 0x000010, "Member 'ABP_BaseRole_C_叠加层::叠加层_0' has a wrong offset!");
+
+// Function ABP_BaseRole.ABP_BaseRole_C.基础层
+// 0x0010 (0x0010 - 0x0000)
+struct ABP_BaseRole_C_基础层 final
+{
+public:
+	struct FPoseLink                              基础层_0;                                          // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
+};
+static_assert(alignof(ABP_BaseRole_C_基础层) == 0x000008, "Wrong alignment on ABP_BaseRole_C_基础层");
+static_assert(sizeof(ABP_BaseRole_C_基础层) == 0x000010, "Wrong size on ABP_BaseRole_C_基础层");
+static_assert(offsetof(ABP_BaseRole_C_基础层, 基础层_0) == 0x000000, "Member 'ABP_BaseRole_C_基础层::基础层_0' has a wrong offset!");
+
+// Function ABP_BaseRole.ABP_BaseRole_C.AnimGraph
+// 0x0020 (0x0020 - 0x0000)
+struct ABP_BaseRole_C_AnimGraph final
+{
+public:
+	struct FPoseLink                              SpeicalPose;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              AnimGraph_0;                                       // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
+};
+static_assert(alignof(ABP_BaseRole_C_AnimGraph) == 0x000008, "Wrong alignment on ABP_BaseRole_C_AnimGraph");
+static_assert(sizeof(ABP_BaseRole_C_AnimGraph) == 0x000020, "Wrong size on ABP_BaseRole_C_AnimGraph");
+static_assert(offsetof(ABP_BaseRole_C_AnimGraph, SpeicalPose) == 0x000000, "Member 'ABP_BaseRole_C_AnimGraph::SpeicalPose' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_AnimGraph, AnimGraph_0) == 0x000010, "Member 'ABP_BaseRole_C_AnimGraph::AnimGraph_0' has a wrong offset!");
+
+// Function ABP_BaseRole.ABP_BaseRole_C.更新载具信息
+// 0x00F0 (0x00F0 - 0x0000)
+struct ABP_BaseRole_C_更新载具信息 final
+{
+public:
+	struct FVector                                VehicleVelocity;                                   // 0x0000(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsForward;                                         // 0x000C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CurSpeed;                                          // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CurVelocity;                                       // 0x0014(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_DegSin_ReturnValue;                       // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_DegCos_ReturnValue;                       // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_IntFloat_ReturnValue;            // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_IntFloat_ReturnValue_1;          // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FMax_ReturnValue;                         // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FMax_ReturnValue_1;                       // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FMax_ReturnValue_2;                       // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FMax_ReturnValue_3;                       // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector4                               K2Node_MakeStruct_Vector4;                         // 0x0040(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VSize_ReturnValue;                        // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0062(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0063(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0065(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0066(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_67[0x1];                                       // 0x0067(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Vector4_Size_ReturnValue;                 // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector4                               K2Node_MakeStruct_Vector4_1;                       // 0x0070(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector4                               CallFunc_Divide_Vector4Vector4_ReturnValue;        // 0x0080(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector4                               K2Node_MakeStruct_Vector4_2;                       // 0x0090(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector4                               K2Node_MakeStruct_Vector4_3;                       // 0x00A0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue_1;        // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FMax_ReturnValue_4;                       // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue;        // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x00B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_1;         // 0x00BA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_FloatFloat_ReturnValue_1;            // 0x00BB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_FloatFloat_ReturnValue_2;            // 0x00BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_3;                 // 0x00BD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_4;                 // 0x00BE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_2;         // 0x00BF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_5;                 // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_GetDrivedVehicleVelocity_ReturnValue;     // 0x00C2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_C3[0x1];                                       // 0x00C3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x00C4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Dot_VectorVector_ReturnValue;             // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SignOfFloat_ReturnValue;                  // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_ConvertAngleToPassengerSpace_ReturnValue; // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetDrivedVehicleSeatRot_ReturnValue;      // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_3;         // 0x00E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_6;                 // 0x00E2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(ABP_BaseRole_C_更新载具信息) == 0x000010, "Wrong alignment on ABP_BaseRole_C_更新载具信息");
+static_assert(sizeof(ABP_BaseRole_C_更新载具信息) == 0x0000F0, "Wrong size on ABP_BaseRole_C_更新载具信息");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, VehicleVelocity) == 0x000000, "Member 'ABP_BaseRole_C_更新载具信息::VehicleVelocity' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, IsForward) == 0x00000C, "Member 'ABP_BaseRole_C_更新载具信息::IsForward' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CurSpeed) == 0x000010, "Member 'ABP_BaseRole_C_更新载具信息::CurSpeed' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CurVelocity) == 0x000014, "Member 'ABP_BaseRole_C_更新载具信息::CurVelocity' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_DegSin_ReturnValue) == 0x000020, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_DegSin_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_DegCos_ReturnValue) == 0x000024, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_DegCos_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_Multiply_IntFloat_ReturnValue) == 0x000028, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_Multiply_IntFloat_ReturnValue_1) == 0x00002C, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_Multiply_IntFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_FMax_ReturnValue) == 0x000030, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_FMax_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_FMax_ReturnValue_1) == 0x000034, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_FMax_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_FMax_ReturnValue_2) == 0x000038, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_FMax_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_FMax_ReturnValue_3) == 0x00003C, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_FMax_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, K2Node_MakeStruct_Vector4) == 0x000040, "Member 'ABP_BaseRole_C_更新载具信息::K2Node_MakeStruct_Vector4' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x000050, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000054, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_VSize_ReturnValue) == 0x000058, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_VSize_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00005C, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x000060, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x000061, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_Less_FloatFloat_ReturnValue) == 0x000062, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000063, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_BooleanAND_ReturnValue) == 0x000064, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_Not_PreBool_ReturnValue) == 0x000065, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_BooleanAND_ReturnValue_1) == 0x000066, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_Vector4_Size_ReturnValue) == 0x000068, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_Vector4_Size_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, K2Node_MakeStruct_Vector4_1) == 0x000070, "Member 'ABP_BaseRole_C_更新载具信息::K2Node_MakeStruct_Vector4_1' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_Divide_Vector4Vector4_ReturnValue) == 0x000080, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_Divide_Vector4Vector4_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, K2Node_MakeStruct_Vector4_2) == 0x000090, "Member 'ABP_BaseRole_C_更新载具信息::K2Node_MakeStruct_Vector4_2' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, K2Node_MakeStruct_Vector4_3) == 0x0000A0, "Member 'ABP_BaseRole_C_更新载具信息::K2Node_MakeStruct_Vector4_3' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_Subtract_FloatFloat_ReturnValue_1) == 0x0000B0, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_Subtract_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_FMax_ReturnValue_4) == 0x0000B4, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_FMax_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_EqualEqual_FloatFloat_ReturnValue) == 0x0000B8, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_EqualEqual_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_BooleanAND_ReturnValue_2) == 0x0000B9, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_Greater_FloatFloat_ReturnValue_1) == 0x0000BA, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_Greater_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_Less_FloatFloat_ReturnValue_1) == 0x0000BB, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_Less_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_Less_FloatFloat_ReturnValue_2) == 0x0000BC, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_Less_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_BooleanAND_ReturnValue_3) == 0x0000BD, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_BooleanAND_ReturnValue_4) == 0x0000BE, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_BooleanAND_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_Greater_FloatFloat_ReturnValue_2) == 0x0000BF, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_Greater_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_BooleanAND_ReturnValue_5) == 0x0000C0, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_BooleanAND_ReturnValue_5' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_BooleanOR_ReturnValue) == 0x0000C1, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_GetDrivedVehicleVelocity_ReturnValue) == 0x0000C2, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_GetDrivedVehicleVelocity_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_GetActorForwardVector_ReturnValue) == 0x0000C4, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_Dot_VectorVector_ReturnValue) == 0x0000D0, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_Dot_VectorVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_SignOfFloat_ReturnValue) == 0x0000D4, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_SignOfFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0000D8, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_ConvertAngleToPassengerSpace_ReturnValue) == 0x0000DC, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_ConvertAngleToPassengerSpace_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_GetDrivedVehicleSeatRot_ReturnValue) == 0x0000E0, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_GetDrivedVehicleSeatRot_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_Greater_FloatFloat_ReturnValue_3) == 0x0000E1, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_Greater_FloatFloat_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_BooleanAND_ReturnValue_6) == 0x0000E2, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_BooleanAND_ReturnValue_6' has a wrong offset!");
+
+// Function ABP_BaseRole.ABP_BaseRole_C.风筝移动更新
+// 0x0150 (0x0150 - 0x0000)
+struct ABP_BaseRole_C_风筝移动更新 final
+{
+public:
+	double                                        Len;                                               // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Len2D;                                             // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVectorDouble                          Offset;                                            // 0x0010(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0028(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_D_Greater_FloatFloat_ReturnValue;         // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_D_VSizeXY_ReturnValue;                    // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Conv_VectorDoubleToVector_ReturnValue;    // 0x0040(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_D_VSize_ReturnValue;                      // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVectorDouble_X;                      // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVectorDouble_Y;                      // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVectorDouble_Z;                      // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_D_Abs_ReturnValue;                        // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_D_Abs_ReturnValue_1;                      // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_D_Add_FloatFloat_ReturnValue;             // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVectorDouble                          CallFunc_D_Divide_VectorFloat_ReturnValue;         // 0x0088(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_D_Divide_FloatFloat_ReturnValue;          // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_D_Divide_FloatFloat_ReturnValue_1;        // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVectorDouble                          CallFunc_D_Multiply_VectorFloat_ReturnValue;       // 0x00B0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_D_Divide_FloatFloat_ReturnValue_2;        // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_D_Greater_FloatFloat_ReturnValue_1;       // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVectorDouble                          CallFunc_FixHookTargetLocation_ReturnValue;        // 0x00D8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransformDouble                       CallFunc_D_GetTransform_ReturnValue;               // 0x00F0(0x0040)(IsPlainOldData, NoDestructor)
+	struct FVectorDouble                          CallFunc_D_InverseTransformLocation_ReturnValue;   // 0x0130(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(ABP_BaseRole_C_风筝移动更新) == 0x000010, "Wrong alignment on ABP_BaseRole_C_风筝移动更新");
+static_assert(sizeof(ABP_BaseRole_C_风筝移动更新) == 0x000150, "Wrong size on ABP_BaseRole_C_风筝移动更新");
+static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, Len) == 0x000000, "Member 'ABP_BaseRole_C_风筝移动更新::Len' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, Len2D) == 0x000008, "Member 'ABP_BaseRole_C_风筝移动更新::Len2D' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, Offset) == 0x000010, "Member 'ABP_BaseRole_C_风筝移动更新::Offset' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_MakeVector_ReturnValue) == 0x000028, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_D_Greater_FloatFloat_ReturnValue) == 0x000034, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_D_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_D_VSizeXY_ReturnValue) == 0x000038, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_D_VSizeXY_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_Conv_VectorDoubleToVector_ReturnValue) == 0x000040, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_Conv_VectorDoubleToVector_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_D_VSize_ReturnValue) == 0x000050, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_D_VSize_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_BreakVectorDouble_X) == 0x000058, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_BreakVectorDouble_X' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_BreakVectorDouble_Y) == 0x000060, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_BreakVectorDouble_Y' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_BreakVectorDouble_Z) == 0x000068, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_BreakVectorDouble_Z' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_D_Abs_ReturnValue) == 0x000070, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_D_Abs_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_D_Abs_ReturnValue_1) == 0x000078, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_D_Abs_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_D_Add_FloatFloat_ReturnValue) == 0x000080, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_D_Add_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_D_Divide_VectorFloat_ReturnValue) == 0x000088, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_D_Divide_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_D_Divide_FloatFloat_ReturnValue) == 0x0000A0, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_D_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_D_Divide_FloatFloat_ReturnValue_1) == 0x0000A8, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_D_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_D_Multiply_VectorFloat_ReturnValue) == 0x0000B0, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_D_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_D_Divide_FloatFloat_ReturnValue_2) == 0x0000C8, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_D_Divide_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_D_Greater_FloatFloat_ReturnValue_1) == 0x0000D0, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_D_Greater_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_FixHookTargetLocation_ReturnValue) == 0x0000D8, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_FixHookTargetLocation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_D_GetTransform_ReturnValue) == 0x0000F0, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_D_GetTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_D_InverseTransformLocation_ReturnValue) == 0x000130, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_D_InverseTransformLocation_ReturnValue' has a wrong offset!");
+
+// Function ABP_BaseRole.ABP_BaseRole_C.上坡IK削弱
+// 0x0030 (0x0030 - 0x0000)
+struct ABP_BaseRole_C_上坡IK削弱 final
+{
+public:
+	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Abs_ReturnValue;                          // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MapRangeClamped_ReturnValue;              // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FInterpTo_ReturnValue;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_FInterpTo_ReturnValue_1;                  // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Abs_ReturnValue_1;                        // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MapRangeClamped_ReturnValue_1;            // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FInterpTo_ReturnValue_2;                  // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MapRangeClamped_ReturnValue_2;            // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FInterpTo_ReturnValue_3;                  // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(ABP_BaseRole_C_上坡IK削弱) == 0x000004, "Wrong alignment on ABP_BaseRole_C_上坡IK削弱");
+static_assert(sizeof(ABP_BaseRole_C_上坡IK削弱) == 0x000030, "Wrong size on ABP_BaseRole_C_上坡IK削弱");
+static_assert(offsetof(ABP_BaseRole_C_上坡IK削弱, CallFunc_Less_FloatFloat_ReturnValue) == 0x000000, "Member 'ABP_BaseRole_C_上坡IK削弱::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_上坡IK削弱, CallFunc_BooleanAND_ReturnValue) == 0x000001, "Member 'ABP_BaseRole_C_上坡IK削弱::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_上坡IK削弱, CallFunc_Abs_ReturnValue) == 0x000004, "Member 'ABP_BaseRole_C_上坡IK削弱::CallFunc_Abs_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_上坡IK削弱, CallFunc_MapRangeClamped_ReturnValue) == 0x000008, "Member 'ABP_BaseRole_C_上坡IK削弱::CallFunc_MapRangeClamped_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_上坡IK削弱, CallFunc_FInterpTo_ReturnValue) == 0x00000C, "Member 'ABP_BaseRole_C_上坡IK削弱::CallFunc_FInterpTo_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_上坡IK削弱, CallFunc_Not_PreBool_ReturnValue) == 0x000010, "Member 'ABP_BaseRole_C_上坡IK削弱::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_上坡IK削弱, CallFunc_FInterpTo_ReturnValue_1) == 0x000014, "Member 'ABP_BaseRole_C_上坡IK削弱::CallFunc_FInterpTo_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_上坡IK削弱, CallFunc_BooleanAND_ReturnValue_1) == 0x000018, "Member 'ABP_BaseRole_C_上坡IK削弱::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_上坡IK削弱, CallFunc_Abs_ReturnValue_1) == 0x00001C, "Member 'ABP_BaseRole_C_上坡IK削弱::CallFunc_Abs_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_上坡IK削弱, CallFunc_MapRangeClamped_ReturnValue_1) == 0x000020, "Member 'ABP_BaseRole_C_上坡IK削弱::CallFunc_MapRangeClamped_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_上坡IK削弱, CallFunc_FInterpTo_ReturnValue_2) == 0x000024, "Member 'ABP_BaseRole_C_上坡IK削弱::CallFunc_FInterpTo_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_上坡IK削弱, CallFunc_MapRangeClamped_ReturnValue_2) == 0x000028, "Member 'ABP_BaseRole_C_上坡IK削弱::CallFunc_MapRangeClamped_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_上坡IK削弱, CallFunc_FInterpTo_ReturnValue_3) == 0x00002C, "Member 'ABP_BaseRole_C_上坡IK削弱::CallFunc_FInterpTo_ReturnValue_3' has a wrong offset!");
+
+// Function ABP_BaseRole.ABP_BaseRole_C.落地速度切割初始化
+// 0x0018 (0x0018 - 0x0000)
+struct ABP_BaseRole_C_落地速度切割初始化 final
+{
+public:
+	class FString                                 CallFunc_GetPathName_ReturnValue;                  // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Contains_ReturnValue;                     // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Contains_ReturnValue_1;                   // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Contains_ReturnValue_2;                   // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Contains_ReturnValue_3;                   // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Contains_ReturnValue_4;                   // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Contains_ReturnValue_5;                   // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(ABP_BaseRole_C_落地速度切割初始化) == 0x000008, "Wrong alignment on ABP_BaseRole_C_落地速度切割初始化");
+static_assert(sizeof(ABP_BaseRole_C_落地速度切割初始化) == 0x000018, "Wrong size on ABP_BaseRole_C_落地速度切割初始化");
+static_assert(offsetof(ABP_BaseRole_C_落地速度切割初始化, CallFunc_GetPathName_ReturnValue) == 0x000000, "Member 'ABP_BaseRole_C_落地速度切割初始化::CallFunc_GetPathName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_落地速度切割初始化, CallFunc_Contains_ReturnValue) == 0x000010, "Member 'ABP_BaseRole_C_落地速度切割初始化::CallFunc_Contains_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_落地速度切割初始化, CallFunc_Contains_ReturnValue_1) == 0x000011, "Member 'ABP_BaseRole_C_落地速度切割初始化::CallFunc_Contains_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_落地速度切割初始化, CallFunc_Contains_ReturnValue_2) == 0x000012, "Member 'ABP_BaseRole_C_落地速度切割初始化::CallFunc_Contains_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_落地速度切割初始化, CallFunc_Contains_ReturnValue_3) == 0x000013, "Member 'ABP_BaseRole_C_落地速度切割初始化::CallFunc_Contains_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_落地速度切割初始化, CallFunc_Contains_ReturnValue_4) == 0x000014, "Member 'ABP_BaseRole_C_落地速度切割初始化::CallFunc_Contains_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_落地速度切割初始化, CallFunc_Contains_ReturnValue_5) == 0x000015, "Member 'ABP_BaseRole_C_落地速度切割初始化::CallFunc_Contains_ReturnValue_5' has a wrong offset!");
+
+// Function ABP_BaseRole.ABP_BaseRole_C.VelocityBlendLerp
+// 0x0054 (0x0054 - 0x0000)
+struct ABP_BaseRole_C_VelocityBlendLerp final
+{
+public:
+	struct FVeloctiyBlend                         From;                                              // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVeloctiyBlend                         To;                                                // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         Alpha;                                             // 0x0020(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVeloctiyBlend                         Out;                                               // 0x0024(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         CallFunc_Lerp_ReturnValue;                         // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Lerp_ReturnValue_1;                       // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Lerp_ReturnValue_2;                       // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Lerp_ReturnValue_3;                       // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVeloctiyBlend                         K2Node_MakeStruct_VeloctiyBlend;                   // 0x0044(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(ABP_BaseRole_C_VelocityBlendLerp) == 0x000004, "Wrong alignment on ABP_BaseRole_C_VelocityBlendLerp");
+static_assert(sizeof(ABP_BaseRole_C_VelocityBlendLerp) == 0x000054, "Wrong size on ABP_BaseRole_C_VelocityBlendLerp");
+static_assert(offsetof(ABP_BaseRole_C_VelocityBlendLerp, From) == 0x000000, "Member 'ABP_BaseRole_C_VelocityBlendLerp::From' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_VelocityBlendLerp, To) == 0x000010, "Member 'ABP_BaseRole_C_VelocityBlendLerp::To' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_VelocityBlendLerp, Alpha) == 0x000020, "Member 'ABP_BaseRole_C_VelocityBlendLerp::Alpha' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_VelocityBlendLerp, Out) == 0x000024, "Member 'ABP_BaseRole_C_VelocityBlendLerp::Out' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_VelocityBlendLerp, CallFunc_Lerp_ReturnValue) == 0x000034, "Member 'ABP_BaseRole_C_VelocityBlendLerp::CallFunc_Lerp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_VelocityBlendLerp, CallFunc_Lerp_ReturnValue_1) == 0x000038, "Member 'ABP_BaseRole_C_VelocityBlendLerp::CallFunc_Lerp_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_VelocityBlendLerp, CallFunc_Lerp_ReturnValue_2) == 0x00003C, "Member 'ABP_BaseRole_C_VelocityBlendLerp::CallFunc_Lerp_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_VelocityBlendLerp, CallFunc_Lerp_ReturnValue_3) == 0x000040, "Member 'ABP_BaseRole_C_VelocityBlendLerp::CallFunc_Lerp_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_VelocityBlendLerp, K2Node_MakeStruct_VeloctiyBlend) == 0x000044, "Member 'ABP_BaseRole_C_VelocityBlendLerp::K2Node_MakeStruct_VeloctiyBlend' has a wrong offset!");
+
+// Function ABP_BaseRole.ABP_BaseRole_C.XA状态更新
+// 0x0110 (0x0110 - 0x0000)
+struct ABP_BaseRole_C_XA状态更新 final
+{
+public:
+	struct FVectorDouble                          相对速度;                                          // 0x0000(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         InputSize2D;                                       // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          NewMovingUp;                                       // 0x001C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransformDouble                       CallFunc_D_GetTransform_ReturnValue;               // 0x0020(0x0040)(IsPlainOldData, NoDestructor)
+	double                                        CallFunc_BreakVectorDouble_X;                      // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVectorDouble_Y;                      // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVectorDouble_Z;                      // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_DoubleToFloat_ReturnValue;           // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_DegAsin_ReturnValue;                      // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_89[0x3];                                       // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_1;          // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FClamp_ReturnValue;                       // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VSizeXY_ReturnValue;                      // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FInterpTo_ReturnValue;                    // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_X;                            // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Y;                            // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Z;                            // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue_2;          // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FClamp_ReturnValue_1;                     // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B4[0x4];                                       // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVectorDouble                          CallFunc_Conv_VectorToVectorDouble_ReturnValue;    // 0x00B8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FInterpTo_ReturnValue_1;                  // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D4[0x4];                                       // 0x00D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVectorDouble                          CallFunc_D_InverseTransformDirection_ReturnValue;  // 0x00D8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVectorDouble                          CallFunc_D_Normal_ReturnValue;                     // 0x00F0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(ABP_BaseRole_C_XA状态更新) == 0x000010, "Wrong alignment on ABP_BaseRole_C_XA状态更新");
+static_assert(sizeof(ABP_BaseRole_C_XA状态更新) == 0x000110, "Wrong size on ABP_BaseRole_C_XA状态更新");
+static_assert(offsetof(ABP_BaseRole_C_XA状态更新, 相对速度) == 0x000000, "Member 'ABP_BaseRole_C_XA状态更新::相对速度' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_XA状态更新, InputSize2D) == 0x000018, "Member 'ABP_BaseRole_C_XA状态更新::InputSize2D' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_XA状态更新, NewMovingUp) == 0x00001C, "Member 'ABP_BaseRole_C_XA状态更新::NewMovingUp' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_D_GetTransform_ReturnValue) == 0x000020, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_D_GetTransform_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_BreakVectorDouble_X) == 0x000060, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_BreakVectorDouble_X' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_BreakVectorDouble_Y) == 0x000068, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_BreakVectorDouble_Y' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_BreakVectorDouble_Z) == 0x000070, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_BreakVectorDouble_Z' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_Conv_DoubleToFloat_ReturnValue) == 0x000078, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_Conv_DoubleToFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_DegAsin_ReturnValue) == 0x00007C, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_DegAsin_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000080, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000084, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000088, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x00008C, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_SelectFloat_ReturnValue) == 0x000090, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_FClamp_ReturnValue) == 0x000094, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_FClamp_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_VSizeXY_ReturnValue) == 0x000098, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_VSizeXY_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_FInterpTo_ReturnValue) == 0x00009C, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_FInterpTo_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_BreakVector_X) == 0x0000A0, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_BreakVector_X' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_BreakVector_Y) == 0x0000A4, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_BreakVector_Y' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_BreakVector_Z) == 0x0000A8, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_BreakVector_Z' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_Divide_FloatFloat_ReturnValue_2) == 0x0000AC, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_Divide_FloatFloat_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_FClamp_ReturnValue_1) == 0x0000B0, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_FClamp_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_Conv_VectorToVectorDouble_ReturnValue) == 0x0000B8, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_Conv_VectorToVectorDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_FInterpTo_ReturnValue_1) == 0x0000D0, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_FInterpTo_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_D_InverseTransformDirection_ReturnValue) == 0x0000D8, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_D_InverseTransformDirection_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_D_Normal_ReturnValue) == 0x0000F0, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_D_Normal_ReturnValue' has a wrong offset!");
+
+// Function ABP_BaseRole.ABP_BaseRole_C.设置跳跃速率
+// 0x0004 (0x0004 - 0x0000)
+struct ABP_BaseRole_C_设置跳跃速率 final
+{
+public:
+	float                                         新速率;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(ABP_BaseRole_C_设置跳跃速率) == 0x000004, "Wrong alignment on ABP_BaseRole_C_设置跳跃速率");
+static_assert(sizeof(ABP_BaseRole_C_设置跳跃速率) == 0x000004, "Wrong size on ABP_BaseRole_C_设置跳跃速率");
+static_assert(offsetof(ABP_BaseRole_C_设置跳跃速率, 新速率) == 0x000000, "Member 'ABP_BaseRole_C_设置跳跃速率::新速率' has a wrong offset!");
+
+// Function ABP_BaseRole.ABP_BaseRole_C.计算跳跃混合
+// 0x0010 (0x0010 - 0x0000)
+struct ABP_BaseRole_C_计算跳跃混合 final
+{
+public:
+	float                                         速度;                                              // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         混合;                                              // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_FClamp_ReturnValue;                       // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(ABP_BaseRole_C_计算跳跃混合) == 0x000004, "Wrong alignment on ABP_BaseRole_C_计算跳跃混合");
+static_assert(sizeof(ABP_BaseRole_C_计算跳跃混合) == 0x000010, "Wrong size on ABP_BaseRole_C_计算跳跃混合");
+static_assert(offsetof(ABP_BaseRole_C_计算跳跃混合, 速度) == 0x000000, "Member 'ABP_BaseRole_C_计算跳跃混合::速度' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_计算跳跃混合, 混合) == 0x000004, "Member 'ABP_BaseRole_C_计算跳跃混合::混合' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_计算跳跃混合, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000008, "Member 'ABP_BaseRole_C_计算跳跃混合::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_计算跳跃混合, CallFunc_FClamp_ReturnValue) == 0x00000C, "Member 'ABP_BaseRole_C_计算跳跃混合::CallFunc_FClamp_ReturnValue' has a wrong offset!");
+
+// Function ABP_BaseRole.ABP_BaseRole_C.True布尔序列输出
+// 0x0050 (0x0050 - 0x0000)
+struct ABP_BaseRole_C_True布尔序列输出 final
+{
+public:
+	TArray<bool>                                  ValArrt_Bool;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	int32                                         Out;                                               // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<bool>                                  BoolArry;                                          // 0x0018(0x0010)(Edit, BlueprintVisible)
+	int32                                         V_Int;                                             // 0x0028(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         ___int_Array_Index_Variable;                       // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_Get_Item;                           // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ___bool_True_if_break_was_hit_Variable;            // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x003D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3E[0x2];                                       // 0x003E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         ___int_Loop_Counter_Variable;                      // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_45[0x3];                                       // 0x0045(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(ABP_BaseRole_C_True布尔序列输出) == 0x000008, "Wrong alignment on ABP_BaseRole_C_True布尔序列输出");
+static_assert(sizeof(ABP_BaseRole_C_True布尔序列输出) == 0x000050, "Wrong size on ABP_BaseRole_C_True布尔序列输出");
+static_assert(offsetof(ABP_BaseRole_C_True布尔序列输出, ValArrt_Bool) == 0x000000, "Member 'ABP_BaseRole_C_True布尔序列输出::ValArrt_Bool' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_True布尔序列输出, Out) == 0x000010, "Member 'ABP_BaseRole_C_True布尔序列输出::Out' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_True布尔序列输出, BoolArry) == 0x000018, "Member 'ABP_BaseRole_C_True布尔序列输出::BoolArry' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_True布尔序列输出, V_Int) == 0x000028, "Member 'ABP_BaseRole_C_True布尔序列输出::V_Int' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_True布尔序列输出, ___int_Array_Index_Variable) == 0x00002C, "Member 'ABP_BaseRole_C_True布尔序列输出::___int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_True布尔序列输出, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'ABP_BaseRole_C_True布尔序列输出::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_True布尔序列输出, CallFunc_Array_Get_Item) == 0x000034, "Member 'ABP_BaseRole_C_True布尔序列输出::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_True布尔序列输出, CallFunc_Add_IntInt_ReturnValue) == 0x000038, "Member 'ABP_BaseRole_C_True布尔序列输出::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_True布尔序列输出, ___bool_True_if_break_was_hit_Variable) == 0x00003C, "Member 'ABP_BaseRole_C_True布尔序列输出::___bool_True_if_break_was_hit_Variable' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_True布尔序列输出, CallFunc_Not_PreBool_ReturnValue) == 0x00003D, "Member 'ABP_BaseRole_C_True布尔序列输出::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_True布尔序列输出, ___int_Loop_Counter_Variable) == 0x000040, "Member 'ABP_BaseRole_C_True布尔序列输出::___int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_True布尔序列输出, CallFunc_Less_IntInt_ReturnValue) == 0x000044, "Member 'ABP_BaseRole_C_True布尔序列输出::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_True布尔序列输出, CallFunc_Add_IntInt_ReturnValue_1) == 0x000048, "Member 'ABP_BaseRole_C_True布尔序列输出::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_True布尔序列输出, CallFunc_BooleanAND_ReturnValue) == 0x00004C, "Member 'ABP_BaseRole_C_True布尔序列输出::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+
+// Function ABP_BaseRole.ABP_BaseRole_C.更新上传
+// 0x000C (0x000C - 0x0000)
+struct ABP_BaseRole_C_更新上传 final
+{
+public:
+	float                                         CallFunc_BreakVector_X;                            // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Y;                            // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakVector_Z;                            // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(ABP_BaseRole_C_更新上传) == 0x000004, "Wrong alignment on ABP_BaseRole_C_更新上传");
+static_assert(sizeof(ABP_BaseRole_C_更新上传) == 0x00000C, "Wrong size on ABP_BaseRole_C_更新上传");
+static_assert(offsetof(ABP_BaseRole_C_更新上传, CallFunc_BreakVector_X) == 0x000000, "Member 'ABP_BaseRole_C_更新上传::CallFunc_BreakVector_X' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新上传, CallFunc_BreakVector_Y) == 0x000004, "Member 'ABP_BaseRole_C_更新上传::CallFunc_BreakVector_Y' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_更新上传, CallFunc_BreakVector_Z) == 0x000008, "Member 'ABP_BaseRole_C_更新上传::CallFunc_BreakVector_Z' has a wrong offset!");
+
+// Function ABP_BaseRole.ABP_BaseRole_C.替换角色时同步动作数据
+// 0x0010 (0x0010 - 0x0000)
+struct ABP_BaseRole_C_替换角色时同步动作数据 final
+{
+public:
+	class UABP_BaseRole_C*                        切出角色AnimIns;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SyncAnimStates_ReturnValue;               // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(ABP_BaseRole_C_替换角色时同步动作数据) == 0x000008, "Wrong alignment on ABP_BaseRole_C_替换角色时同步动作数据");
+static_assert(sizeof(ABP_BaseRole_C_替换角色时同步动作数据) == 0x000010, "Wrong size on ABP_BaseRole_C_替换角色时同步动作数据");
+static_assert(offsetof(ABP_BaseRole_C_替换角色时同步动作数据, 切出角色AnimIns) == 0x000000, "Member 'ABP_BaseRole_C_替换角色时同步动作数据::切出角色AnimIns' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_替换角色时同步动作数据, CallFunc_SyncAnimStates_ReturnValue) == 0x000008, "Member 'ABP_BaseRole_C_替换角色时同步动作数据::CallFunc_SyncAnimStates_ReturnValue' has a wrong offset!");
+
+// Function ABP_BaseRole.ABP_BaseRole_C.设置头部转向状态
+// 0x0002 (0x0002 - 0x0000)
+struct ABP_BaseRole_C_设置头部转向状态 final
+{
+public:
+	ESightLockMode                                SightMode;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(ABP_BaseRole_C_设置头部转向状态) == 0x000001, "Wrong alignment on ABP_BaseRole_C_设置头部转向状态");
+static_assert(sizeof(ABP_BaseRole_C_设置头部转向状态) == 0x000002, "Wrong size on ABP_BaseRole_C_设置头部转向状态");
+static_assert(offsetof(ABP_BaseRole_C_设置头部转向状态, SightMode) == 0x000000, "Member 'ABP_BaseRole_C_设置头部转向状态::SightMode' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_C_设置头部转向状态, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000001, "Member 'ABP_BaseRole_C_设置头部转向状态::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
+
+// Function ABP_BaseRole.ABP_BaseRole_C.BlueprintUpdateAnimation
+// 0x0004 (0x0004 - 0x0000)
+struct ABP_BaseRole_C_BlueprintUpdateAnimation final
+{
+public:
+	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(ABP_BaseRole_C_BlueprintUpdateAnimation) == 0x000004, "Wrong alignment on ABP_BaseRole_C_BlueprintUpdateAnimation");
+static_assert(sizeof(ABP_BaseRole_C_BlueprintUpdateAnimation) == 0x000004, "Wrong size on ABP_BaseRole_C_BlueprintUpdateAnimation");
+static_assert(offsetof(ABP_BaseRole_C_BlueprintUpdateAnimation, DeltaTimeX) == 0x000000, "Member 'ABP_BaseRole_C_BlueprintUpdateAnimation::DeltaTimeX' has a wrong offset!");
+
+// Function ABP_BaseRole.ABP_BaseRole_C.播放动画
+// 0x0018 (0x0018 - 0x0000)
+struct ABP_BaseRole_C_播放动画 final
+{
+public:
+	struct FSDynamicMontageParams                 播放动画_0;                                        // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(ABP_BaseRole_C_播放动画) == 0x000008, "Wrong alignment on ABP_BaseRole_C_播放动画");
+static_assert(sizeof(ABP_BaseRole_C_播放动画) == 0x000018, "Wrong size on ABP_BaseRole_C_播放动画");
+static_assert(offsetof(ABP_BaseRole_C_播放动画, 播放动画_0) == 0x000000, "Member 'ABP_BaseRole_C_播放动画::播放动画_0' has a wrong offset!");
+
+// Function ABP_BaseRole.ABP_BaseRole_C.InterfaceSimulateJump
+// 0x0004 (0x0004 - 0x0000)
+struct ABP_BaseRole_C_InterfaceSimulateJump final
+{
+public:
+	float                                         Speed;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(ABP_BaseRole_C_InterfaceSimulateJump) == 0x000004, "Wrong alignment on ABP_BaseRole_C_InterfaceSimulateJump");
+static_assert(sizeof(ABP_BaseRole_C_InterfaceSimulateJump) == 0x000004, "Wrong size on ABP_BaseRole_C_InterfaceSimulateJump");
+static_assert(offsetof(ABP_BaseRole_C_InterfaceSimulateJump, Speed) == 0x000000, "Member 'ABP_BaseRole_C_InterfaceSimulateJump::Speed' has a wrong offset!");
+
+// Function ABP_BaseRole.ABP_BaseRole_C.InterfaceFixHookDirect
+// 0x000C (0x000C - 0x0000)
+struct ABP_BaseRole_C_InterfaceFixHookDirect final
+{
+public:
+	struct FVector                                Offset;                                            // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(ABP_BaseRole_C_InterfaceFixHookDirect) == 0x000004, "Wrong alignment on ABP_BaseRole_C_InterfaceFixHookDirect");
+static_assert(sizeof(ABP_BaseRole_C_InterfaceFixHookDirect) == 0x00000C, "Wrong size on ABP_BaseRole_C_InterfaceFixHookDirect");
+static_assert(offsetof(ABP_BaseRole_C_InterfaceFixHookDirect, Offset) == 0x000000, "Member 'ABP_BaseRole_C_InterfaceFixHookDirect::Offset' has a wrong offset!");
+
+// Function ABP_BaseRole.ABP_BaseRole_C.InterfaceManipulateInteractDirection
+// 0x0004 (0x0004 - 0x0000)
+struct ABP_BaseRole_C_InterfaceManipulateInteractDirection final
+{
+public:
+	float                                         角度;                                              // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(ABP_BaseRole_C_InterfaceManipulateInteractDirection) == 0x000004, "Wrong alignment on ABP_BaseRole_C_InterfaceManipulateInteractDirection");
+static_assert(sizeof(ABP_BaseRole_C_InterfaceManipulateInteractDirection) == 0x000004, "Wrong size on ABP_BaseRole_C_InterfaceManipulateInteractDirection");
+static_assert(offsetof(ABP_BaseRole_C_InterfaceManipulateInteractDirection, 角度) == 0x000000, "Member 'ABP_BaseRole_C_InterfaceManipulateInteractDirection::角度' has a wrong offset!");
+
 // Function ABP_BaseRole.ABP_BaseRole_C.ExecuteUbergraph_ABP_BaseRole
 // 0x1100 (0x1100 - 0x0000)
 struct ABP_BaseRole_C_ExecuteUbergraph_ABP_BaseRole final
@@ -2364,707 +3065,6 @@ static_assert(offsetof(ABP_BaseRole_C_ExecuteUbergraph_ABP_BaseRole, CallFunc_Ge
 static_assert(offsetof(ABP_BaseRole_C_ExecuteUbergraph_ABP_BaseRole, CallFunc_Not_PreBool_ReturnValue_99) == 0x0010F4, "Member 'ABP_BaseRole_C_ExecuteUbergraph_ABP_BaseRole::CallFunc_Not_PreBool_ReturnValue_99' has a wrong offset!");
 static_assert(offsetof(ABP_BaseRole_C_ExecuteUbergraph_ABP_BaseRole, CallFunc_Not_PreBool_ReturnValue_100) == 0x0010F5, "Member 'ABP_BaseRole_C_ExecuteUbergraph_ABP_BaseRole::CallFunc_Not_PreBool_ReturnValue_100' has a wrong offset!");
 static_assert(offsetof(ABP_BaseRole_C_ExecuteUbergraph_ABP_BaseRole, CallFunc_Greater_FloatFloat_ReturnValue_15) == 0x0010F6, "Member 'ABP_BaseRole_C_ExecuteUbergraph_ABP_BaseRole::CallFunc_Greater_FloatFloat_ReturnValue_15' has a wrong offset!");
-
-// Function ABP_BaseRole.ABP_BaseRole_C.InterfaceManipulateInteractDirection
-// 0x0004 (0x0004 - 0x0000)
-struct ABP_BaseRole_C_InterfaceManipulateInteractDirection final
-{
-public:
-	float                                         角度;                                              // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(ABP_BaseRole_C_InterfaceManipulateInteractDirection) == 0x000004, "Wrong alignment on ABP_BaseRole_C_InterfaceManipulateInteractDirection");
-static_assert(sizeof(ABP_BaseRole_C_InterfaceManipulateInteractDirection) == 0x000004, "Wrong size on ABP_BaseRole_C_InterfaceManipulateInteractDirection");
-static_assert(offsetof(ABP_BaseRole_C_InterfaceManipulateInteractDirection, 角度) == 0x000000, "Member 'ABP_BaseRole_C_InterfaceManipulateInteractDirection::角度' has a wrong offset!");
-
-// Function ABP_BaseRole.ABP_BaseRole_C.InterfaceFixHookDirect
-// 0x000C (0x000C - 0x0000)
-struct ABP_BaseRole_C_InterfaceFixHookDirect final
-{
-public:
-	struct FVector                                Offset;                                            // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(ABP_BaseRole_C_InterfaceFixHookDirect) == 0x000004, "Wrong alignment on ABP_BaseRole_C_InterfaceFixHookDirect");
-static_assert(sizeof(ABP_BaseRole_C_InterfaceFixHookDirect) == 0x00000C, "Wrong size on ABP_BaseRole_C_InterfaceFixHookDirect");
-static_assert(offsetof(ABP_BaseRole_C_InterfaceFixHookDirect, Offset) == 0x000000, "Member 'ABP_BaseRole_C_InterfaceFixHookDirect::Offset' has a wrong offset!");
-
-// Function ABP_BaseRole.ABP_BaseRole_C.InterfaceSimulateJump
-// 0x0004 (0x0004 - 0x0000)
-struct ABP_BaseRole_C_InterfaceSimulateJump final
-{
-public:
-	float                                         Speed;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(ABP_BaseRole_C_InterfaceSimulateJump) == 0x000004, "Wrong alignment on ABP_BaseRole_C_InterfaceSimulateJump");
-static_assert(sizeof(ABP_BaseRole_C_InterfaceSimulateJump) == 0x000004, "Wrong size on ABP_BaseRole_C_InterfaceSimulateJump");
-static_assert(offsetof(ABP_BaseRole_C_InterfaceSimulateJump, Speed) == 0x000000, "Member 'ABP_BaseRole_C_InterfaceSimulateJump::Speed' has a wrong offset!");
-
-// Function ABP_BaseRole.ABP_BaseRole_C.播放动画
-// 0x0018 (0x0018 - 0x0000)
-struct ABP_BaseRole_C_播放动画 final
-{
-public:
-	struct FSDynamicMontageParams                 播放动画_0;                                        // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(ABP_BaseRole_C_播放动画) == 0x000008, "Wrong alignment on ABP_BaseRole_C_播放动画");
-static_assert(sizeof(ABP_BaseRole_C_播放动画) == 0x000018, "Wrong size on ABP_BaseRole_C_播放动画");
-static_assert(offsetof(ABP_BaseRole_C_播放动画, 播放动画_0) == 0x000000, "Member 'ABP_BaseRole_C_播放动画::播放动画_0' has a wrong offset!");
-
-// Function ABP_BaseRole.ABP_BaseRole_C.BlueprintUpdateAnimation
-// 0x0004 (0x0004 - 0x0000)
-struct ABP_BaseRole_C_BlueprintUpdateAnimation final
-{
-public:
-	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(ABP_BaseRole_C_BlueprintUpdateAnimation) == 0x000004, "Wrong alignment on ABP_BaseRole_C_BlueprintUpdateAnimation");
-static_assert(sizeof(ABP_BaseRole_C_BlueprintUpdateAnimation) == 0x000004, "Wrong size on ABP_BaseRole_C_BlueprintUpdateAnimation");
-static_assert(offsetof(ABP_BaseRole_C_BlueprintUpdateAnimation, DeltaTimeX) == 0x000000, "Member 'ABP_BaseRole_C_BlueprintUpdateAnimation::DeltaTimeX' has a wrong offset!");
-
-// Function ABP_BaseRole.ABP_BaseRole_C.设置头部转向状态
-// 0x0002 (0x0002 - 0x0000)
-struct ABP_BaseRole_C_设置头部转向状态 final
-{
-public:
-	ESightLockMode                                SightMode;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(ABP_BaseRole_C_设置头部转向状态) == 0x000001, "Wrong alignment on ABP_BaseRole_C_设置头部转向状态");
-static_assert(sizeof(ABP_BaseRole_C_设置头部转向状态) == 0x000002, "Wrong size on ABP_BaseRole_C_设置头部转向状态");
-static_assert(offsetof(ABP_BaseRole_C_设置头部转向状态, SightMode) == 0x000000, "Member 'ABP_BaseRole_C_设置头部转向状态::SightMode' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_设置头部转向状态, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000001, "Member 'ABP_BaseRole_C_设置头部转向状态::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-
-// Function ABP_BaseRole.ABP_BaseRole_C.替换角色时同步动作数据
-// 0x0010 (0x0010 - 0x0000)
-struct ABP_BaseRole_C_替换角色时同步动作数据 final
-{
-public:
-	class UABP_BaseRole_C*                        切出角色AnimIns;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SyncAnimStates_ReturnValue;               // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(ABP_BaseRole_C_替换角色时同步动作数据) == 0x000008, "Wrong alignment on ABP_BaseRole_C_替换角色时同步动作数据");
-static_assert(sizeof(ABP_BaseRole_C_替换角色时同步动作数据) == 0x000010, "Wrong size on ABP_BaseRole_C_替换角色时同步动作数据");
-static_assert(offsetof(ABP_BaseRole_C_替换角色时同步动作数据, 切出角色AnimIns) == 0x000000, "Member 'ABP_BaseRole_C_替换角色时同步动作数据::切出角色AnimIns' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_替换角色时同步动作数据, CallFunc_SyncAnimStates_ReturnValue) == 0x000008, "Member 'ABP_BaseRole_C_替换角色时同步动作数据::CallFunc_SyncAnimStates_ReturnValue' has a wrong offset!");
-
-// Function ABP_BaseRole.ABP_BaseRole_C.更新上传
-// 0x000C (0x000C - 0x0000)
-struct ABP_BaseRole_C_更新上传 final
-{
-public:
-	float                                         CallFunc_BreakVector_X;                            // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Y;                            // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Z;                            // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(ABP_BaseRole_C_更新上传) == 0x000004, "Wrong alignment on ABP_BaseRole_C_更新上传");
-static_assert(sizeof(ABP_BaseRole_C_更新上传) == 0x00000C, "Wrong size on ABP_BaseRole_C_更新上传");
-static_assert(offsetof(ABP_BaseRole_C_更新上传, CallFunc_BreakVector_X) == 0x000000, "Member 'ABP_BaseRole_C_更新上传::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新上传, CallFunc_BreakVector_Y) == 0x000004, "Member 'ABP_BaseRole_C_更新上传::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新上传, CallFunc_BreakVector_Z) == 0x000008, "Member 'ABP_BaseRole_C_更新上传::CallFunc_BreakVector_Z' has a wrong offset!");
-
-// Function ABP_BaseRole.ABP_BaseRole_C.True布尔序列输出
-// 0x0050 (0x0050 - 0x0000)
-struct ABP_BaseRole_C_True布尔序列输出 final
-{
-public:
-	TArray<bool>                                  ValArrt_Bool;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	int32                                         Out;                                               // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<bool>                                  BoolArry;                                          // 0x0018(0x0010)(Edit, BlueprintVisible)
-	int32                                         V_Int;                                             // 0x0028(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         ___int_Array_Index_Variable;                       // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_Get_Item;                           // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ___bool_True_if_break_was_hit_Variable;            // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x003D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3E[0x2];                                       // 0x003E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         ___int_Loop_Counter_Variable;                      // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_45[0x3];                                       // 0x0045(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(ABP_BaseRole_C_True布尔序列输出) == 0x000008, "Wrong alignment on ABP_BaseRole_C_True布尔序列输出");
-static_assert(sizeof(ABP_BaseRole_C_True布尔序列输出) == 0x000050, "Wrong size on ABP_BaseRole_C_True布尔序列输出");
-static_assert(offsetof(ABP_BaseRole_C_True布尔序列输出, ValArrt_Bool) == 0x000000, "Member 'ABP_BaseRole_C_True布尔序列输出::ValArrt_Bool' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_True布尔序列输出, Out) == 0x000010, "Member 'ABP_BaseRole_C_True布尔序列输出::Out' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_True布尔序列输出, BoolArry) == 0x000018, "Member 'ABP_BaseRole_C_True布尔序列输出::BoolArry' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_True布尔序列输出, V_Int) == 0x000028, "Member 'ABP_BaseRole_C_True布尔序列输出::V_Int' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_True布尔序列输出, ___int_Array_Index_Variable) == 0x00002C, "Member 'ABP_BaseRole_C_True布尔序列输出::___int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_True布尔序列输出, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'ABP_BaseRole_C_True布尔序列输出::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_True布尔序列输出, CallFunc_Array_Get_Item) == 0x000034, "Member 'ABP_BaseRole_C_True布尔序列输出::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_True布尔序列输出, CallFunc_Add_IntInt_ReturnValue) == 0x000038, "Member 'ABP_BaseRole_C_True布尔序列输出::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_True布尔序列输出, ___bool_True_if_break_was_hit_Variable) == 0x00003C, "Member 'ABP_BaseRole_C_True布尔序列输出::___bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_True布尔序列输出, CallFunc_Not_PreBool_ReturnValue) == 0x00003D, "Member 'ABP_BaseRole_C_True布尔序列输出::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_True布尔序列输出, ___int_Loop_Counter_Variable) == 0x000040, "Member 'ABP_BaseRole_C_True布尔序列输出::___int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_True布尔序列输出, CallFunc_Less_IntInt_ReturnValue) == 0x000044, "Member 'ABP_BaseRole_C_True布尔序列输出::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_True布尔序列输出, CallFunc_Add_IntInt_ReturnValue_1) == 0x000048, "Member 'ABP_BaseRole_C_True布尔序列输出::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_True布尔序列输出, CallFunc_BooleanAND_ReturnValue) == 0x00004C, "Member 'ABP_BaseRole_C_True布尔序列输出::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-
-// Function ABP_BaseRole.ABP_BaseRole_C.计算跳跃混合
-// 0x0010 (0x0010 - 0x0000)
-struct ABP_BaseRole_C_计算跳跃混合 final
-{
-public:
-	float                                         速度;                                              // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         混合;                                              // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FClamp_ReturnValue;                       // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(ABP_BaseRole_C_计算跳跃混合) == 0x000004, "Wrong alignment on ABP_BaseRole_C_计算跳跃混合");
-static_assert(sizeof(ABP_BaseRole_C_计算跳跃混合) == 0x000010, "Wrong size on ABP_BaseRole_C_计算跳跃混合");
-static_assert(offsetof(ABP_BaseRole_C_计算跳跃混合, 速度) == 0x000000, "Member 'ABP_BaseRole_C_计算跳跃混合::速度' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_计算跳跃混合, 混合) == 0x000004, "Member 'ABP_BaseRole_C_计算跳跃混合::混合' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_计算跳跃混合, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000008, "Member 'ABP_BaseRole_C_计算跳跃混合::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_计算跳跃混合, CallFunc_FClamp_ReturnValue) == 0x00000C, "Member 'ABP_BaseRole_C_计算跳跃混合::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-
-// Function ABP_BaseRole.ABP_BaseRole_C.设置跳跃速率
-// 0x0004 (0x0004 - 0x0000)
-struct ABP_BaseRole_C_设置跳跃速率 final
-{
-public:
-	float                                         新速率;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(ABP_BaseRole_C_设置跳跃速率) == 0x000004, "Wrong alignment on ABP_BaseRole_C_设置跳跃速率");
-static_assert(sizeof(ABP_BaseRole_C_设置跳跃速率) == 0x000004, "Wrong size on ABP_BaseRole_C_设置跳跃速率");
-static_assert(offsetof(ABP_BaseRole_C_设置跳跃速率, 新速率) == 0x000000, "Member 'ABP_BaseRole_C_设置跳跃速率::新速率' has a wrong offset!");
-
-// Function ABP_BaseRole.ABP_BaseRole_C.XA状态更新
-// 0x0110 (0x0110 - 0x0000)
-struct ABP_BaseRole_C_XA状态更新 final
-{
-public:
-	struct FVectorDouble                          相对速度;                                          // 0x0000(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         InputSize2D;                                       // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          NewMovingUp;                                       // 0x001C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransformDouble                       CallFunc_D_GetTransform_ReturnValue;               // 0x0020(0x0040)(IsPlainOldData, NoDestructor)
-	double                                        CallFunc_BreakVectorDouble_X;                      // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVectorDouble_Y;                      // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVectorDouble_Z;                      // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_DoubleToFloat_ReturnValue;           // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_DegAsin_ReturnValue;                      // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_89[0x3];                                       // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_1;          // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FClamp_ReturnValue;                       // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VSizeXY_ReturnValue;                      // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FInterpTo_ReturnValue;                    // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_X;                            // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Y;                            // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector_Z;                            // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue_2;          // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FClamp_ReturnValue_1;                     // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B4[0x4];                                       // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVectorDouble                          CallFunc_Conv_VectorToVectorDouble_ReturnValue;    // 0x00B8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FInterpTo_ReturnValue_1;                  // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D4[0x4];                                       // 0x00D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVectorDouble                          CallFunc_D_InverseTransformDirection_ReturnValue;  // 0x00D8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVectorDouble                          CallFunc_D_Normal_ReturnValue;                     // 0x00F0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(ABP_BaseRole_C_XA状态更新) == 0x000010, "Wrong alignment on ABP_BaseRole_C_XA状态更新");
-static_assert(sizeof(ABP_BaseRole_C_XA状态更新) == 0x000110, "Wrong size on ABP_BaseRole_C_XA状态更新");
-static_assert(offsetof(ABP_BaseRole_C_XA状态更新, 相对速度) == 0x000000, "Member 'ABP_BaseRole_C_XA状态更新::相对速度' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_XA状态更新, InputSize2D) == 0x000018, "Member 'ABP_BaseRole_C_XA状态更新::InputSize2D' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_XA状态更新, NewMovingUp) == 0x00001C, "Member 'ABP_BaseRole_C_XA状态更新::NewMovingUp' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_D_GetTransform_ReturnValue) == 0x000020, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_D_GetTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_BreakVectorDouble_X) == 0x000060, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_BreakVectorDouble_X' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_BreakVectorDouble_Y) == 0x000068, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_BreakVectorDouble_Y' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_BreakVectorDouble_Z) == 0x000070, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_BreakVectorDouble_Z' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_Conv_DoubleToFloat_ReturnValue) == 0x000078, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_Conv_DoubleToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_DegAsin_ReturnValue) == 0x00007C, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_DegAsin_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000080, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000084, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000088, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x00008C, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_SelectFloat_ReturnValue) == 0x000090, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_FClamp_ReturnValue) == 0x000094, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_VSizeXY_ReturnValue) == 0x000098, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_VSizeXY_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_FInterpTo_ReturnValue) == 0x00009C, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_FInterpTo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_BreakVector_X) == 0x0000A0, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_BreakVector_Y) == 0x0000A4, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_BreakVector_Z) == 0x0000A8, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_Divide_FloatFloat_ReturnValue_2) == 0x0000AC, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_Divide_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_FClamp_ReturnValue_1) == 0x0000B0, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_FClamp_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_Conv_VectorToVectorDouble_ReturnValue) == 0x0000B8, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_Conv_VectorToVectorDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_FInterpTo_ReturnValue_1) == 0x0000D0, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_FInterpTo_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_D_InverseTransformDirection_ReturnValue) == 0x0000D8, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_D_InverseTransformDirection_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_XA状态更新, CallFunc_D_Normal_ReturnValue) == 0x0000F0, "Member 'ABP_BaseRole_C_XA状态更新::CallFunc_D_Normal_ReturnValue' has a wrong offset!");
-
-// Function ABP_BaseRole.ABP_BaseRole_C.VelocityBlendLerp
-// 0x0054 (0x0054 - 0x0000)
-struct ABP_BaseRole_C_VelocityBlendLerp final
-{
-public:
-	struct FVeloctiyBlend                         From;                                              // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVeloctiyBlend                         To;                                                // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	float                                         Alpha;                                             // 0x0020(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVeloctiyBlend                         Out;                                               // 0x0024(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	float                                         CallFunc_Lerp_ReturnValue;                         // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Lerp_ReturnValue_1;                       // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Lerp_ReturnValue_2;                       // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Lerp_ReturnValue_3;                       // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVeloctiyBlend                         K2Node_MakeStruct_VeloctiyBlend;                   // 0x0044(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(ABP_BaseRole_C_VelocityBlendLerp) == 0x000004, "Wrong alignment on ABP_BaseRole_C_VelocityBlendLerp");
-static_assert(sizeof(ABP_BaseRole_C_VelocityBlendLerp) == 0x000054, "Wrong size on ABP_BaseRole_C_VelocityBlendLerp");
-static_assert(offsetof(ABP_BaseRole_C_VelocityBlendLerp, From) == 0x000000, "Member 'ABP_BaseRole_C_VelocityBlendLerp::From' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_VelocityBlendLerp, To) == 0x000010, "Member 'ABP_BaseRole_C_VelocityBlendLerp::To' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_VelocityBlendLerp, Alpha) == 0x000020, "Member 'ABP_BaseRole_C_VelocityBlendLerp::Alpha' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_VelocityBlendLerp, Out) == 0x000024, "Member 'ABP_BaseRole_C_VelocityBlendLerp::Out' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_VelocityBlendLerp, CallFunc_Lerp_ReturnValue) == 0x000034, "Member 'ABP_BaseRole_C_VelocityBlendLerp::CallFunc_Lerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_VelocityBlendLerp, CallFunc_Lerp_ReturnValue_1) == 0x000038, "Member 'ABP_BaseRole_C_VelocityBlendLerp::CallFunc_Lerp_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_VelocityBlendLerp, CallFunc_Lerp_ReturnValue_2) == 0x00003C, "Member 'ABP_BaseRole_C_VelocityBlendLerp::CallFunc_Lerp_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_VelocityBlendLerp, CallFunc_Lerp_ReturnValue_3) == 0x000040, "Member 'ABP_BaseRole_C_VelocityBlendLerp::CallFunc_Lerp_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_VelocityBlendLerp, K2Node_MakeStruct_VeloctiyBlend) == 0x000044, "Member 'ABP_BaseRole_C_VelocityBlendLerp::K2Node_MakeStruct_VeloctiyBlend' has a wrong offset!");
-
-// Function ABP_BaseRole.ABP_BaseRole_C.落地速度切割初始化
-// 0x0018 (0x0018 - 0x0000)
-struct ABP_BaseRole_C_落地速度切割初始化 final
-{
-public:
-	class FString                                 CallFunc_GetPathName_ReturnValue;                  // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Contains_ReturnValue;                     // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Contains_ReturnValue_1;                   // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Contains_ReturnValue_2;                   // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Contains_ReturnValue_3;                   // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Contains_ReturnValue_4;                   // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Contains_ReturnValue_5;                   // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(ABP_BaseRole_C_落地速度切割初始化) == 0x000008, "Wrong alignment on ABP_BaseRole_C_落地速度切割初始化");
-static_assert(sizeof(ABP_BaseRole_C_落地速度切割初始化) == 0x000018, "Wrong size on ABP_BaseRole_C_落地速度切割初始化");
-static_assert(offsetof(ABP_BaseRole_C_落地速度切割初始化, CallFunc_GetPathName_ReturnValue) == 0x000000, "Member 'ABP_BaseRole_C_落地速度切割初始化::CallFunc_GetPathName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_落地速度切割初始化, CallFunc_Contains_ReturnValue) == 0x000010, "Member 'ABP_BaseRole_C_落地速度切割初始化::CallFunc_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_落地速度切割初始化, CallFunc_Contains_ReturnValue_1) == 0x000011, "Member 'ABP_BaseRole_C_落地速度切割初始化::CallFunc_Contains_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_落地速度切割初始化, CallFunc_Contains_ReturnValue_2) == 0x000012, "Member 'ABP_BaseRole_C_落地速度切割初始化::CallFunc_Contains_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_落地速度切割初始化, CallFunc_Contains_ReturnValue_3) == 0x000013, "Member 'ABP_BaseRole_C_落地速度切割初始化::CallFunc_Contains_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_落地速度切割初始化, CallFunc_Contains_ReturnValue_4) == 0x000014, "Member 'ABP_BaseRole_C_落地速度切割初始化::CallFunc_Contains_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_落地速度切割初始化, CallFunc_Contains_ReturnValue_5) == 0x000015, "Member 'ABP_BaseRole_C_落地速度切割初始化::CallFunc_Contains_ReturnValue_5' has a wrong offset!");
-
-// Function ABP_BaseRole.ABP_BaseRole_C.上坡IK削弱
-// 0x0030 (0x0030 - 0x0000)
-struct ABP_BaseRole_C_上坡IK削弱 final
-{
-public:
-	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Abs_ReturnValue;                          // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_MapRangeClamped_ReturnValue;              // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FInterpTo_ReturnValue;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_FInterpTo_ReturnValue_1;                  // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Abs_ReturnValue_1;                        // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_MapRangeClamped_ReturnValue_1;            // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FInterpTo_ReturnValue_2;                  // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_MapRangeClamped_ReturnValue_2;            // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FInterpTo_ReturnValue_3;                  // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(ABP_BaseRole_C_上坡IK削弱) == 0x000004, "Wrong alignment on ABP_BaseRole_C_上坡IK削弱");
-static_assert(sizeof(ABP_BaseRole_C_上坡IK削弱) == 0x000030, "Wrong size on ABP_BaseRole_C_上坡IK削弱");
-static_assert(offsetof(ABP_BaseRole_C_上坡IK削弱, CallFunc_Less_FloatFloat_ReturnValue) == 0x000000, "Member 'ABP_BaseRole_C_上坡IK削弱::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_上坡IK削弱, CallFunc_BooleanAND_ReturnValue) == 0x000001, "Member 'ABP_BaseRole_C_上坡IK削弱::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_上坡IK削弱, CallFunc_Abs_ReturnValue) == 0x000004, "Member 'ABP_BaseRole_C_上坡IK削弱::CallFunc_Abs_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_上坡IK削弱, CallFunc_MapRangeClamped_ReturnValue) == 0x000008, "Member 'ABP_BaseRole_C_上坡IK削弱::CallFunc_MapRangeClamped_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_上坡IK削弱, CallFunc_FInterpTo_ReturnValue) == 0x00000C, "Member 'ABP_BaseRole_C_上坡IK削弱::CallFunc_FInterpTo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_上坡IK削弱, CallFunc_Not_PreBool_ReturnValue) == 0x000010, "Member 'ABP_BaseRole_C_上坡IK削弱::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_上坡IK削弱, CallFunc_FInterpTo_ReturnValue_1) == 0x000014, "Member 'ABP_BaseRole_C_上坡IK削弱::CallFunc_FInterpTo_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_上坡IK削弱, CallFunc_BooleanAND_ReturnValue_1) == 0x000018, "Member 'ABP_BaseRole_C_上坡IK削弱::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_上坡IK削弱, CallFunc_Abs_ReturnValue_1) == 0x00001C, "Member 'ABP_BaseRole_C_上坡IK削弱::CallFunc_Abs_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_上坡IK削弱, CallFunc_MapRangeClamped_ReturnValue_1) == 0x000020, "Member 'ABP_BaseRole_C_上坡IK削弱::CallFunc_MapRangeClamped_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_上坡IK削弱, CallFunc_FInterpTo_ReturnValue_2) == 0x000024, "Member 'ABP_BaseRole_C_上坡IK削弱::CallFunc_FInterpTo_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_上坡IK削弱, CallFunc_MapRangeClamped_ReturnValue_2) == 0x000028, "Member 'ABP_BaseRole_C_上坡IK削弱::CallFunc_MapRangeClamped_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_上坡IK削弱, CallFunc_FInterpTo_ReturnValue_3) == 0x00002C, "Member 'ABP_BaseRole_C_上坡IK削弱::CallFunc_FInterpTo_ReturnValue_3' has a wrong offset!");
-
-// Function ABP_BaseRole.ABP_BaseRole_C.风筝移动更新
-// 0x0150 (0x0150 - 0x0000)
-struct ABP_BaseRole_C_风筝移动更新 final
-{
-public:
-	double                                        Len;                                               // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        Len2D;                                             // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVectorDouble                          Offset;                                            // 0x0010(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0028(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_D_Greater_FloatFloat_ReturnValue;         // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_D_VSizeXY_ReturnValue;                    // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Conv_VectorDoubleToVector_ReturnValue;    // 0x0040(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_D_VSize_ReturnValue;                      // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVectorDouble_X;                      // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVectorDouble_Y;                      // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVectorDouble_Z;                      // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_D_Abs_ReturnValue;                        // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_D_Abs_ReturnValue_1;                      // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_D_Add_FloatFloat_ReturnValue;             // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVectorDouble                          CallFunc_D_Divide_VectorFloat_ReturnValue;         // 0x0088(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_D_Divide_FloatFloat_ReturnValue;          // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_D_Divide_FloatFloat_ReturnValue_1;        // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVectorDouble                          CallFunc_D_Multiply_VectorFloat_ReturnValue;       // 0x00B0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_D_Divide_FloatFloat_ReturnValue_2;        // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_D_Greater_FloatFloat_ReturnValue_1;       // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVectorDouble                          CallFunc_FixHookTargetLocation_ReturnValue;        // 0x00D8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransformDouble                       CallFunc_D_GetTransform_ReturnValue;               // 0x00F0(0x0040)(IsPlainOldData, NoDestructor)
-	struct FVectorDouble                          CallFunc_D_InverseTransformLocation_ReturnValue;   // 0x0130(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(ABP_BaseRole_C_风筝移动更新) == 0x000010, "Wrong alignment on ABP_BaseRole_C_风筝移动更新");
-static_assert(sizeof(ABP_BaseRole_C_风筝移动更新) == 0x000150, "Wrong size on ABP_BaseRole_C_风筝移动更新");
-static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, Len) == 0x000000, "Member 'ABP_BaseRole_C_风筝移动更新::Len' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, Len2D) == 0x000008, "Member 'ABP_BaseRole_C_风筝移动更新::Len2D' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, Offset) == 0x000010, "Member 'ABP_BaseRole_C_风筝移动更新::Offset' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_MakeVector_ReturnValue) == 0x000028, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_D_Greater_FloatFloat_ReturnValue) == 0x000034, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_D_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_D_VSizeXY_ReturnValue) == 0x000038, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_D_VSizeXY_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_Conv_VectorDoubleToVector_ReturnValue) == 0x000040, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_Conv_VectorDoubleToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_D_VSize_ReturnValue) == 0x000050, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_D_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_BreakVectorDouble_X) == 0x000058, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_BreakVectorDouble_X' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_BreakVectorDouble_Y) == 0x000060, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_BreakVectorDouble_Y' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_BreakVectorDouble_Z) == 0x000068, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_BreakVectorDouble_Z' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_D_Abs_ReturnValue) == 0x000070, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_D_Abs_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_D_Abs_ReturnValue_1) == 0x000078, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_D_Abs_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_D_Add_FloatFloat_ReturnValue) == 0x000080, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_D_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_D_Divide_VectorFloat_ReturnValue) == 0x000088, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_D_Divide_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_D_Divide_FloatFloat_ReturnValue) == 0x0000A0, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_D_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_D_Divide_FloatFloat_ReturnValue_1) == 0x0000A8, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_D_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_D_Multiply_VectorFloat_ReturnValue) == 0x0000B0, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_D_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_D_Divide_FloatFloat_ReturnValue_2) == 0x0000C8, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_D_Divide_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_D_Greater_FloatFloat_ReturnValue_1) == 0x0000D0, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_D_Greater_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_FixHookTargetLocation_ReturnValue) == 0x0000D8, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_FixHookTargetLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_D_GetTransform_ReturnValue) == 0x0000F0, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_D_GetTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_风筝移动更新, CallFunc_D_InverseTransformLocation_ReturnValue) == 0x000130, "Member 'ABP_BaseRole_C_风筝移动更新::CallFunc_D_InverseTransformLocation_ReturnValue' has a wrong offset!");
-
-// Function ABP_BaseRole.ABP_BaseRole_C.更新载具信息
-// 0x00F0 (0x00F0 - 0x0000)
-struct ABP_BaseRole_C_更新载具信息 final
-{
-public:
-	struct FVector                                VehicleVelocity;                                   // 0x0000(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsForward;                                         // 0x000C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CurSpeed;                                          // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CurVelocity;                                       // 0x0014(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_DegSin_ReturnValue;                       // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_DegCos_ReturnValue;                       // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_IntFloat_ReturnValue;            // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_IntFloat_ReturnValue_1;          // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FMax_ReturnValue;                         // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FMax_ReturnValue_1;                       // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FMax_ReturnValue_2;                       // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FMax_ReturnValue_3;                       // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector4                               K2Node_MakeStruct_Vector4;                         // 0x0040(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetWorldDeltaSeconds_ReturnValue;         // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VSize_ReturnValue;                        // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0062(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0063(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0065(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0066(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_67[0x1];                                       // 0x0067(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Vector4_Size_ReturnValue;                 // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector4                               K2Node_MakeStruct_Vector4_1;                       // 0x0070(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector4                               CallFunc_Divide_Vector4Vector4_ReturnValue;        // 0x0080(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector4                               K2Node_MakeStruct_Vector4_2;                       // 0x0090(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector4                               K2Node_MakeStruct_Vector4_3;                       // 0x00A0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue_1;        // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_FMax_ReturnValue_4;                       // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue;        // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x00B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_1;         // 0x00BA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_FloatFloat_ReturnValue_1;            // 0x00BB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_FloatFloat_ReturnValue_2;            // 0x00BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_3;                 // 0x00BD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_4;                 // 0x00BE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_2;         // 0x00BF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_5;                 // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_GetDrivedVehicleVelocity_ReturnValue;     // 0x00C2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C3[0x1];                                       // 0x00C3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x00C4(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Dot_VectorVector_ReturnValue;             // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SignOfFloat_ReturnValue;                  // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_ConvertAngleToPassengerSpace_ReturnValue; // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetDrivedVehicleSeatRot_ReturnValue;      // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue_3;         // 0x00E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_6;                 // 0x00E2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(ABP_BaseRole_C_更新载具信息) == 0x000010, "Wrong alignment on ABP_BaseRole_C_更新载具信息");
-static_assert(sizeof(ABP_BaseRole_C_更新载具信息) == 0x0000F0, "Wrong size on ABP_BaseRole_C_更新载具信息");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, VehicleVelocity) == 0x000000, "Member 'ABP_BaseRole_C_更新载具信息::VehicleVelocity' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, IsForward) == 0x00000C, "Member 'ABP_BaseRole_C_更新载具信息::IsForward' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CurSpeed) == 0x000010, "Member 'ABP_BaseRole_C_更新载具信息::CurSpeed' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CurVelocity) == 0x000014, "Member 'ABP_BaseRole_C_更新载具信息::CurVelocity' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_DegSin_ReturnValue) == 0x000020, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_DegSin_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_DegCos_ReturnValue) == 0x000024, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_DegCos_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_Multiply_IntFloat_ReturnValue) == 0x000028, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_Multiply_IntFloat_ReturnValue_1) == 0x00002C, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_Multiply_IntFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_FMax_ReturnValue) == 0x000030, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_FMax_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_FMax_ReturnValue_1) == 0x000034, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_FMax_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_FMax_ReturnValue_2) == 0x000038, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_FMax_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_FMax_ReturnValue_3) == 0x00003C, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_FMax_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, K2Node_MakeStruct_Vector4) == 0x000040, "Member 'ABP_BaseRole_C_更新载具信息::K2Node_MakeStruct_Vector4' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x000050, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000054, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_VSize_ReturnValue) == 0x000058, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00005C, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x000060, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x000061, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_Less_FloatFloat_ReturnValue) == 0x000062, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000063, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_BooleanAND_ReturnValue) == 0x000064, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_Not_PreBool_ReturnValue) == 0x000065, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_BooleanAND_ReturnValue_1) == 0x000066, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_Vector4_Size_ReturnValue) == 0x000068, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_Vector4_Size_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, K2Node_MakeStruct_Vector4_1) == 0x000070, "Member 'ABP_BaseRole_C_更新载具信息::K2Node_MakeStruct_Vector4_1' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_Divide_Vector4Vector4_ReturnValue) == 0x000080, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_Divide_Vector4Vector4_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, K2Node_MakeStruct_Vector4_2) == 0x000090, "Member 'ABP_BaseRole_C_更新载具信息::K2Node_MakeStruct_Vector4_2' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, K2Node_MakeStruct_Vector4_3) == 0x0000A0, "Member 'ABP_BaseRole_C_更新载具信息::K2Node_MakeStruct_Vector4_3' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_Subtract_FloatFloat_ReturnValue_1) == 0x0000B0, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_Subtract_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_FMax_ReturnValue_4) == 0x0000B4, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_FMax_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_EqualEqual_FloatFloat_ReturnValue) == 0x0000B8, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_EqualEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_BooleanAND_ReturnValue_2) == 0x0000B9, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_Greater_FloatFloat_ReturnValue_1) == 0x0000BA, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_Greater_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_Less_FloatFloat_ReturnValue_1) == 0x0000BB, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_Less_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_Less_FloatFloat_ReturnValue_2) == 0x0000BC, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_Less_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_BooleanAND_ReturnValue_3) == 0x0000BD, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_BooleanAND_ReturnValue_4) == 0x0000BE, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_BooleanAND_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_Greater_FloatFloat_ReturnValue_2) == 0x0000BF, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_Greater_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_BooleanAND_ReturnValue_5) == 0x0000C0, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_BooleanAND_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_BooleanOR_ReturnValue) == 0x0000C1, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_GetDrivedVehicleVelocity_ReturnValue) == 0x0000C2, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_GetDrivedVehicleVelocity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_GetActorForwardVector_ReturnValue) == 0x0000C4, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_Dot_VectorVector_ReturnValue) == 0x0000D0, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_Dot_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_SignOfFloat_ReturnValue) == 0x0000D4, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_SignOfFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0000D8, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_ConvertAngleToPassengerSpace_ReturnValue) == 0x0000DC, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_ConvertAngleToPassengerSpace_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_GetDrivedVehicleSeatRot_ReturnValue) == 0x0000E0, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_GetDrivedVehicleSeatRot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_Greater_FloatFloat_ReturnValue_3) == 0x0000E1, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_Greater_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_更新载具信息, CallFunc_BooleanAND_ReturnValue_6) == 0x0000E2, "Member 'ABP_BaseRole_C_更新载具信息::CallFunc_BooleanAND_ReturnValue_6' has a wrong offset!");
-
-// Function ABP_BaseRole.ABP_BaseRole_C.AnimGraph
-// 0x0020 (0x0020 - 0x0000)
-struct ABP_BaseRole_C_AnimGraph final
-{
-public:
-	struct FPoseLink                              SpeicalPose;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              AnimGraph_0;                                       // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
-};
-static_assert(alignof(ABP_BaseRole_C_AnimGraph) == 0x000008, "Wrong alignment on ABP_BaseRole_C_AnimGraph");
-static_assert(sizeof(ABP_BaseRole_C_AnimGraph) == 0x000020, "Wrong size on ABP_BaseRole_C_AnimGraph");
-static_assert(offsetof(ABP_BaseRole_C_AnimGraph, SpeicalPose) == 0x000000, "Member 'ABP_BaseRole_C_AnimGraph::SpeicalPose' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_AnimGraph, AnimGraph_0) == 0x000010, "Member 'ABP_BaseRole_C_AnimGraph::AnimGraph_0' has a wrong offset!");
-
-// Function ABP_BaseRole.ABP_BaseRole_C.基础层
-// 0x0010 (0x0010 - 0x0000)
-struct ABP_BaseRole_C_基础层 final
-{
-public:
-	struct FPoseLink                              基础层_0;                                          // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
-};
-static_assert(alignof(ABP_BaseRole_C_基础层) == 0x000008, "Wrong alignment on ABP_BaseRole_C_基础层");
-static_assert(sizeof(ABP_BaseRole_C_基础层) == 0x000010, "Wrong size on ABP_BaseRole_C_基础层");
-static_assert(offsetof(ABP_BaseRole_C_基础层, 基础层_0) == 0x000000, "Member 'ABP_BaseRole_C_基础层::基础层_0' has a wrong offset!");
-
-// Function ABP_BaseRole.ABP_BaseRole_C.叠加层
-// 0x0020 (0x0020 - 0x0000)
-struct ABP_BaseRole_C_叠加层 final
-{
-public:
-	struct FPoseLink                              角色特定动作;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              叠加层_0;                                          // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
-};
-static_assert(alignof(ABP_BaseRole_C_叠加层) == 0x000008, "Wrong alignment on ABP_BaseRole_C_叠加层");
-static_assert(sizeof(ABP_BaseRole_C_叠加层) == 0x000020, "Wrong size on ABP_BaseRole_C_叠加层");
-static_assert(offsetof(ABP_BaseRole_C_叠加层, 角色特定动作) == 0x000000, "Member 'ABP_BaseRole_C_叠加层::角色特定动作' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_叠加层, 叠加层_0) == 0x000010, "Member 'ABP_BaseRole_C_叠加层::叠加层_0' has a wrong offset!");
-
-// Function ABP_BaseRole.ABP_BaseRole_C.基础姿势层
-// 0x0010 (0x0010 - 0x0000)
-struct ABP_BaseRole_C_基础姿势层 final
-{
-public:
-	struct FPoseLink                              基础姿势层_0;                                      // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
-};
-static_assert(alignof(ABP_BaseRole_C_基础姿势层) == 0x000008, "Wrong alignment on ABP_BaseRole_C_基础姿势层");
-static_assert(sizeof(ABP_BaseRole_C_基础姿势层) == 0x000010, "Wrong size on ABP_BaseRole_C_基础姿势层");
-static_assert(offsetof(ABP_BaseRole_C_基础姿势层, 基础姿势层_0) == 0x000000, "Member 'ABP_BaseRole_C_基础姿势层::基础姿势层_0' has a wrong offset!");
-
-// Function ABP_BaseRole.ABP_BaseRole_C.骨骼混合叠加层
-// 0x0040 (0x0040 - 0x0000)
-struct ABP_BaseRole_C_骨骼混合叠加层 final
-{
-public:
-	struct FPoseLink                              BaseLayer;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              OverlayLayer;                                      // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              BasePose;                                          // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              骨骼混合叠加层_0;                                  // 0x0030(0x0010)(Parm, OutParm, NoDestructor)
-};
-static_assert(alignof(ABP_BaseRole_C_骨骼混合叠加层) == 0x000008, "Wrong alignment on ABP_BaseRole_C_骨骼混合叠加层");
-static_assert(sizeof(ABP_BaseRole_C_骨骼混合叠加层) == 0x000040, "Wrong size on ABP_BaseRole_C_骨骼混合叠加层");
-static_assert(offsetof(ABP_BaseRole_C_骨骼混合叠加层, BaseLayer) == 0x000000, "Member 'ABP_BaseRole_C_骨骼混合叠加层::BaseLayer' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_骨骼混合叠加层, OverlayLayer) == 0x000010, "Member 'ABP_BaseRole_C_骨骼混合叠加层::OverlayLayer' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_骨骼混合叠加层, BasePose) == 0x000020, "Member 'ABP_BaseRole_C_骨骼混合叠加层::BasePose' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_骨骼混合叠加层, 骨骼混合叠加层_0) == 0x000030, "Member 'ABP_BaseRole_C_骨骼混合叠加层::骨骼混合叠加层_0' has a wrong offset!");
-
-// Function ABP_BaseRole.ABP_BaseRole_C.混合层
-// 0x0040 (0x0040 - 0x0000)
-struct ABP_BaseRole_C_混合层 final
-{
-public:
-	struct FPoseLink                              基础层输入;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              叠加层输入;                                        // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              姿势层输入;                                        // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              混合层_0;                                          // 0x0030(0x0010)(Parm, OutParm, NoDestructor)
-};
-static_assert(alignof(ABP_BaseRole_C_混合层) == 0x000008, "Wrong alignment on ABP_BaseRole_C_混合层");
-static_assert(sizeof(ABP_BaseRole_C_混合层) == 0x000040, "Wrong size on ABP_BaseRole_C_混合层");
-static_assert(offsetof(ABP_BaseRole_C_混合层, 基础层输入) == 0x000000, "Member 'ABP_BaseRole_C_混合层::基础层输入' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_混合层, 叠加层输入) == 0x000010, "Member 'ABP_BaseRole_C_混合层::叠加层输入' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_混合层, 姿势层输入) == 0x000020, "Member 'ABP_BaseRole_C_混合层::姿势层输入' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_混合层, 混合层_0) == 0x000030, "Member 'ABP_BaseRole_C_混合层::混合层_0' has a wrong offset!");
-
-// Function ABP_BaseRole.ABP_BaseRole_C.地面站立循环混合层
-// 0x0080 (0x0080 - 0x0000)
-struct ABP_BaseRole_C_地面站立循环混合层 final
-{
-public:
-	struct FPoseLink                              前;                                                // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              后;                                                // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              左前;                                              // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              左后;                                              // 0x0030(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              右前;                                              // 0x0040(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              右后;                                              // 0x0050(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              冲刺;                                              // 0x0060(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              地面站立循环混合层_0;                              // 0x0070(0x0010)(Parm, OutParm, NoDestructor)
-};
-static_assert(alignof(ABP_BaseRole_C_地面站立循环混合层) == 0x000008, "Wrong alignment on ABP_BaseRole_C_地面站立循环混合层");
-static_assert(sizeof(ABP_BaseRole_C_地面站立循环混合层) == 0x000080, "Wrong size on ABP_BaseRole_C_地面站立循环混合层");
-static_assert(offsetof(ABP_BaseRole_C_地面站立循环混合层, 前) == 0x000000, "Member 'ABP_BaseRole_C_地面站立循环混合层::前' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_地面站立循环混合层, 后) == 0x000010, "Member 'ABP_BaseRole_C_地面站立循环混合层::后' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_地面站立循环混合层, 左前) == 0x000020, "Member 'ABP_BaseRole_C_地面站立循环混合层::左前' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_地面站立循环混合层, 左后) == 0x000030, "Member 'ABP_BaseRole_C_地面站立循环混合层::左后' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_地面站立循环混合层, 右前) == 0x000040, "Member 'ABP_BaseRole_C_地面站立循环混合层::右前' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_地面站立循环混合层, 右后) == 0x000050, "Member 'ABP_BaseRole_C_地面站立循环混合层::右后' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_地面站立循环混合层, 冲刺) == 0x000060, "Member 'ABP_BaseRole_C_地面站立循环混合层::冲刺' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_地面站立循环混合层, 地面站立循环混合层_0) == 0x000070, "Member 'ABP_BaseRole_C_地面站立循环混合层::地面站立循环混合层_0' has a wrong offset!");
-
-// Function ABP_BaseRole.ABP_BaseRole_C.后处理层
-// 0x0020 (0x0020 - 0x0000)
-struct ABP_BaseRole_C_后处理层 final
-{
-public:
-	struct FPoseLink                              InPose_0;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              后处理层_0;                                        // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
-};
-static_assert(alignof(ABP_BaseRole_C_后处理层) == 0x000008, "Wrong alignment on ABP_BaseRole_C_后处理层");
-static_assert(sizeof(ABP_BaseRole_C_后处理层) == 0x000020, "Wrong size on ABP_BaseRole_C_后处理层");
-static_assert(offsetof(ABP_BaseRole_C_后处理层, InPose_0) == 0x000000, "Member 'ABP_BaseRole_C_后处理层::InPose_0' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_后处理层, 后处理层_0) == 0x000010, "Member 'ABP_BaseRole_C_后处理层::后处理层_0' has a wrong offset!");
-
-// Function ABP_BaseRole.ABP_BaseRole_C.空中射击层
-// 0x0040 (0x0040 - 0x0000)
-struct ABP_BaseRole_C_空中射击层 final
-{
-public:
-	struct FPoseLink                              空中瞄准;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              空中射击;                                          // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              空中射击BasePose;                                  // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              空中射击层_0;                                      // 0x0030(0x0010)(Parm, OutParm, NoDestructor)
-};
-static_assert(alignof(ABP_BaseRole_C_空中射击层) == 0x000008, "Wrong alignment on ABP_BaseRole_C_空中射击层");
-static_assert(sizeof(ABP_BaseRole_C_空中射击层) == 0x000040, "Wrong size on ABP_BaseRole_C_空中射击层");
-static_assert(offsetof(ABP_BaseRole_C_空中射击层, 空中瞄准) == 0x000000, "Member 'ABP_BaseRole_C_空中射击层::空中瞄准' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_空中射击层, 空中射击) == 0x000010, "Member 'ABP_BaseRole_C_空中射击层::空中射击' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_空中射击层, 空中射击BasePose) == 0x000020, "Member 'ABP_BaseRole_C_空中射击层::空中射击BasePose' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_空中射击层, 空中射击层_0) == 0x000030, "Member 'ABP_BaseRole_C_空中射击层::空中射击层_0' has a wrong offset!");
-
-// Function ABP_BaseRole.ABP_BaseRole_C.地面站立循环混合层2
-// 0x0080 (0x0080 - 0x0000)
-struct ABP_BaseRole_C_地面站立循环混合层2 final
-{
-public:
-	struct FPoseLink                              前_走跑;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              后_走跑;                                           // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              左前_走跑;                                         // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              右前_走跑;                                         // 0x0030(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              左后_走跑;                                         // 0x0040(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              右后_走跑;                                         // 0x0050(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              前_冲刺;                                           // 0x0060(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              地面站立循环混合层2_0;                             // 0x0070(0x0010)(Parm, OutParm, NoDestructor)
-};
-static_assert(alignof(ABP_BaseRole_C_地面站立循环混合层2) == 0x000008, "Wrong alignment on ABP_BaseRole_C_地面站立循环混合层2");
-static_assert(sizeof(ABP_BaseRole_C_地面站立循环混合层2) == 0x000080, "Wrong size on ABP_BaseRole_C_地面站立循环混合层2");
-static_assert(offsetof(ABP_BaseRole_C_地面站立循环混合层2, 前_走跑) == 0x000000, "Member 'ABP_BaseRole_C_地面站立循环混合层2::前_走跑' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_地面站立循环混合层2, 后_走跑) == 0x000010, "Member 'ABP_BaseRole_C_地面站立循环混合层2::后_走跑' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_地面站立循环混合层2, 左前_走跑) == 0x000020, "Member 'ABP_BaseRole_C_地面站立循环混合层2::左前_走跑' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_地面站立循环混合层2, 右前_走跑) == 0x000030, "Member 'ABP_BaseRole_C_地面站立循环混合层2::右前_走跑' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_地面站立循环混合层2, 左后_走跑) == 0x000040, "Member 'ABP_BaseRole_C_地面站立循环混合层2::左后_走跑' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_地面站立循环混合层2, 右后_走跑) == 0x000050, "Member 'ABP_BaseRole_C_地面站立循环混合层2::右后_走跑' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_地面站立循环混合层2, 前_冲刺) == 0x000060, "Member 'ABP_BaseRole_C_地面站立循环混合层2::前_冲刺' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_地面站立循环混合层2, 地面站立循环混合层2_0) == 0x000070, "Member 'ABP_BaseRole_C_地面站立循环混合层2::地面站立循环混合层2_0' has a wrong offset!");
-
-// Function ABP_BaseRole.ABP_BaseRole_C.演出层
-// 0x0020 (0x0020 - 0x0000)
-struct ABP_BaseRole_C_演出层 final
-{
-public:
-	struct FPoseLink                              InPose;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              演出层_0;                                          // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
-};
-static_assert(alignof(ABP_BaseRole_C_演出层) == 0x000008, "Wrong alignment on ABP_BaseRole_C_演出层");
-static_assert(sizeof(ABP_BaseRole_C_演出层) == 0x000020, "Wrong size on ABP_BaseRole_C_演出层");
-static_assert(offsetof(ABP_BaseRole_C_演出层, InPose) == 0x000000, "Member 'ABP_BaseRole_C_演出层::InPose' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_演出层, 演出层_0) == 0x000010, "Member 'ABP_BaseRole_C_演出层::演出层_0' has a wrong offset!");
-
-// Function ABP_BaseRole.ABP_BaseRole_C.修型层
-// 0x0020 (0x0020 - 0x0000)
-struct ABP_BaseRole_C_修型层 final
-{
-public:
-	struct FPoseLink                              InPose_0;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              修型层_0;                                          // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
-};
-static_assert(alignof(ABP_BaseRole_C_修型层) == 0x000008, "Wrong alignment on ABP_BaseRole_C_修型层");
-static_assert(sizeof(ABP_BaseRole_C_修型层) == 0x000020, "Wrong size on ABP_BaseRole_C_修型层");
-static_assert(offsetof(ABP_BaseRole_C_修型层, InPose_0) == 0x000000, "Member 'ABP_BaseRole_C_修型层::InPose_0' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_修型层, 修型层_0) == 0x000010, "Member 'ABP_BaseRole_C_修型层::修型层_0' has a wrong offset!");
-
-// Function ABP_BaseRole.ABP_BaseRole_C.InterfaceJumpPressed
-// 0x0020 (0x0020 - 0x0000)
-struct ABP_BaseRole_C_InterfaceJumpPressed final
-{
-public:
-	float                                         Speed;                                             // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc__________;                                // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetVelocity_ReturnValue;                  // 0x000C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VSize_ReturnValue;                        // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(ABP_BaseRole_C_InterfaceJumpPressed) == 0x000004, "Wrong alignment on ABP_BaseRole_C_InterfaceJumpPressed");
-static_assert(sizeof(ABP_BaseRole_C_InterfaceJumpPressed) == 0x000020, "Wrong size on ABP_BaseRole_C_InterfaceJumpPressed");
-static_assert(offsetof(ABP_BaseRole_C_InterfaceJumpPressed, Speed) == 0x000000, "Member 'ABP_BaseRole_C_InterfaceJumpPressed::Speed' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_InterfaceJumpPressed, CallFunc__________) == 0x000004, "Member 'ABP_BaseRole_C_InterfaceJumpPressed::CallFunc__________' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_InterfaceJumpPressed, CallFunc_Not_PreBool_ReturnValue) == 0x000008, "Member 'ABP_BaseRole_C_InterfaceJumpPressed::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_InterfaceJumpPressed, CallFunc_BooleanAND_ReturnValue) == 0x000009, "Member 'ABP_BaseRole_C_InterfaceJumpPressed::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_InterfaceJumpPressed, CallFunc_GetVelocity_ReturnValue) == 0x00000C, "Member 'ABP_BaseRole_C_InterfaceJumpPressed::CallFunc_GetVelocity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_InterfaceJumpPressed, CallFunc_VSize_ReturnValue) == 0x000018, "Member 'ABP_BaseRole_C_InterfaceJumpPressed::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_C_InterfaceJumpPressed, CallFunc_Add_FloatFloat_ReturnValue) == 0x00001C, "Member 'ABP_BaseRole_C_InterfaceJumpPressed::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
 
 }
 

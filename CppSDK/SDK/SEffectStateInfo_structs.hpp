@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "SEffectStateFloatCurve_structs.hpp"
-#include "SStateBasedEffectFloatCurveSection_structs.hpp"
 #include "SEffectStateLinearColorCurve_structs.hpp"
+#include "SStateBasedEffectFloatCurveSection_structs.hpp"
 #include "SStateBasedEffectLinearColorCurveSection_structs.hpp"
 
 

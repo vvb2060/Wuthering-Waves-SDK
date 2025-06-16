@@ -20,7 +20,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_BaseNPC.BP_BaseNPC_C
 // 0x0060 (0x07B0 - 0x0750)
-class ABP_BaseNPC_C final : public ATsBaseCharacter_C
+class ABP_BaseNPC_C : public ATsBaseCharacter_C
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_BP_BaseNPC_C;                       // 0x0750(0x0008)(ZeroConstructor, Transient, DuplicateTransient)

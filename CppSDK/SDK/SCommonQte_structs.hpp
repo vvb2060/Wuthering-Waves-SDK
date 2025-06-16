@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "SCommonQte_Audio_structs.hpp"
 #include "SCommonQte_Base_structs.hpp"
 #include "SCommonQte_Extra_structs.hpp"
+#include "SCommonQte_Audio_structs.hpp"
 
 
 namespace SDK

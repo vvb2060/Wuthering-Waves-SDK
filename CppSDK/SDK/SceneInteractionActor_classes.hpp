@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "SScenePropertyEffect_structs.hpp"
-#include "SSceneInteractionTags_structs.hpp"
+#include "SSceneInteractionitem_structs.hpp"
 #include "KuroRenderingRuntimeBPPlugin_structs.hpp"
 #include "KuroRenderingRuntimeBPPlugin_classes.hpp"
-#include "GameplayTags_structs.hpp"
-#include "SSceneInteractionitem_structs.hpp"
+#include "SScenePropertyEffect_structs.hpp"
+#include "Engine_structs.hpp"
 #include "ESceneInteractionEffect_structs.hpp"
+#include "GameplayTags_structs.hpp"
+#include "SSceneInteractionTags_structs.hpp"
 
 
 namespace SDK

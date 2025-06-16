@@ -16,16 +16,16 @@
 namespace SDK::Params
 {
 
-// Function BP_BasePathLine.BP_BasePathLine_C.ExecuteUbergraph_BP_BasePathLine
-// 0x0004 (0x0004 - 0x0000)
-struct BP_BasePathLine_C_ExecuteUbergraph_BP_BasePathLine final
+// Function BP_BasePathLine.BP_BasePathLine_C.Save
+// 0x000C (0x000C - 0x0000)
+struct BP_BasePathLine_C_Save final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0000(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_BasePathLine_C_ExecuteUbergraph_BP_BasePathLine) == 0x000004, "Wrong alignment on BP_BasePathLine_C_ExecuteUbergraph_BP_BasePathLine");
-static_assert(sizeof(BP_BasePathLine_C_ExecuteUbergraph_BP_BasePathLine) == 0x000004, "Wrong size on BP_BasePathLine_C_ExecuteUbergraph_BP_BasePathLine");
-static_assert(offsetof(BP_BasePathLine_C_ExecuteUbergraph_BP_BasePathLine, EntryPoint) == 0x000000, "Member 'BP_BasePathLine_C_ExecuteUbergraph_BP_BasePathLine::EntryPoint' has a wrong offset!");
+static_assert(alignof(BP_BasePathLine_C_Save) == 0x000004, "Wrong alignment on BP_BasePathLine_C_Save");
+static_assert(sizeof(BP_BasePathLine_C_Save) == 0x00000C, "Wrong size on BP_BasePathLine_C_Save");
+static_assert(offsetof(BP_BasePathLine_C_Save, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000000, "Member 'BP_BasePathLine_C_Save::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
 
 // Function BP_BasePathLine.BP_BasePathLine_C.贴地处理
 // 0x002C (0x002C - 0x0000)
@@ -51,16 +51,16 @@ static_assert(offsetof(BP_BasePathLine_C_贴地处理, CallFunc_Add_IntInt_Retur
 static_assert(offsetof(BP_BasePathLine_C_贴地处理, CallFunc_GetNumberOfSplinePoints_ReturnValue) == 0x000024, "Member 'BP_BasePathLine_C_贴地处理::CallFunc_GetNumberOfSplinePoints_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_BasePathLine_C_贴地处理, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000028, "Member 'BP_BasePathLine_C_贴地处理::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
 
-// Function BP_BasePathLine.BP_BasePathLine_C.Save
-// 0x000C (0x000C - 0x0000)
-struct BP_BasePathLine_C_Save final
+// Function BP_BasePathLine.BP_BasePathLine_C.ExecuteUbergraph_BP_BasePathLine
+// 0x0004 (0x0004 - 0x0000)
+struct BP_BasePathLine_C_ExecuteUbergraph_BP_BasePathLine final
 {
 public:
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0000(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_BasePathLine_C_Save) == 0x000004, "Wrong alignment on BP_BasePathLine_C_Save");
-static_assert(sizeof(BP_BasePathLine_C_Save) == 0x00000C, "Wrong size on BP_BasePathLine_C_Save");
-static_assert(offsetof(BP_BasePathLine_C_Save, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000000, "Member 'BP_BasePathLine_C_Save::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
+static_assert(alignof(BP_BasePathLine_C_ExecuteUbergraph_BP_BasePathLine) == 0x000004, "Wrong alignment on BP_BasePathLine_C_ExecuteUbergraph_BP_BasePathLine");
+static_assert(sizeof(BP_BasePathLine_C_ExecuteUbergraph_BP_BasePathLine) == 0x000004, "Wrong size on BP_BasePathLine_C_ExecuteUbergraph_BP_BasePathLine");
+static_assert(offsetof(BP_BasePathLine_C_ExecuteUbergraph_BP_BasePathLine, EntryPoint) == 0x000000, "Member 'BP_BasePathLine_C_ExecuteUbergraph_BP_BasePathLine::EntryPoint' has a wrong offset!");
 
 }
 

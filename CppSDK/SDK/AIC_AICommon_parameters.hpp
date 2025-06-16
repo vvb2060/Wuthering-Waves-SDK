@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "EAiLevelVarSource_structs.hpp"
-#include "SAiLevelVar_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "SAiLevelVar_structs.hpp"
+#include "Engine_structs.hpp"
 #include "ECharacterState_structs.hpp"
 
 

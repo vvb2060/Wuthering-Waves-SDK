@@ -17,55 +17,21 @@
 namespace SDK
 {
 
-// Function BP_UiSceneRenderingComponent.BP_UiSceneRenderingComponent_C.OnKuroEndUiScene
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UBP_UiSceneRenderingComponent_C::OnKuroEndUiScene()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UiSceneRenderingComponent_C", "OnKuroEndUiScene");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_UiSceneRenderingComponent.BP_UiSceneRenderingComponent_C.OnKuroStartUiScene
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_UiSceneRenderingComponent.BP_UiSceneRenderingComponent_C.ExecuteUbergraph_BP_UiSceneRenderingComponent
+// (Final, UbergraphFunction)
 // Parameters:
-// const class FString&                    UiScenePath                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_UiSceneRenderingComponent_C::OnKuroStartUiScene(const class FString& UiScenePath)
+void UBP_UiSceneRenderingComponent_C::ExecuteUbergraph_BP_UiSceneRenderingComponent(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UiSceneRenderingComponent_C", "OnKuroStartUiScene");
+		Func = Class->GetFunction("BP_UiSceneRenderingComponent_C", "ExecuteUbergraph_BP_UiSceneRenderingComponent");
 
-	Params::BP_UiSceneRenderingComponent_C_OnKuroStartUiScene Parms{};
+	Params::BP_UiSceneRenderingComponent_C_ExecuteUbergraph_BP_UiSceneRenderingComponent Parms{};
 
-	Parms.UiScenePath = std::move(UiScenePath);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_UiSceneRenderingComponent.BP_UiSceneRenderingComponent_C.Init
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class ABP_GlobalGI_C*                   InGlobalGI                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_UiSceneRenderingComponent_C::Init(class ABP_GlobalGI_C* InGlobalGI)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UiSceneRenderingComponent_C", "Init");
-
-	Params::BP_UiSceneRenderingComponent_C_Init Parms{};
-
-	Parms.InGlobalGI = InGlobalGI;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -91,23 +57,57 @@ void UBP_UiSceneRenderingComponent_C::ReceiveEndPlay(EEndPlayReason EndPlayReaso
 }
 
 
-// Function BP_UiSceneRenderingComponent.BP_UiSceneRenderingComponent_C.ExecuteUbergraph_BP_UiSceneRenderingComponent
-// (Final, UbergraphFunction)
+// Function BP_UiSceneRenderingComponent.BP_UiSceneRenderingComponent_C.Init
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ABP_GlobalGI_C*                   InGlobalGI                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_UiSceneRenderingComponent_C::ExecuteUbergraph_BP_UiSceneRenderingComponent(int32 EntryPoint)
+void UBP_UiSceneRenderingComponent_C::Init(class ABP_GlobalGI_C* InGlobalGI)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UiSceneRenderingComponent_C", "ExecuteUbergraph_BP_UiSceneRenderingComponent");
+		Func = Class->GetFunction("BP_UiSceneRenderingComponent_C", "Init");
 
-	Params::BP_UiSceneRenderingComponent_C_ExecuteUbergraph_BP_UiSceneRenderingComponent Parms{};
+	Params::BP_UiSceneRenderingComponent_C_Init Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.InGlobalGI = InGlobalGI;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_UiSceneRenderingComponent.BP_UiSceneRenderingComponent_C.OnKuroStartUiScene
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    UiScenePath                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UBP_UiSceneRenderingComponent_C::OnKuroStartUiScene(const class FString& UiScenePath)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_UiSceneRenderingComponent_C", "OnKuroStartUiScene");
+
+	Params::BP_UiSceneRenderingComponent_C_OnKuroStartUiScene Parms{};
+
+	Parms.UiScenePath = std::move(UiScenePath);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_UiSceneRenderingComponent.BP_UiSceneRenderingComponent_C.OnKuroEndUiScene
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBP_UiSceneRenderingComponent_C::OnKuroEndUiScene()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_UiSceneRenderingComponent_C", "OnKuroEndUiScene");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

@@ -17,45 +17,23 @@
 namespace SDK
 {
 
-// Function BP_PerformanceDisableLight_MP4_OnlyEditor.BP_PerformanceDisableLight_MP4_OnlyEditor_C.DisableLightFun_MP4
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_PerformanceDisableLight_MP4_OnlyEditor.BP_PerformanceDisableLight_MP4_OnlyEditor_C.ExecuteUbergraph_BP_PerformanceDisableLight_MP4_OnlyEditor
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PerformanceDisableLight_MP4_OnlyEditor_C::DisableLightFun_MP4()
+void ABP_PerformanceDisableLight_MP4_OnlyEditor_C::ExecuteUbergraph_BP_PerformanceDisableLight_MP4_OnlyEditor(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PerformanceDisableLight_MP4_OnlyEditor_C", "DisableLightFun_MP4");
+		Func = Class->GetFunction("BP_PerformanceDisableLight_MP4_OnlyEditor_C", "ExecuteUbergraph_BP_PerformanceDisableLight_MP4_OnlyEditor");
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Params::BP_PerformanceDisableLight_MP4_OnlyEditor_C_ExecuteUbergraph_BP_PerformanceDisableLight_MP4_OnlyEditor Parms{};
 
+	Parms.EntryPoint = EntryPoint;
 
-// Function BP_PerformanceDisableLight_MP4_OnlyEditor.BP_PerformanceDisableLight_MP4_OnlyEditor_C.DisableLightFun
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_PerformanceDisableLight_MP4_OnlyEditor_C::DisableLightFun()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PerformanceDisableLight_MP4_OnlyEditor_C", "DisableLightFun");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_PerformanceDisableLight_MP4_OnlyEditor.BP_PerformanceDisableLight_MP4_OnlyEditor_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_PerformanceDisableLight_MP4_OnlyEditor_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PerformanceDisableLight_MP4_OnlyEditor_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -79,23 +57,45 @@ void ABP_PerformanceDisableLight_MP4_OnlyEditor_C::ReceiveTick(float DeltaSecond
 }
 
 
-// Function BP_PerformanceDisableLight_MP4_OnlyEditor.BP_PerformanceDisableLight_MP4_OnlyEditor_C.ExecuteUbergraph_BP_PerformanceDisableLight_MP4_OnlyEditor
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_PerformanceDisableLight_MP4_OnlyEditor.BP_PerformanceDisableLight_MP4_OnlyEditor_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_PerformanceDisableLight_MP4_OnlyEditor_C::ExecuteUbergraph_BP_PerformanceDisableLight_MP4_OnlyEditor(int32 EntryPoint)
+void ABP_PerformanceDisableLight_MP4_OnlyEditor_C::UserConstructionScript()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PerformanceDisableLight_MP4_OnlyEditor_C", "ExecuteUbergraph_BP_PerformanceDisableLight_MP4_OnlyEditor");
+		Func = Class->GetFunction("BP_PerformanceDisableLight_MP4_OnlyEditor_C", "UserConstructionScript");
 
-	Params::BP_PerformanceDisableLight_MP4_OnlyEditor_C_ExecuteUbergraph_BP_PerformanceDisableLight_MP4_OnlyEditor Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function BP_PerformanceDisableLight_MP4_OnlyEditor.BP_PerformanceDisableLight_MP4_OnlyEditor_C.DisableLightFun
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_PerformanceDisableLight_MP4_OnlyEditor_C::DisableLightFun()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PerformanceDisableLight_MP4_OnlyEditor_C", "DisableLightFun");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_PerformanceDisableLight_MP4_OnlyEditor.BP_PerformanceDisableLight_MP4_OnlyEditor_C.DisableLightFun_MP4
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_PerformanceDisableLight_MP4_OnlyEditor_C::DisableLightFun_MP4()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PerformanceDisableLight_MP4_OnlyEditor_C", "DisableLightFun_MP4");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

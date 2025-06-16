@@ -31,9 +31,9 @@ public:
 	class UEffectScreenPlayData_C*                ScreenEffectToPlay;                                // 0x0328(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_WorldRainComponent_Common(int32 EntryPoint);
 	void OnReceiveStartRain();
 	void OnReceiveDeactivateRain();
+	void ExecuteUbergraph_BP_WorldRainComponent_Common(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

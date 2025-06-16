@@ -17,28 +17,6 @@
 namespace SDK
 {
 
-// Function BP_BulletLogicBase.BP_BulletLogicBase_C.子弹范围内吸附
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          子弹                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   吸附速度                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_BulletLogicBase_C::子弹范围内吸附(class UObject* 子弹, float 吸附速度)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BulletLogicBase_C", "子弹范围内吸附");
-
-	Params::BP_BulletLogicBase_C_子弹范围内吸附 Parms{};
-
-	Parms.子弹 = 子弹;
-	Parms.吸附速度 = 吸附速度;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_BulletLogicBase.BP_BulletLogicBase_C.执行
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -60,6 +38,28 @@ void UBP_BulletLogicBase_C::执行(class ATsBaseCharacter_C* 攻击者, class AT
 	Parms.受击者 = 受击者;
 	Parms.子弹数据 = std::move(子弹数据);
 	Parms.子弹 = 子弹;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BulletLogicBase.BP_BulletLogicBase_C.子弹范围内吸附
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          子弹                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   吸附速度                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_BulletLogicBase_C::子弹范围内吸附(class UObject* 子弹, float 吸附速度)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BulletLogicBase_C", "子弹范围内吸附");
+
+	Params::BP_BulletLogicBase_C_子弹范围内吸附 Parms{};
+
+	Parms.子弹 = 子弹;
+	Parms.吸附速度 = 吸附速度;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
+#include "ECharState_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
 #include "Engine_structs.hpp"
-#include "EAnimalEcologicalState_structs.hpp"
 #include "KuroAnim_structs.hpp"
 #include "KuroAnim_classes.hpp"
-#include "ECharState_structs.hpp"
+#include "EAnimalEcologicalState_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
@@ -25,7 +25,7 @@ namespace SDK
 
 // AnimBlueprintGeneratedClass ABP_BaseAnimal.ABP_BaseAnimal_C
 // 0x3330 (0x3A80 - 0x0750)
-class UABP_BaseAnimal_C final : public UKuroAnimInstance
+class UABP_BaseAnimal_C : public UKuroAnimInstance
 {
 public:
 	uint8                                         Pad_748[0x8];                                      // 0x0748(0x0008)(Fixing Size After Last Property [ Dumper-7 ])

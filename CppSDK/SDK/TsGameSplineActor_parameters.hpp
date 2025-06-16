@@ -16,19 +16,6 @@
 namespace SDK::Params
 {
 
-// Function TsGameSplineActor.TsGameSplineActor_C.GetPatrolSpeedByIndex
-// 0x0008 (0x0008 - 0x0000)
-struct TsGameSplineActor_C_GetPatrolSpeedByIndex final
-{
-public:
-	int32                                         index;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(TsGameSplineActor_C_GetPatrolSpeedByIndex) == 0x000004, "Wrong alignment on TsGameSplineActor_C_GetPatrolSpeedByIndex");
-static_assert(sizeof(TsGameSplineActor_C_GetPatrolSpeedByIndex) == 0x000008, "Wrong size on TsGameSplineActor_C_GetPatrolSpeedByIndex");
-static_assert(offsetof(TsGameSplineActor_C_GetPatrolSpeedByIndex, index) == 0x000000, "Member 'TsGameSplineActor_C_GetPatrolSpeedByIndex::index' has a wrong offset!");
-static_assert(offsetof(TsGameSplineActor_C_GetPatrolSpeedByIndex, ReturnValue) == 0x000004, "Member 'TsGameSplineActor_C_GetPatrolSpeedByIndex::ReturnValue' has a wrong offset!");
-
 // Function TsGameSplineActor.TsGameSplineActor_C.GetPointRotatorByIndex
 // 0x0010 (0x0010 - 0x0000)
 struct TsGameSplineActor_C_GetPointRotatorByIndex final
@@ -41,6 +28,19 @@ static_assert(alignof(TsGameSplineActor_C_GetPointRotatorByIndex) == 0x000004, "
 static_assert(sizeof(TsGameSplineActor_C_GetPointRotatorByIndex) == 0x000010, "Wrong size on TsGameSplineActor_C_GetPointRotatorByIndex");
 static_assert(offsetof(TsGameSplineActor_C_GetPointRotatorByIndex, index) == 0x000000, "Member 'TsGameSplineActor_C_GetPointRotatorByIndex::index' has a wrong offset!");
 static_assert(offsetof(TsGameSplineActor_C_GetPointRotatorByIndex, ReturnValue) == 0x000004, "Member 'TsGameSplineActor_C_GetPointRotatorByIndex::ReturnValue' has a wrong offset!");
+
+// Function TsGameSplineActor.TsGameSplineActor_C.GetPatrolSpeedByIndex
+// 0x0008 (0x0008 - 0x0000)
+struct TsGameSplineActor_C_GetPatrolSpeedByIndex final
+{
+public:
+	int32                                         index;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	float                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(TsGameSplineActor_C_GetPatrolSpeedByIndex) == 0x000004, "Wrong alignment on TsGameSplineActor_C_GetPatrolSpeedByIndex");
+static_assert(sizeof(TsGameSplineActor_C_GetPatrolSpeedByIndex) == 0x000008, "Wrong size on TsGameSplineActor_C_GetPatrolSpeedByIndex");
+static_assert(offsetof(TsGameSplineActor_C_GetPatrolSpeedByIndex, index) == 0x000000, "Member 'TsGameSplineActor_C_GetPatrolSpeedByIndex::index' has a wrong offset!");
+static_assert(offsetof(TsGameSplineActor_C_GetPatrolSpeedByIndex, ReturnValue) == 0x000004, "Member 'TsGameSplineActor_C_GetPatrolSpeedByIndex::ReturnValue' has a wrong offset!");
 
 }
 

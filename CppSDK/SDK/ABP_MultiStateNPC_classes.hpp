@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "ECharState_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
 #include "Engine_structs.hpp"
-#include "ECharState_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "KuroAnim_structs.hpp"
 #include "KuroAnim_classes.hpp"

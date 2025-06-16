@@ -22,8 +22,6 @@ class UPlotBlueprintFunctionLibrary_C final : public UBlueprintFunctionLibrary
 {
 public:
 	static void ShowBgIcon(bool bShow, class UTexture2D* texture, class ABP_KuroMasterSeqEvent_C* obj, class UObject* __WorldContext);
-	static void TriggerTagToInteractingGravityMachine(const struct FGameplayTag& Tag, class UObject* __WorldContext);
-	static void RemoveInteractTagFromInteractingGravityMachine(class UObject* __WorldContext);
 	static void AddInteractTagToInteractingGravityMachine(class UObject* __WorldContext);
 	static void CloseSpineAnimInArray(TArray<class FString>& spineArray, class UObject* __WorldContext);
 	static void CloseSpineAnim(const class FString& spineName, class UObject* __WorldContext);
@@ -52,6 +50,8 @@ public:
 	static void PauseSequence(class UObject* __WorldContext);
 	static void SkipCurrentSequence(class UObject* __WorldContext);
 	static bool IsInSequence(class UObject* __WorldContext);
+	static void TriggerTagToInteractingGravityMachine(const struct FGameplayTag& Tag, class UObject* __WorldContext);
+	static void RemoveInteractTagFromInteractingGravityMachine(class UObject* __WorldContext);
 
 public:
 	static class UClass* StaticClass()

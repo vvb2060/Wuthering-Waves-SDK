@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "ERoleInteractType_structs.hpp"
-#include "ECharViewDirectionState_structs.hpp"
-#include "EInputAction_structs.hpp"
 #include "SInputCaches_structs.hpp"
+#include "EInputAction_structs.hpp"
+#include "ECharViewDirectionState_structs.hpp"
 #include "SInputHoldConfig_structs.hpp"
 #include "BP_InputBase_classes.hpp"
 

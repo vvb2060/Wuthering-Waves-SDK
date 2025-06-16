@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_classes.hpp"
 #include "SKuroInteractionLimbsConfig_structs.hpp"
 #include "SWaterEffectObject_structs.hpp"
+#include "Engine_classes.hpp"
 
 
 namespace SDK

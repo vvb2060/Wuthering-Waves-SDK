@@ -30,10 +30,10 @@ public:
 	bool                                          IsAttachedToEntity;                                // 0x02D4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor)
 
 public:
-	void ExecuteUbergraph_BP_MovePathLine(int32 EntryPoint);
-	void ReceiveBeginPlay();
-	void Save();
 	void 贴地处理();
+	void Save();
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_MovePathLine(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "EHookInteractTypeBp_structs.hpp"
+#include "ESkillTargetDirection_structs.hpp"
 #include "ECharacterLoadType_structs.hpp"
 #include "Engine_classes.hpp"
+#include "EVisionType_structs.hpp"
 #include "EMorphType_structs.hpp"
 #include "EFishingSkillType_structs.hpp"
-#include "EVisionType_structs.hpp"
-#include "ESkillTargetDirection_structs.hpp"
+#include "EHookInteractTypeBp_structs.hpp"
 #include "EHitAnim_structs.hpp"
 #include "EAimViewState_structs.hpp"
 #include "ECharViewDirectionState_structs.hpp"

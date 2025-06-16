@@ -34,9 +34,9 @@ public:
 	bool                                          EnableSunHorizontalAngle;                          // 0x02E4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor)
 
 public:
-	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
-	void EditorTick(float DeltaSeconds);
 	void ExecuteUbergraph_BP_ControlTodTime(int32 EntryPoint);
+	void EditorTick(float DeltaSeconds);
+	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
 	void ReceiveBeginPlay();
 	void ReceiveTick(float DeltaSeconds);
 	void UserConstructionScript();

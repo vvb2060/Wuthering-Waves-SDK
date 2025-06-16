@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "EBattleUIChild_structs.hpp"
 #include "EPanelQteViewType_structs.hpp"
+#include "EBattleUIChild_structs.hpp"
 #include "SPanelQteAction_structs.hpp"
 
 

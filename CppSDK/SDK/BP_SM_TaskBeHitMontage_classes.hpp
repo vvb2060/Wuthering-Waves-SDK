@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "EHitAnim_structs.hpp"
 #include "SMSystem_classes.hpp"
+#include "EHitAnim_structs.hpp"
 
 
 namespace SDK

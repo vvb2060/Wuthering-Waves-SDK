@@ -33,12 +33,12 @@ public:
 	class ABP_BaseVision_C*                       As_BP_Base_Vision;                                 // 0x09C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 
 public:
-	void OnStart();
-	void 添加生命周期(bool bContent);
-	void 添加生命结束();
-	void 取消定时(bool bContent);
-	void 免疫子弹(bool bContent);
 	void ExecuteUbergraph_AIC_VM_Common(int32 EntryPoint);
+	void 免疫子弹(bool bContent);
+	void 取消定时(bool bContent);
+	void 添加生命结束();
+	void 添加生命周期(bool bContent);
+	void OnStart();
 
 public:
 	static class UClass* StaticClass()

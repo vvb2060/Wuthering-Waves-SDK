@@ -29,9 +29,9 @@ public:
 	struct FTimerHandle                           ReleaseTimeHandle;                                 // 0x02F8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void IsPhysicInteracted(bool* OutInteracted);
 	void ReceiveBeginPlay();
 	void ExecuteUbergraph_BP_InteractedBox(int32 EntryPoint);
+	void IsPhysicInteracted(bool* OutInteracted);
 
 public:
 	static class UClass* StaticClass()

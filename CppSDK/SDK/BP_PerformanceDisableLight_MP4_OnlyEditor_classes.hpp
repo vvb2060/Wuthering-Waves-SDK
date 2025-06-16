@@ -29,11 +29,11 @@ public:
 	class FString                                 MainCommand;                                       // 0x02C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 
 public:
-	void DisableLightFun_MP4();
-	void DisableLightFun();
-	void UserConstructionScript();
-	void ReceiveTick(float DeltaSeconds);
 	void ExecuteUbergraph_BP_PerformanceDisableLight_MP4_OnlyEditor(int32 EntryPoint);
+	void ReceiveTick(float DeltaSeconds);
+	void UserConstructionScript();
+	void DisableLightFun();
+	void DisableLightFun_MP4();
 
 public:
 	static class UClass* StaticClass()

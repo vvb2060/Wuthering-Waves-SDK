@@ -17,21 +17,44 @@
 namespace SDK
 {
 
-// Function TsTaskCheckTarget.TsTaskCheckTarget_C.ExecuteUbergraph_TsTaskCheckTarget
-// (Final, Native, UbergraphFunction, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function TsTaskCheckTarget.TsTaskCheckTarget_C.Tags
+// (Native, Public, BlueprintCallable, BlueprintEvent)
 
-void UTsTaskCheckTarget_C::ExecuteUbergraph_TsTaskCheckTarget(int32 EntryPoint)
+void UTsTaskCheckTarget_C::Tags()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("TsTaskCheckTarget_C", "ExecuteUbergraph_TsTaskCheckTarget");
+		Func = Class->GetFunction("TsTaskCheckTarget_C", "Tags");
 
-	Params::TsTaskCheckTarget_C_ExecuteUbergraph_TsTaskCheckTarget Parms{};
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
 
-	Parms.EntryPoint = EntryPoint;
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function TsTaskCheckTarget.TsTaskCheckTarget_C.ReceiveTickAI
+// (Native, Event, Public, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AAIController*                    OwnerController                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UTsTaskCheckTarget_C::ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TsTaskCheckTarget_C", "ReceiveTickAI");
+
+	Params::TsTaskCheckTarget_C_ReceiveTickAI Parms{};
+
+	Parms.OwnerController = OwnerController;
+	Parms.ControlledPawn = ControlledPawn;
+	Parms.DeltaSeconds = DeltaSeconds;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -69,49 +92,26 @@ void UTsTaskCheckTarget_C::ReceiveExecuteAI(class AAIController* OwnerController
 }
 
 
-// Function TsTaskCheckTarget.TsTaskCheckTarget_C.ReceiveTickAI
-// (Native, Event, Public, Protected, BlueprintCallable, BlueprintEvent)
+// Function TsTaskCheckTarget.TsTaskCheckTarget_C.ExecuteUbergraph_TsTaskCheckTarget
+// (Final, Native, UbergraphFunction, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AAIController*                    OwnerController                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UTsTaskCheckTarget_C::ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds)
+void UTsTaskCheckTarget_C::ExecuteUbergraph_TsTaskCheckTarget(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("TsTaskCheckTarget_C", "ReceiveTickAI");
+		Func = Class->GetFunction("TsTaskCheckTarget_C", "ExecuteUbergraph_TsTaskCheckTarget");
 
-	Params::TsTaskCheckTarget_C_ReceiveTickAI Parms{};
+	Params::TsTaskCheckTarget_C_ExecuteUbergraph_TsTaskCheckTarget Parms{};
 
-	Parms.OwnerController = OwnerController;
-	Parms.ControlledPawn = ControlledPawn;
-	Parms.DeltaSeconds = DeltaSeconds;
+	Parms.EntryPoint = EntryPoint;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function TsTaskCheckTarget.TsTaskCheckTarget_C.Tags
-// (Native, Public, BlueprintCallable, BlueprintEvent)
-
-void UTsTaskCheckTarget_C::Tags()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TsTaskCheckTarget_C", "Tags");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }

@@ -1,6 +1,6 @@
 # Wuthering Waves SDK
 
-> **SDK Current Version:** `v2.4.0`
+> **SDK Current Version:** `v2.4.1`
 
 ---
 

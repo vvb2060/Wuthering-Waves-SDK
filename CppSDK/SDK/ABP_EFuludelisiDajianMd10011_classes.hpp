@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "KuroAnim_structs.hpp"
 #include "ABP_MonsterCommon_classes.hpp"
+#include "KuroAnim_structs.hpp"
 
 
 namespace SDK

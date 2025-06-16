@@ -14,6 +14,26 @@
 namespace SDK::Params
 {
 
+// Function Ani_MissionPnlProcess_Finish.SequenceDirector_C.ExecuteUbergraph_SequenceDirector
+// 0x0038 (0x0038 - 0x0000)
+struct SequenceDirector_C_ExecuteUbergraph_SequenceDirector final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AUIContainerActor*                      K2Node_CustomEvent_PnlSubTitle;                    // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AUIContainerActor*                      K2Node_CustomEvent_PnlParent;                      // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 K2Node_CustomEvent_sequenceName;                   // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 K2Node_CustomEvent_eventName;                      // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+};
+static_assert(alignof(SequenceDirector_C_ExecuteUbergraph_SequenceDirector) == 0x000008, "Wrong alignment on SequenceDirector_C_ExecuteUbergraph_SequenceDirector");
+static_assert(sizeof(SequenceDirector_C_ExecuteUbergraph_SequenceDirector) == 0x000038, "Wrong size on SequenceDirector_C_ExecuteUbergraph_SequenceDirector");
+static_assert(offsetof(SequenceDirector_C_ExecuteUbergraph_SequenceDirector, EntryPoint) == 0x000000, "Member 'SequenceDirector_C_ExecuteUbergraph_SequenceDirector::EntryPoint' has a wrong offset!");
+static_assert(offsetof(SequenceDirector_C_ExecuteUbergraph_SequenceDirector, K2Node_CustomEvent_PnlSubTitle) == 0x000008, "Member 'SequenceDirector_C_ExecuteUbergraph_SequenceDirector::K2Node_CustomEvent_PnlSubTitle' has a wrong offset!");
+static_assert(offsetof(SequenceDirector_C_ExecuteUbergraph_SequenceDirector, K2Node_CustomEvent_PnlParent) == 0x000010, "Member 'SequenceDirector_C_ExecuteUbergraph_SequenceDirector::K2Node_CustomEvent_PnlParent' has a wrong offset!");
+static_assert(offsetof(SequenceDirector_C_ExecuteUbergraph_SequenceDirector, K2Node_CustomEvent_sequenceName) == 0x000018, "Member 'SequenceDirector_C_ExecuteUbergraph_SequenceDirector::K2Node_CustomEvent_sequenceName' has a wrong offset!");
+static_assert(offsetof(SequenceDirector_C_ExecuteUbergraph_SequenceDirector, K2Node_CustomEvent_eventName) == 0x000028, "Member 'SequenceDirector_C_ExecuteUbergraph_SequenceDirector::K2Node_CustomEvent_eventName' has a wrong offset!");
+
 // Function Ani_MissionPnlProcess_Finish.SequenceDirector_C.SequenceEvent__ENTRYPOINTSequenceDirector_2
 // 0x0008 (0x0008 - 0x0000)
 struct SequenceDirector_C_SequenceEvent__ENTRYPOINTSequenceDirector_2 final
@@ -72,26 +92,6 @@ public:
 static_assert(alignof(SequenceDirector_C_PnlSubTitle_Event_0) == 0x000008, "Wrong alignment on SequenceDirector_C_PnlSubTitle_Event_0");
 static_assert(sizeof(SequenceDirector_C_PnlSubTitle_Event_0) == 0x000008, "Wrong size on SequenceDirector_C_PnlSubTitle_Event_0");
 static_assert(offsetof(SequenceDirector_C_PnlSubTitle_Event_0, PnlSubTitle) == 0x000000, "Member 'SequenceDirector_C_PnlSubTitle_Event_0::PnlSubTitle' has a wrong offset!");
-
-// Function Ani_MissionPnlProcess_Finish.SequenceDirector_C.ExecuteUbergraph_SequenceDirector
-// 0x0038 (0x0038 - 0x0000)
-struct SequenceDirector_C_ExecuteUbergraph_SequenceDirector final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AUIContainerActor*                      K2Node_CustomEvent_PnlSubTitle;                    // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AUIContainerActor*                      K2Node_CustomEvent_PnlParent;                      // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 K2Node_CustomEvent_sequenceName;                   // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 K2Node_CustomEvent_eventName;                      // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(SequenceDirector_C_ExecuteUbergraph_SequenceDirector) == 0x000008, "Wrong alignment on SequenceDirector_C_ExecuteUbergraph_SequenceDirector");
-static_assert(sizeof(SequenceDirector_C_ExecuteUbergraph_SequenceDirector) == 0x000038, "Wrong size on SequenceDirector_C_ExecuteUbergraph_SequenceDirector");
-static_assert(offsetof(SequenceDirector_C_ExecuteUbergraph_SequenceDirector, EntryPoint) == 0x000000, "Member 'SequenceDirector_C_ExecuteUbergraph_SequenceDirector::EntryPoint' has a wrong offset!");
-static_assert(offsetof(SequenceDirector_C_ExecuteUbergraph_SequenceDirector, K2Node_CustomEvent_PnlSubTitle) == 0x000008, "Member 'SequenceDirector_C_ExecuteUbergraph_SequenceDirector::K2Node_CustomEvent_PnlSubTitle' has a wrong offset!");
-static_assert(offsetof(SequenceDirector_C_ExecuteUbergraph_SequenceDirector, K2Node_CustomEvent_PnlParent) == 0x000010, "Member 'SequenceDirector_C_ExecuteUbergraph_SequenceDirector::K2Node_CustomEvent_PnlParent' has a wrong offset!");
-static_assert(offsetof(SequenceDirector_C_ExecuteUbergraph_SequenceDirector, K2Node_CustomEvent_sequenceName) == 0x000018, "Member 'SequenceDirector_C_ExecuteUbergraph_SequenceDirector::K2Node_CustomEvent_sequenceName' has a wrong offset!");
-static_assert(offsetof(SequenceDirector_C_ExecuteUbergraph_SequenceDirector, K2Node_CustomEvent_eventName) == 0x000028, "Member 'SequenceDirector_C_ExecuteUbergraph_SequenceDirector::K2Node_CustomEvent_eventName' has a wrong offset!");
 
 }
 

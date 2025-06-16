@@ -11,12 +11,56 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "KuroRenderingRuntimeBPPlugin_structs.hpp"
 #include "SD_KuroTraceCloudData_structs.hpp"
+#include "KuroRenderingRuntimeBPPlugin_structs.hpp"
 
 
 namespace SDK::Params
 {
+
+// Function BP_KuroVolumeCloud_Global.BP_KuroVolumeCloud_Global_C.UserConstructionScript
+// 0x0050 (0x0050 - 0x0000)
+struct BP_KuroVolumeCloud_Global_C_UserConstructionScript final
+{
+public:
+	EBP_EWorldType                                Editor_Type;                                       // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0xF];                                        // 0x0001(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             ___struct_Variable;                                // 0x0010(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
+	class UChildActorComponent*                   CallFunc_AddComponent_ReturnValue;                 // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_KuroVolumeCloud_Global_C_UserConstructionScript) == 0x000010, "Wrong alignment on BP_KuroVolumeCloud_Global_C_UserConstructionScript");
+static_assert(sizeof(BP_KuroVolumeCloud_Global_C_UserConstructionScript) == 0x000050, "Wrong size on BP_KuroVolumeCloud_Global_C_UserConstructionScript");
+static_assert(offsetof(BP_KuroVolumeCloud_Global_C_UserConstructionScript, Editor_Type) == 0x000000, "Member 'BP_KuroVolumeCloud_Global_C_UserConstructionScript::Editor_Type' has a wrong offset!");
+static_assert(offsetof(BP_KuroVolumeCloud_Global_C_UserConstructionScript, ___struct_Variable) == 0x000010, "Member 'BP_KuroVolumeCloud_Global_C_UserConstructionScript::___struct_Variable' has a wrong offset!");
+static_assert(offsetof(BP_KuroVolumeCloud_Global_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue) == 0x000040, "Member 'BP_KuroVolumeCloud_Global_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
+
+// Function BP_KuroVolumeCloud_Global.BP_KuroVolumeCloud_Global_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_KuroVolumeCloud_Global_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_KuroVolumeCloud_Global_C_ReceiveTick) == 0x000004, "Wrong alignment on BP_KuroVolumeCloud_Global_C_ReceiveTick");
+static_assert(sizeof(BP_KuroVolumeCloud_Global_C_ReceiveTick) == 0x000004, "Wrong size on BP_KuroVolumeCloud_Global_C_ReceiveTick");
+static_assert(offsetof(BP_KuroVolumeCloud_Global_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'BP_KuroVolumeCloud_Global_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
+
+// Function BP_KuroVolumeCloud_Global.BP_KuroVolumeCloud_Global_C.CleanMID
+// 0x0020 (0x0020 - 0x0000)
+struct BP_KuroVolumeCloud_Global_C_CleanMID final
+{
+public:
+	class UMaterialInterface*                     CallFunc_GetMaterial_ReturnValue;                  // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInterface*                     CallFunc_GetMaterial_ReturnValue_1;                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               K2Node_DynamicCast_As______;                       // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(BP_KuroVolumeCloud_Global_C_CleanMID) == 0x000008, "Wrong alignment on BP_KuroVolumeCloud_Global_C_CleanMID");
+static_assert(sizeof(BP_KuroVolumeCloud_Global_C_CleanMID) == 0x000020, "Wrong size on BP_KuroVolumeCloud_Global_C_CleanMID");
+static_assert(offsetof(BP_KuroVolumeCloud_Global_C_CleanMID, CallFunc_GetMaterial_ReturnValue) == 0x000000, "Member 'BP_KuroVolumeCloud_Global_C_CleanMID::CallFunc_GetMaterial_ReturnValue' has a wrong offset!");
+static_assert(offsetof(BP_KuroVolumeCloud_Global_C_CleanMID, CallFunc_GetMaterial_ReturnValue_1) == 0x000008, "Member 'BP_KuroVolumeCloud_Global_C_CleanMID::CallFunc_GetMaterial_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(BP_KuroVolumeCloud_Global_C_CleanMID, K2Node_DynamicCast_As______) == 0x000010, "Member 'BP_KuroVolumeCloud_Global_C_CleanMID::K2Node_DynamicCast_As______' has a wrong offset!");
+static_assert(offsetof(BP_KuroVolumeCloud_Global_C_CleanMID, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'BP_KuroVolumeCloud_Global_C_CleanMID::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function BP_KuroVolumeCloud_Global.BP_KuroVolumeCloud_Global_C.CheckNeed Update
 // 0x0048 (0x0048 - 0x0000)
@@ -258,22 +302,18 @@ static_assert(offsetof(BP_KuroVolumeCloud_Global_C_UpdateCloudLighting, CallFunc
 static_assert(offsetof(BP_KuroVolumeCloud_Global_C_UpdateCloudLighting, CallFunc_Greater_FloatFloat_ReturnValue) == 0x0000A4, "Member 'BP_KuroVolumeCloud_Global_C_UpdateCloudLighting::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_KuroVolumeCloud_Global_C_UpdateCloudLighting, ___float_Variable_2) == 0x0000A8, "Member 'BP_KuroVolumeCloud_Global_C_UpdateCloudLighting::___float_Variable_2' has a wrong offset!");
 
-// Function BP_KuroVolumeCloud_Global.BP_KuroVolumeCloud_Global_C.CleanMID
-// 0x0020 (0x0020 - 0x0000)
-struct BP_KuroVolumeCloud_Global_C_CleanMID final
+// Function BP_KuroVolumeCloud_Global.BP_KuroVolumeCloud_Global_C.ExecuteUbergraph_BP_KuroVolumeCloud_Global
+// 0x0008 (0x0008 - 0x0000)
+struct BP_KuroVolumeCloud_Global_C_ExecuteUbergraph_BP_KuroVolumeCloud_Global final
 {
 public:
-	class UMaterialInterface*                     CallFunc_GetMaterial_ReturnValue;                  // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInterface*                     CallFunc_GetMaterial_ReturnValue_1;                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               K2Node_DynamicCast_As______;                       // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_KuroVolumeCloud_Global_C_CleanMID) == 0x000008, "Wrong alignment on BP_KuroVolumeCloud_Global_C_CleanMID");
-static_assert(sizeof(BP_KuroVolumeCloud_Global_C_CleanMID) == 0x000020, "Wrong size on BP_KuroVolumeCloud_Global_C_CleanMID");
-static_assert(offsetof(BP_KuroVolumeCloud_Global_C_CleanMID, CallFunc_GetMaterial_ReturnValue) == 0x000000, "Member 'BP_KuroVolumeCloud_Global_C_CleanMID::CallFunc_GetMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_KuroVolumeCloud_Global_C_CleanMID, CallFunc_GetMaterial_ReturnValue_1) == 0x000008, "Member 'BP_KuroVolumeCloud_Global_C_CleanMID::CallFunc_GetMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_KuroVolumeCloud_Global_C_CleanMID, K2Node_DynamicCast_As______) == 0x000010, "Member 'BP_KuroVolumeCloud_Global_C_CleanMID::K2Node_DynamicCast_As______' has a wrong offset!");
-static_assert(offsetof(BP_KuroVolumeCloud_Global_C_CleanMID, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'BP_KuroVolumeCloud_Global_C_CleanMID::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(alignof(BP_KuroVolumeCloud_Global_C_ExecuteUbergraph_BP_KuroVolumeCloud_Global) == 0x000004, "Wrong alignment on BP_KuroVolumeCloud_Global_C_ExecuteUbergraph_BP_KuroVolumeCloud_Global");
+static_assert(sizeof(BP_KuroVolumeCloud_Global_C_ExecuteUbergraph_BP_KuroVolumeCloud_Global) == 0x000008, "Wrong size on BP_KuroVolumeCloud_Global_C_ExecuteUbergraph_BP_KuroVolumeCloud_Global");
+static_assert(offsetof(BP_KuroVolumeCloud_Global_C_ExecuteUbergraph_BP_KuroVolumeCloud_Global, EntryPoint) == 0x000000, "Member 'BP_KuroVolumeCloud_Global_C_ExecuteUbergraph_BP_KuroVolumeCloud_Global::EntryPoint' has a wrong offset!");
+static_assert(offsetof(BP_KuroVolumeCloud_Global_C_ExecuteUbergraph_BP_KuroVolumeCloud_Global, K2Node_Event_DeltaSeconds) == 0x000004, "Member 'BP_KuroVolumeCloud_Global_C_ExecuteUbergraph_BP_KuroVolumeCloud_Global::K2Node_Event_DeltaSeconds' has a wrong offset!");
 
 // Function BP_KuroVolumeCloud_Global.BP_KuroVolumeCloud_Global_C.UpdateCloudTransform
 // 0x0180 (0x0180 - 0x0000)
@@ -320,46 +360,6 @@ static_assert(offsetof(BP_KuroVolumeCloud_Global_C_UpdateCloudTransform, CallFun
 static_assert(offsetof(BP_KuroVolumeCloud_Global_C_UpdateCloudTransform, CallFunc_Conv_VectorToLinearColor_ReturnValue) == 0x000144, "Member 'BP_KuroVolumeCloud_Global_C_UpdateCloudTransform::CallFunc_Conv_VectorToLinearColor_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BP_KuroVolumeCloud_Global_C_UpdateCloudTransform, CallFunc_Conv_VectorToLinearColor_ReturnValue_1) == 0x000154, "Member 'BP_KuroVolumeCloud_Global_C_UpdateCloudTransform::CallFunc_Conv_VectorToLinearColor_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(BP_KuroVolumeCloud_Global_C_UpdateCloudTransform, CallFunc_Conv_VectorToLinearColor_ReturnValue_2) == 0x000164, "Member 'BP_KuroVolumeCloud_Global_C_UpdateCloudTransform::CallFunc_Conv_VectorToLinearColor_ReturnValue_2' has a wrong offset!");
-
-// Function BP_KuroVolumeCloud_Global.BP_KuroVolumeCloud_Global_C.UserConstructionScript
-// 0x0050 (0x0050 - 0x0000)
-struct BP_KuroVolumeCloud_Global_C_UserConstructionScript final
-{
-public:
-	EBP_EWorldType                                Editor_Type;                                       // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0xF];                                        // 0x0001(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             ___struct_Variable;                                // 0x0010(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
-	class UChildActorComponent*                   CallFunc_AddComponent_ReturnValue;                 // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_KuroVolumeCloud_Global_C_UserConstructionScript) == 0x000010, "Wrong alignment on BP_KuroVolumeCloud_Global_C_UserConstructionScript");
-static_assert(sizeof(BP_KuroVolumeCloud_Global_C_UserConstructionScript) == 0x000050, "Wrong size on BP_KuroVolumeCloud_Global_C_UserConstructionScript");
-static_assert(offsetof(BP_KuroVolumeCloud_Global_C_UserConstructionScript, Editor_Type) == 0x000000, "Member 'BP_KuroVolumeCloud_Global_C_UserConstructionScript::Editor_Type' has a wrong offset!");
-static_assert(offsetof(BP_KuroVolumeCloud_Global_C_UserConstructionScript, ___struct_Variable) == 0x000010, "Member 'BP_KuroVolumeCloud_Global_C_UserConstructionScript::___struct_Variable' has a wrong offset!");
-static_assert(offsetof(BP_KuroVolumeCloud_Global_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue) == 0x000040, "Member 'BP_KuroVolumeCloud_Global_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
-
-// Function BP_KuroVolumeCloud_Global.BP_KuroVolumeCloud_Global_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_KuroVolumeCloud_Global_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_KuroVolumeCloud_Global_C_ReceiveTick) == 0x000004, "Wrong alignment on BP_KuroVolumeCloud_Global_C_ReceiveTick");
-static_assert(sizeof(BP_KuroVolumeCloud_Global_C_ReceiveTick) == 0x000004, "Wrong size on BP_KuroVolumeCloud_Global_C_ReceiveTick");
-static_assert(offsetof(BP_KuroVolumeCloud_Global_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'BP_KuroVolumeCloud_Global_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
-
-// Function BP_KuroVolumeCloud_Global.BP_KuroVolumeCloud_Global_C.ExecuteUbergraph_BP_KuroVolumeCloud_Global
-// 0x0008 (0x0008 - 0x0000)
-struct BP_KuroVolumeCloud_Global_C_ExecuteUbergraph_BP_KuroVolumeCloud_Global final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_DeltaSeconds;                         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_KuroVolumeCloud_Global_C_ExecuteUbergraph_BP_KuroVolumeCloud_Global) == 0x000004, "Wrong alignment on BP_KuroVolumeCloud_Global_C_ExecuteUbergraph_BP_KuroVolumeCloud_Global");
-static_assert(sizeof(BP_KuroVolumeCloud_Global_C_ExecuteUbergraph_BP_KuroVolumeCloud_Global) == 0x000008, "Wrong size on BP_KuroVolumeCloud_Global_C_ExecuteUbergraph_BP_KuroVolumeCloud_Global");
-static_assert(offsetof(BP_KuroVolumeCloud_Global_C_ExecuteUbergraph_BP_KuroVolumeCloud_Global, EntryPoint) == 0x000000, "Member 'BP_KuroVolumeCloud_Global_C_ExecuteUbergraph_BP_KuroVolumeCloud_Global::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_KuroVolumeCloud_Global_C_ExecuteUbergraph_BP_KuroVolumeCloud_Global, K2Node_Event_DeltaSeconds) == 0x000004, "Member 'BP_KuroVolumeCloud_Global_C_ExecuteUbergraph_BP_KuroVolumeCloud_Global::K2Node_Event_DeltaSeconds' has a wrong offset!");
 
 }
 

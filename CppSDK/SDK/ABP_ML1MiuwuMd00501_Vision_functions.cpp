@@ -65,27 +65,6 @@ void UABP_ML1MiuwuMd00501_Vision_C::EvaluateGraphExposedInputs_ExecuteUbergraph_
 }
 
 
-// Function ABP_ML1MiuwuMd00501_Vision.ABP_ML1MiuwuMd00501_Vision_C.AnimGraph
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FPoseLink*                       Param_AnimGraph_0                                      (Parm, OutParm, NoDestructor)
-
-void UABP_ML1MiuwuMd00501_Vision_C::AnimGraph(struct FPoseLink* Param_AnimGraph_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_ML1MiuwuMd00501_Vision_C", "AnimGraph");
-
-	Params::ABP_ML1MiuwuMd00501_Vision_C_AnimGraph Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Param_AnimGraph_0 != nullptr)
-		*Param_AnimGraph_0 = std::move(Parms.Param_AnimGraph_0);
-}
-
-
 // Function ABP_ML1MiuwuMd00501_Vision.ABP_ML1MiuwuMd00501_Vision_C.IKAndFk_Clone
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -107,6 +86,27 @@ void UABP_ML1MiuwuMd00501_Vision_C::IKAndFk_Clone(const struct FPoseLink& InPose
 
 	if (IKAndFk_Clone_0 != nullptr)
 		*IKAndFk_Clone_0 = std::move(Parms.IKAndFk_Clone_0);
+}
+
+
+// Function ABP_ML1MiuwuMd00501_Vision.ABP_ML1MiuwuMd00501_Vision_C.AnimGraph
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FPoseLink*                       Param_AnimGraph_0                                      (Parm, OutParm, NoDestructor)
+
+void UABP_ML1MiuwuMd00501_Vision_C::AnimGraph(struct FPoseLink* Param_AnimGraph_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ABP_ML1MiuwuMd00501_Vision_C", "AnimGraph");
+
+	Params::ABP_ML1MiuwuMd00501_Vision_C_AnimGraph Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Param_AnimGraph_0 != nullptr)
+		*Param_AnimGraph_0 = std::move(Parms.Param_AnimGraph_0);
 }
 
 }

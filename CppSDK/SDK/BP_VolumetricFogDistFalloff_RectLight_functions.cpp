@@ -17,43 +17,35 @@
 namespace SDK
 {
 
-// Function BP_VolumetricFogDistFalloff_RectLight.BP_VolumetricFogDistFalloff_RectLight_C.RectLightFunction
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_VolumetricFogDistFalloff_RectLight.BP_VolumetricFogDistFalloff_RectLight_C.ExecuteUbergraph_BP_VolumetricFogDistFalloff_RectLight
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_VolumetricFogDistFalloff_RectLight_C::RectLightFunction()
+void ABP_VolumetricFogDistFalloff_RectLight_C::ExecuteUbergraph_BP_VolumetricFogDistFalloff_RectLight(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VolumetricFogDistFalloff_RectLight_C", "RectLightFunction");
+		Func = Class->GetFunction("BP_VolumetricFogDistFalloff_RectLight_C", "ExecuteUbergraph_BP_VolumetricFogDistFalloff_RectLight");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_VolumetricFogDistFalloff_RectLight_C_ExecuteUbergraph_BP_VolumetricFogDistFalloff_RectLight Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_VolumetricFogDistFalloff_RectLight.BP_VolumetricFogDistFalloff_RectLight_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_VolumetricFogDistFalloff_RectLight.BP_VolumetricFogDistFalloff_RectLight_C.TimerEvent
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_VolumetricFogDistFalloff_RectLight_C::UserConstructionScript()
+void ABP_VolumetricFogDistFalloff_RectLight_C::TimerEvent()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VolumetricFogDistFalloff_RectLight_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_VolumetricFogDistFalloff_RectLight.BP_VolumetricFogDistFalloff_RectLight_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_VolumetricFogDistFalloff_RectLight_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VolumetricFogDistFalloff_RectLight_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("BP_VolumetricFogDistFalloff_RectLight_C", "TimerEvent");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -79,37 +71,45 @@ void ABP_VolumetricFogDistFalloff_RectLight_C::ReceiveTick(float DeltaSeconds)
 }
 
 
-// Function BP_VolumetricFogDistFalloff_RectLight.BP_VolumetricFogDistFalloff_RectLight_C.TimerEvent
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_VolumetricFogDistFalloff_RectLight.BP_VolumetricFogDistFalloff_RectLight_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_VolumetricFogDistFalloff_RectLight_C::TimerEvent()
+void ABP_VolumetricFogDistFalloff_RectLight_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VolumetricFogDistFalloff_RectLight_C", "TimerEvent");
+		Func = Class->GetFunction("BP_VolumetricFogDistFalloff_RectLight_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_VolumetricFogDistFalloff_RectLight.BP_VolumetricFogDistFalloff_RectLight_C.ExecuteUbergraph_BP_VolumetricFogDistFalloff_RectLight
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_VolumetricFogDistFalloff_RectLight.BP_VolumetricFogDistFalloff_RectLight_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_VolumetricFogDistFalloff_RectLight_C::ExecuteUbergraph_BP_VolumetricFogDistFalloff_RectLight(int32 EntryPoint)
+void ABP_VolumetricFogDistFalloff_RectLight_C::UserConstructionScript()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VolumetricFogDistFalloff_RectLight_C", "ExecuteUbergraph_BP_VolumetricFogDistFalloff_RectLight");
+		Func = Class->GetFunction("BP_VolumetricFogDistFalloff_RectLight_C", "UserConstructionScript");
 
-	Params::BP_VolumetricFogDistFalloff_RectLight_C_ExecuteUbergraph_BP_VolumetricFogDistFalloff_RectLight Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function BP_VolumetricFogDistFalloff_RectLight.BP_VolumetricFogDistFalloff_RectLight_C.RectLightFunction
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_VolumetricFogDistFalloff_RectLight_C::RectLightFunction()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_VolumetricFogDistFalloff_RectLight_C", "RectLightFunction");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

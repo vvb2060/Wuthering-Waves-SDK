@@ -21,8 +21,8 @@ namespace SDK
 class IABPC_Seq_MascotInterface_C final
 {
 public:
-	void GetAddSpineValue(struct FRotator* AddSpine);
 	void GetAddSpineHeadValue(struct FRotator* AddSpineHead);
+	void GetAddSpineValue(struct FRotator* AddSpine);
 
 public:
 	static class UClass* StaticClass()

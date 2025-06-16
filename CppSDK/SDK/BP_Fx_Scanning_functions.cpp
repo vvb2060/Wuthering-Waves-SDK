@@ -17,35 +17,169 @@
 namespace SDK
 {
 
-// Function BP_Fx_Scanning.BP_Fx_Scanning_C.ExecuteUbergraph_BP_Fx_Scanning
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_Fx_Scanning.BP_Fx_Scanning_C.StartScanEffect
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_Fx_Scanning_C::ExecuteUbergraph_BP_Fx_Scanning(int32 EntryPoint)
+void ABP_Fx_Scanning_C::StartScanEffect()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fx_Scanning_C", "ExecuteUbergraph_BP_Fx_Scanning");
+		Func = Class->GetFunction("BP_Fx_Scanning_C", "StartScanEffect");
 
-	Params::BP_Fx_Scanning_C_ExecuteUbergraph_BP_Fx_Scanning Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Fx_Scanning.BP_Fx_Scanning_C.ReceiveBeginPlay
-// (Event, Public, Protected, BlueprintCallable, BlueprintEvent)
+// Function BP_Fx_Scanning.BP_Fx_Scanning_C.SetRevert
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Fx_Scanning_C::ReceiveBeginPlay()
+void ABP_Fx_Scanning_C::SetRevert()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fx_Scanning_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("BP_Fx_Scanning_C", "SetRevert");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Fx_Scanning.BP_Fx_Scanning_C.扫描范围__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_Fx_Scanning_C::扫描范围__FinishedFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Fx_Scanning_C", "扫描范围__FinishedFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Fx_Scanning.BP_Fx_Scanning_C.扫描范围__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_Fx_Scanning_C::扫描范围__UpdateFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Fx_Scanning_C", "扫描范围__UpdateFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Fx_Scanning.BP_Fx_Scanning_C.扫描带强度__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_Fx_Scanning_C::扫描带强度__FinishedFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Fx_Scanning_C", "扫描带强度__FinishedFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Fx_Scanning.BP_Fx_Scanning_C.扫描带强度__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_Fx_Scanning_C::扫描带强度__UpdateFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Fx_Scanning_C", "扫描带强度__UpdateFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Fx_Scanning.BP_Fx_Scanning_C.轮廓强度__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_Fx_Scanning_C::轮廓强度__FinishedFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Fx_Scanning_C", "轮廓强度__FinishedFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Fx_Scanning.BP_Fx_Scanning_C.轮廓强度__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_Fx_Scanning_C::轮廓强度__UpdateFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Fx_Scanning_C", "轮廓强度__UpdateFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Fx_Scanning.BP_Fx_Scanning_C.衰退范围__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_Fx_Scanning_C::衰退范围__FinishedFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Fx_Scanning_C", "衰退范围__FinishedFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Fx_Scanning.BP_Fx_Scanning_C.衰退范围__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_Fx_Scanning_C::衰退范围__UpdateFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Fx_Scanning_C", "衰退范围__UpdateFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Fx_Scanning.BP_Fx_Scanning_C.Timeline_0__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_Fx_Scanning_C::Timeline_0__FinishedFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Fx_Scanning_C", "Timeline_0__FinishedFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Fx_Scanning.BP_Fx_Scanning_C.Timeline_0__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_Fx_Scanning_C::Timeline_0__UpdateFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Fx_Scanning_C", "Timeline_0__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,171 +205,37 @@ void ABP_Fx_Scanning_C::ReceiveTick(float DeltaSeconds)
 }
 
 
-// Function BP_Fx_Scanning.BP_Fx_Scanning_C.Timeline_0__UpdateFunc
-// (BlueprintEvent)
+// Function BP_Fx_Scanning.BP_Fx_Scanning_C.ReceiveBeginPlay
+// (Event, Public, Protected, BlueprintCallable, BlueprintEvent)
 
-void ABP_Fx_Scanning_C::Timeline_0__UpdateFunc()
+void ABP_Fx_Scanning_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fx_Scanning_C", "Timeline_0__UpdateFunc");
+		Func = Class->GetFunction("BP_Fx_Scanning_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Fx_Scanning.BP_Fx_Scanning_C.Timeline_0__FinishedFunc
-// (BlueprintEvent)
+// Function BP_Fx_Scanning.BP_Fx_Scanning_C.ExecuteUbergraph_BP_Fx_Scanning
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Fx_Scanning_C::Timeline_0__FinishedFunc()
+void ABP_Fx_Scanning_C::ExecuteUbergraph_BP_Fx_Scanning(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fx_Scanning_C", "Timeline_0__FinishedFunc");
+		Func = Class->GetFunction("BP_Fx_Scanning_C", "ExecuteUbergraph_BP_Fx_Scanning");
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Params::BP_Fx_Scanning_C_ExecuteUbergraph_BP_Fx_Scanning Parms{};
 
+	Parms.EntryPoint = EntryPoint;
 
-// Function BP_Fx_Scanning.BP_Fx_Scanning_C.衰退范围__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_Fx_Scanning_C::衰退范围__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fx_Scanning_C", "衰退范围__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Fx_Scanning.BP_Fx_Scanning_C.衰退范围__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_Fx_Scanning_C::衰退范围__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fx_Scanning_C", "衰退范围__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Fx_Scanning.BP_Fx_Scanning_C.轮廓强度__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_Fx_Scanning_C::轮廓强度__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fx_Scanning_C", "轮廓强度__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Fx_Scanning.BP_Fx_Scanning_C.轮廓强度__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_Fx_Scanning_C::轮廓强度__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fx_Scanning_C", "轮廓强度__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Fx_Scanning.BP_Fx_Scanning_C.扫描带强度__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_Fx_Scanning_C::扫描带强度__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fx_Scanning_C", "扫描带强度__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Fx_Scanning.BP_Fx_Scanning_C.扫描带强度__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_Fx_Scanning_C::扫描带强度__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fx_Scanning_C", "扫描带强度__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Fx_Scanning.BP_Fx_Scanning_C.扫描范围__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_Fx_Scanning_C::扫描范围__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fx_Scanning_C", "扫描范围__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Fx_Scanning.BP_Fx_Scanning_C.扫描范围__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_Fx_Scanning_C::扫描范围__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fx_Scanning_C", "扫描范围__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Fx_Scanning.BP_Fx_Scanning_C.SetRevert
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_Fx_Scanning_C::SetRevert()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fx_Scanning_C", "SetRevert");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Fx_Scanning.BP_Fx_Scanning_C.StartScanEffect
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_Fx_Scanning_C::StartScanEffect()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Fx_Scanning_C", "StartScanEffect");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

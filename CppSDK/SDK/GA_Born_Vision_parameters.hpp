@@ -17,40 +17,6 @@
 namespace SDK::Params
 {
 
-// Function GA_Born_Vision.GA_Born_Vision_C.获取幻象数据
-// 0x0160 (0x0160 - 0x0000)
-struct GA_Born_Vision_C_获取幻象数据 final
-{
-public:
-	int32                                         幻象ID;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSVisionData                           幻象数据;                                          // 0x0008(0x0098)(Parm, OutParm, ContainsInstancedReference, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x00A0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x00B0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSVisionData                           CallFunc_GetDataTableRowFromName_OutRow;           // 0x00C0(0x0098)(ContainsInstancedReference, HasGetValueTypeHash)
-	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(GA_Born_Vision_C_获取幻象数据) == 0x000008, "Wrong alignment on GA_Born_Vision_C_获取幻象数据");
-static_assert(sizeof(GA_Born_Vision_C_获取幻象数据) == 0x000160, "Wrong size on GA_Born_Vision_C_获取幻象数据");
-static_assert(offsetof(GA_Born_Vision_C_获取幻象数据, 幻象ID) == 0x000000, "Member 'GA_Born_Vision_C_获取幻象数据::幻象ID' has a wrong offset!");
-static_assert(offsetof(GA_Born_Vision_C_获取幻象数据, 幻象数据) == 0x000008, "Member 'GA_Born_Vision_C_获取幻象数据::幻象数据' has a wrong offset!");
-static_assert(offsetof(GA_Born_Vision_C_获取幻象数据, CallFunc_Conv_IntToString_ReturnValue) == 0x0000A0, "Member 'GA_Born_Vision_C_获取幻象数据::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Born_Vision_C_获取幻象数据, CallFunc_Conv_StringToName_ReturnValue) == 0x0000B0, "Member 'GA_Born_Vision_C_获取幻象数据::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Born_Vision_C_获取幻象数据, CallFunc_GetDataTableRowFromName_OutRow) == 0x0000C0, "Member 'GA_Born_Vision_C_获取幻象数据::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(GA_Born_Vision_C_获取幻象数据, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000158, "Member 'GA_Born_Vision_C_获取幻象数据::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-
-// Function GA_Born_Vision.GA_Born_Vision_C.EventReceived_18B59F5945020DB23C42FD889881D7F7
-// 0x00B8 (0x00B8 - 0x0000)
-struct GA_Born_Vision_C_EventReceived_18B59F5945020DB23C42FD889881D7F7 final
-{
-public:
-	struct FGameplayEventData                     Payload;                                           // 0x0000(0x00B8)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-static_assert(alignof(GA_Born_Vision_C_EventReceived_18B59F5945020DB23C42FD889881D7F7) == 0x000008, "Wrong alignment on GA_Born_Vision_C_EventReceived_18B59F5945020DB23C42FD889881D7F7");
-static_assert(sizeof(GA_Born_Vision_C_EventReceived_18B59F5945020DB23C42FD889881D7F7) == 0x0000B8, "Wrong size on GA_Born_Vision_C_EventReceived_18B59F5945020DB23C42FD889881D7F7");
-static_assert(offsetof(GA_Born_Vision_C_EventReceived_18B59F5945020DB23C42FD889881D7F7, Payload) == 0x000000, "Member 'GA_Born_Vision_C_EventReceived_18B59F5945020DB23C42FD889881D7F7::Payload' has a wrong offset!");
-
 // Function GA_Born_Vision.GA_Born_Vision_C.ExecuteUbergraph_GA_Born_Vision
 // 0x0488 (0x0488 - 0x0000)
 struct GA_Born_Vision_C_ExecuteUbergraph_GA_Born_Vision final
@@ -211,6 +177,40 @@ public:
 static_assert(alignof(GA_Born_Vision_C_K2_OnEndAbility) == 0x000001, "Wrong alignment on GA_Born_Vision_C_K2_OnEndAbility");
 static_assert(sizeof(GA_Born_Vision_C_K2_OnEndAbility) == 0x000001, "Wrong size on GA_Born_Vision_C_K2_OnEndAbility");
 static_assert(offsetof(GA_Born_Vision_C_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'GA_Born_Vision_C_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
+
+// Function GA_Born_Vision.GA_Born_Vision_C.EventReceived_18B59F5945020DB23C42FD889881D7F7
+// 0x00B8 (0x00B8 - 0x0000)
+struct GA_Born_Vision_C_EventReceived_18B59F5945020DB23C42FD889881D7F7 final
+{
+public:
+	struct FGameplayEventData                     Payload;                                           // 0x0000(0x00B8)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+static_assert(alignof(GA_Born_Vision_C_EventReceived_18B59F5945020DB23C42FD889881D7F7) == 0x000008, "Wrong alignment on GA_Born_Vision_C_EventReceived_18B59F5945020DB23C42FD889881D7F7");
+static_assert(sizeof(GA_Born_Vision_C_EventReceived_18B59F5945020DB23C42FD889881D7F7) == 0x0000B8, "Wrong size on GA_Born_Vision_C_EventReceived_18B59F5945020DB23C42FD889881D7F7");
+static_assert(offsetof(GA_Born_Vision_C_EventReceived_18B59F5945020DB23C42FD889881D7F7, Payload) == 0x000000, "Member 'GA_Born_Vision_C_EventReceived_18B59F5945020DB23C42FD889881D7F7::Payload' has a wrong offset!");
+
+// Function GA_Born_Vision.GA_Born_Vision_C.获取幻象数据
+// 0x0160 (0x0160 - 0x0000)
+struct GA_Born_Vision_C_获取幻象数据 final
+{
+public:
+	int32                                         幻象ID;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSVisionData                           幻象数据;                                          // 0x0008(0x0098)(Parm, OutParm, ContainsInstancedReference, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x00A0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x00B0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSVisionData                           CallFunc_GetDataTableRowFromName_OutRow;           // 0x00C0(0x0098)(ContainsInstancedReference, HasGetValueTypeHash)
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(GA_Born_Vision_C_获取幻象数据) == 0x000008, "Wrong alignment on GA_Born_Vision_C_获取幻象数据");
+static_assert(sizeof(GA_Born_Vision_C_获取幻象数据) == 0x000160, "Wrong size on GA_Born_Vision_C_获取幻象数据");
+static_assert(offsetof(GA_Born_Vision_C_获取幻象数据, 幻象ID) == 0x000000, "Member 'GA_Born_Vision_C_获取幻象数据::幻象ID' has a wrong offset!");
+static_assert(offsetof(GA_Born_Vision_C_获取幻象数据, 幻象数据) == 0x000008, "Member 'GA_Born_Vision_C_获取幻象数据::幻象数据' has a wrong offset!");
+static_assert(offsetof(GA_Born_Vision_C_获取幻象数据, CallFunc_Conv_IntToString_ReturnValue) == 0x0000A0, "Member 'GA_Born_Vision_C_获取幻象数据::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Born_Vision_C_获取幻象数据, CallFunc_Conv_StringToName_ReturnValue) == 0x0000B0, "Member 'GA_Born_Vision_C_获取幻象数据::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(GA_Born_Vision_C_获取幻象数据, CallFunc_GetDataTableRowFromName_OutRow) == 0x0000C0, "Member 'GA_Born_Vision_C_获取幻象数据::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
+static_assert(offsetof(GA_Born_Vision_C_获取幻象数据, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000158, "Member 'GA_Born_Vision_C_获取幻象数据::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
 
 }
 

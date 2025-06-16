@@ -21,8 +21,8 @@ namespace SDK
 class UBP_BulletLogicBase_C final : public UObject
 {
 public:
-	void 子弹范围内吸附(class UObject* 子弹, float 吸附速度);
 	void 执行(class ATsBaseCharacter_C* 攻击者, class ATsBaseCharacter_C* 受击者, const struct FSBulletDataMain& 子弹数据, class UObject* 子弹);
+	void 子弹范围内吸附(class UObject* 子弹, float 吸附速度);
 
 public:
 	static class UClass* StaticClass()

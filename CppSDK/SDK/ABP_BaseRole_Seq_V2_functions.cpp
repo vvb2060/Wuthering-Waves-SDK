@@ -17,109 +17,27 @@
 namespace SDK
 {
 
-// Function ABP_BaseRole_Seq_V2.ABP_BaseRole_Seq_V2_C.ExecuteUbergraph_ABP_BaseRole_Seq_V2
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UABP_BaseRole_Seq_V2_C::ExecuteUbergraph_ABP_BaseRole_Seq_V2(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_BaseRole_Seq_V2_C", "ExecuteUbergraph_ABP_BaseRole_Seq_V2");
-
-	Params::ABP_BaseRole_Seq_V2_C_ExecuteUbergraph_ABP_BaseRole_Seq_V2 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function ABP_BaseRole_Seq_V2.ABP_BaseRole_Seq_V2_C.BlueprintUpdateAnimation
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaTimeX                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UABP_BaseRole_Seq_V2_C::BlueprintUpdateAnimation(float DeltaTimeX)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_BaseRole_Seq_V2_C", "BlueprintUpdateAnimation");
-
-	Params::ABP_BaseRole_Seq_V2_C_BlueprintUpdateAnimation Parms{};
-
-	Parms.DeltaTimeX = DeltaTimeX;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function ABP_BaseRole_Seq_V2.ABP_BaseRole_Seq_V2_C.AnimGraph
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
-
-void UABP_BaseRole_Seq_V2_C::AnimGraph(struct FPoseLink* AnimGraph_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_BaseRole_Seq_V2_C", "AnimGraph");
-
-	Params::ABP_BaseRole_Seq_V2_C_AnimGraph Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (AnimGraph_0 != nullptr)
-		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
-}
-
-
-// Function ABP_BaseRole_Seq_V2.ABP_BaseRole_Seq_V2_C.计算层
+// Function ABP_BaseRole_Seq_V2.ABP_BaseRole_Seq_V2_C.修型层
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const struct FPoseLink&                 InPose_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-// struct FPoseLink*                       计算层_0                                               (Parm, OutParm, NoDestructor)
+// struct FPoseLink*                       修型层_0                                               (Parm, OutParm, NoDestructor)
 
-void UABP_BaseRole_Seq_V2_C::计算层(const struct FPoseLink& InPose_0, struct FPoseLink* 计算层_0)
+void UABP_BaseRole_Seq_V2_C::修型层(const struct FPoseLink& InPose_0, struct FPoseLink* 修型层_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_BaseRole_Seq_V2_C", "计算层");
+		Func = Class->GetFunction("ABP_BaseRole_Seq_V2_C", "修型层");
 
-	Params::ABP_BaseRole_Seq_V2_C_计算层 Parms{};
+	Params::ABP_BaseRole_Seq_V2_C_修型层 Parms{};
 
 	Parms.InPose_0 = std::move(InPose_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (计算层_0 != nullptr)
-		*计算层_0 = std::move(Parms.计算层_0);
-}
-
-
-// Function ABP_BaseRole_Seq_V2.ABP_BaseRole_Seq_V2_C.肢体层
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FPoseLink*                       肢体层_0                                               (Parm, OutParm, NoDestructor)
-
-void UABP_BaseRole_Seq_V2_C::肢体层(struct FPoseLink* 肢体层_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_BaseRole_Seq_V2_C", "肢体层");
-
-	Params::ABP_BaseRole_Seq_V2_C_肢体层 Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (肢体层_0 != nullptr)
-		*肢体层_0 = std::move(Parms.肢体层_0);
+	if (修型层_0 != nullptr)
+		*修型层_0 = std::move(Parms.修型层_0);
 }
 
 
@@ -147,27 +65,109 @@ void UABP_BaseRole_Seq_V2_C::面部层(const struct FPoseLink& InPose, struct FP
 }
 
 
-// Function ABP_BaseRole_Seq_V2.ABP_BaseRole_Seq_V2_C.修型层
+// Function ABP_BaseRole_Seq_V2.ABP_BaseRole_Seq_V2_C.肢体层
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FPoseLink&                 InPose_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-// struct FPoseLink*                       修型层_0                                               (Parm, OutParm, NoDestructor)
+// struct FPoseLink*                       肢体层_0                                               (Parm, OutParm, NoDestructor)
 
-void UABP_BaseRole_Seq_V2_C::修型层(const struct FPoseLink& InPose_0, struct FPoseLink* 修型层_0)
+void UABP_BaseRole_Seq_V2_C::肢体层(struct FPoseLink* 肢体层_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_BaseRole_Seq_V2_C", "修型层");
+		Func = Class->GetFunction("ABP_BaseRole_Seq_V2_C", "肢体层");
 
-	Params::ABP_BaseRole_Seq_V2_C_修型层 Parms{};
+	Params::ABP_BaseRole_Seq_V2_C_肢体层 Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (肢体层_0 != nullptr)
+		*肢体层_0 = std::move(Parms.肢体层_0);
+}
+
+
+// Function ABP_BaseRole_Seq_V2.ABP_BaseRole_Seq_V2_C.计算层
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FPoseLink&                 InPose_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// struct FPoseLink*                       计算层_0                                               (Parm, OutParm, NoDestructor)
+
+void UABP_BaseRole_Seq_V2_C::计算层(const struct FPoseLink& InPose_0, struct FPoseLink* 计算层_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ABP_BaseRole_Seq_V2_C", "计算层");
+
+	Params::ABP_BaseRole_Seq_V2_C_计算层 Parms{};
 
 	Parms.InPose_0 = std::move(InPose_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (修型层_0 != nullptr)
-		*修型层_0 = std::move(Parms.修型层_0);
+	if (计算层_0 != nullptr)
+		*计算层_0 = std::move(Parms.计算层_0);
+}
+
+
+// Function ABP_BaseRole_Seq_V2.ABP_BaseRole_Seq_V2_C.AnimGraph
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
+
+void UABP_BaseRole_Seq_V2_C::AnimGraph(struct FPoseLink* AnimGraph_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ABP_BaseRole_Seq_V2_C", "AnimGraph");
+
+	Params::ABP_BaseRole_Seq_V2_C_AnimGraph Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (AnimGraph_0 != nullptr)
+		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
+}
+
+
+// Function ABP_BaseRole_Seq_V2.ABP_BaseRole_Seq_V2_C.BlueprintUpdateAnimation
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaTimeX                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UABP_BaseRole_Seq_V2_C::BlueprintUpdateAnimation(float DeltaTimeX)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ABP_BaseRole_Seq_V2_C", "BlueprintUpdateAnimation");
+
+	Params::ABP_BaseRole_Seq_V2_C_BlueprintUpdateAnimation Parms{};
+
+	Parms.DeltaTimeX = DeltaTimeX;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ABP_BaseRole_Seq_V2.ABP_BaseRole_Seq_V2_C.ExecuteUbergraph_ABP_BaseRole_Seq_V2
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UABP_BaseRole_Seq_V2_C::ExecuteUbergraph_ABP_BaseRole_Seq_V2(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ABP_BaseRole_Seq_V2_C", "ExecuteUbergraph_ABP_BaseRole_Seq_V2");
+
+	Params::ABP_BaseRole_Seq_V2_C_ExecuteUbergraph_ABP_BaseRole_Seq_V2 Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "SNpcSetupPartInfo_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "SNpcSetupPartInfo_structs.hpp"
 #include "EBodyPartName_structs.hpp"
 #include "Engine_classes.hpp"
 
@@ -41,23 +41,23 @@ public:
 	TArray<class UMaterialInstance*>              MINPCs;                                            // 0x03C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void SetSkeletalMeshMaterial(class UMaterialInterface* ReplaceMaterial, class USkeletalMeshComponent* SkeletalMeshComp, class FName ParamName01, class FName ParamName02, class FName SkinColorName, int32 NumSlots, int32 MaterialIndex);
-	void 预览MorphTarget();
-	void Test(class USkeletalMeshComponent* SKMesh, class UMaterialInstance* MI);
-	void GetHeadTransform(const struct FTransform& InTransform, int32 Index_0, struct FTransform* OutTransform);
-	void SetSkeletonMeshDI(class USkeletalMeshComponent* SKMesh, class FName ParamName01, class FName ParamName02, EBodyPartName BodyType, class FName SkinColorName, TArray<class UMaterialInterface*>& Materials);
-	void AddSkeletalComponent(class FName Name_0, class USkeletalMeshComponent* SkeletalComp);
-	void SetupSkeletalMeshComponent(class USkeletalMesh* InSkeletalMesh, EBodyPartName BodyType, bool* Suc, class USkeletalMeshComponent** SkeletalComp);
-	void GetWaistTransform(const struct FTransform& InTransform, int32 Index_0, struct FTransform* OutTransform);
-	void GetBackTransform(const struct FTransform& InTransform, int32 Index_0, struct FTransform* OutTransform);
-	void GetLegTransform(const struct FTransform& InTransform, int32 Index_0, struct FTransform* OutTransform);
-	void GetWeaponTransform(const struct FTransform& InTransform, int32 Index_0, struct FTransform* OutTransform);
-	void GetArmTransform(const struct FTransform& InTransform, int32 Index_0, struct FTransform* OutTransform);
-	void SetupSocket(class FName SocketName, const struct FTransform& Transform, class USkeletalMesh* SkeletalMesh, bool* Suc, class USkeletalMeshComponent** SkeletalComp);
-	void SetupSockets();
-	void SetupSkeletalMeshComponents(bool* Suc);
-	void ResetNpcMesh();
 	void SetupNpcMesh(class UPD_NpcSetupData_C* Data, bool bIgnoreSockets, bool* IsSuc, TArray<class USkeletalMeshComponent*>* SkleMain);
+	void ResetNpcMesh();
+	void SetupSkeletalMeshComponents(bool* Suc);
+	void SetupSockets();
+	void SetupSocket(class FName SocketName, const struct FTransform& Transform, class USkeletalMesh* SkeletalMesh, bool* Suc, class USkeletalMeshComponent** SkeletalComp);
+	void GetArmTransform(const struct FTransform& InTransform, int32 Index_0, struct FTransform* OutTransform);
+	void GetWeaponTransform(const struct FTransform& InTransform, int32 Index_0, struct FTransform* OutTransform);
+	void GetLegTransform(const struct FTransform& InTransform, int32 Index_0, struct FTransform* OutTransform);
+	void GetBackTransform(const struct FTransform& InTransform, int32 Index_0, struct FTransform* OutTransform);
+	void GetWaistTransform(const struct FTransform& InTransform, int32 Index_0, struct FTransform* OutTransform);
+	void SetupSkeletalMeshComponent(class USkeletalMesh* InSkeletalMesh, EBodyPartName BodyType, bool* Suc, class USkeletalMeshComponent** SkeletalComp);
+	void AddSkeletalComponent(class FName Name_0, class USkeletalMeshComponent* SkeletalComp);
+	void SetSkeletonMeshDI(class USkeletalMeshComponent* SKMesh, class FName ParamName01, class FName ParamName02, EBodyPartName BodyType, class FName SkinColorName, TArray<class UMaterialInterface*>& Materials);
+	void GetHeadTransform(const struct FTransform& InTransform, int32 Index_0, struct FTransform* OutTransform);
+	void Test(class USkeletalMeshComponent* SKMesh, class UMaterialInstance* MI);
+	void 预览MorphTarget();
+	void SetSkeletalMeshMaterial(class UMaterialInterface* ReplaceMaterial, class USkeletalMeshComponent* SkeletalMeshComp, class FName ParamName01, class FName ParamName02, class FName SkinColorName, int32 NumSlots, int32 MaterialIndex);
 
 public:
 	static class UClass* StaticClass()

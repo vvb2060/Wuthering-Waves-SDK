@@ -17,69 +17,21 @@
 namespace SDK
 {
 
-// Function AIC_VM_Common.AIC_VM_Common_C.OnStart
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AAIC_VM_Common_C::OnStart()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIC_VM_Common_C", "OnStart");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AIC_VM_Common.AIC_VM_Common_C.添加生命周期
-// (BlueprintCallable, BlueprintEvent)
+// Function AIC_VM_Common.AIC_VM_Common_C.ExecuteUbergraph_AIC_VM_Common
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// bool                                    bContent                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AAIC_VM_Common_C::添加生命周期(bool bContent)
+void AAIC_VM_Common_C::ExecuteUbergraph_AIC_VM_Common(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AIC_VM_Common_C", "添加生命周期");
+		Func = Class->GetFunction("AIC_VM_Common_C", "ExecuteUbergraph_AIC_VM_Common");
 
-	Params::AIC_VM_Common_C_添加生命周期 Parms{};
+	Params::AIC_VM_Common_C_ExecuteUbergraph_AIC_VM_Common Parms{};
 
-	Parms.bContent = bContent;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AIC_VM_Common.AIC_VM_Common_C.添加生命结束
-// (BlueprintCallable, BlueprintEvent)
-
-void AAIC_VM_Common_C::添加生命结束()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIC_VM_Common_C", "添加生命结束");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AIC_VM_Common.AIC_VM_Common_C.取消定时
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bContent                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AAIC_VM_Common_C::取消定时(bool bContent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIC_VM_Common_C", "取消定时");
-
-	Params::AIC_VM_Common_C_取消定时 Parms{};
-
-	Parms.bContent = bContent;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -105,23 +57,71 @@ void AAIC_VM_Common_C::免疫子弹(bool bContent)
 }
 
 
-// Function AIC_VM_Common.AIC_VM_Common_C.ExecuteUbergraph_AIC_VM_Common
-// (Final, UbergraphFunction, HasDefaults)
+// Function AIC_VM_Common.AIC_VM_Common_C.取消定时
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bContent                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void AAIC_VM_Common_C::ExecuteUbergraph_AIC_VM_Common(int32 EntryPoint)
+void AAIC_VM_Common_C::取消定时(bool bContent)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AIC_VM_Common_C", "ExecuteUbergraph_AIC_VM_Common");
+		Func = Class->GetFunction("AIC_VM_Common_C", "取消定时");
 
-	Params::AIC_VM_Common_C_ExecuteUbergraph_AIC_VM_Common Parms{};
+	Params::AIC_VM_Common_C_取消定时 Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.bContent = bContent;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AIC_VM_Common.AIC_VM_Common_C.添加生命结束
+// (BlueprintCallable, BlueprintEvent)
+
+void AAIC_VM_Common_C::添加生命结束()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIC_VM_Common_C", "添加生命结束");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AIC_VM_Common.AIC_VM_Common_C.添加生命周期
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bContent                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AAIC_VM_Common_C::添加生命周期(bool bContent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIC_VM_Common_C", "添加生命周期");
+
+	Params::AIC_VM_Common_C_添加生命周期 Parms{};
+
+	Parms.bContent = bContent;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AIC_VM_Common.AIC_VM_Common_C.OnStart
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AAIC_VM_Common_C::OnStart()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AIC_VM_Common_C", "OnStart");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

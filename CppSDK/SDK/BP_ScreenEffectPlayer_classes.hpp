@@ -49,30 +49,30 @@ public:
 	float                                         ParameterTweenTarget;                              // 0x0328(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AlmostEqual(float val1, float val2, bool* isequal);
-	void SetExtraState(int32 ExtraState);
-	void Refresh_Addition_Parameter(float TweenProgress);
-	void TweenParameterSpeed(float TweenTarget, float TweenSpeed, float TweenDeltaSecond);
-	void BP_ScreenEffectPlayer_AutoGenFunc();
-	void DelayEndAudioCall();
-	void UpdatePlayerSEEnvironmentFactor(float EnvironmentFactor);
-	void Destroy_Player();
-	void ClearPlayer();
-	void InitPlayer(class UEffectScreenPlayData_C* Data_0, class AUIContainerActor* ScreenEffectRoot_0);
-	void BeforeStart();
-	void Set_Effect_Hidden(bool bToHide_0, bool bOverrideFadeSpeed, float OverrideFadeSpeed);
-	void SetUIVisible(bool Visible);
-	void UpdateComponentsAlpha();
-	void UpdateComponents();
-	void EndPlayer();
-	void Start_Player();
-	void TweenParameter(float TweenTarget);
-	void TweenParameterImmediately(float TweenTarget);
-	void UserConstructionScript();
-	void ReceiveTick(float DeltaSeconds);
-	void ReceiveBeginPlay();
-	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
 	void ExecuteUbergraph_BP_ScreenEffectPlayer(int32 EntryPoint);
+	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
+	void ReceiveBeginPlay();
+	void ReceiveTick(float DeltaSeconds);
+	void UserConstructionScript();
+	void TweenParameterImmediately(float TweenTarget);
+	void TweenParameter(float TweenTarget);
+	void Start_Player();
+	void EndPlayer();
+	void UpdateComponents();
+	void UpdateComponentsAlpha();
+	void SetUIVisible(bool Visible);
+	void Set_Effect_Hidden(bool bToHide_0, bool bOverrideFadeSpeed, float OverrideFadeSpeed);
+	void BeforeStart();
+	void InitPlayer(class UEffectScreenPlayData_C* Data_0, class AUIContainerActor* ScreenEffectRoot_0);
+	void ClearPlayer();
+	void Destroy_Player();
+	void UpdatePlayerSEEnvironmentFactor(float EnvironmentFactor);
+	void DelayEndAudioCall();
+	void BP_ScreenEffectPlayer_AutoGenFunc();
+	void TweenParameterSpeed(float TweenTarget, float TweenSpeed, float TweenDeltaSecond);
+	void Refresh_Addition_Parameter(float TweenProgress);
+	void SetExtraState(int32 ExtraState);
+	void AlmostEqual(float val1, float val2, bool* isequal);
 
 public:
 	static class UClass* StaticClass()

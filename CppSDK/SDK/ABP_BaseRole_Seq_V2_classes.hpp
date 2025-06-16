@@ -101,13 +101,13 @@ public:
 	float                                         SeqRHandWeight;                                    // 0x2894(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_ABP_BaseRole_Seq_V2(int32 EntryPoint);
-	void BlueprintUpdateAnimation(float DeltaTimeX);
-	void AnimGraph(struct FPoseLink* AnimGraph_0);
-	void 计算层(const struct FPoseLink& InPose_0, struct FPoseLink* 计算层_0);
-	void 肢体层(struct FPoseLink* 肢体层_0);
-	void 面部层(const struct FPoseLink& InPose, struct FPoseLink* 面部层_0);
 	void 修型层(const struct FPoseLink& InPose_0, struct FPoseLink* 修型层_0);
+	void 面部层(const struct FPoseLink& InPose, struct FPoseLink* 面部层_0);
+	void 肢体层(struct FPoseLink* 肢体层_0);
+	void 计算层(const struct FPoseLink& InPose_0, struct FPoseLink* 计算层_0);
+	void AnimGraph(struct FPoseLink* AnimGraph_0);
+	void BlueprintUpdateAnimation(float DeltaTimeX);
+	void ExecuteUbergraph_ABP_BaseRole_Seq_V2(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

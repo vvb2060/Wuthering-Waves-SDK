@@ -17,29 +17,6 @@
 namespace SDK
 {
 
-// Function TsGameSplineActor.TsGameSplineActor_C.GetPatrolSpeedByIndex
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   index                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-float ATsGameSplineActor_C::GetPatrolSpeedByIndex(int32 index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TsGameSplineActor_C", "GetPatrolSpeedByIndex");
-
-	Params::TsGameSplineActor_C_GetPatrolSpeedByIndex Parms{};
-
-	Parms.index = index;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
 // Function TsGameSplineActor.TsGameSplineActor_C.GetPointRotatorByIndex
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -54,6 +31,29 @@ struct FRotator ATsGameSplineActor_C::GetPointRotatorByIndex(int32 index)
 		Func = Class->GetFunction("TsGameSplineActor_C", "GetPointRotatorByIndex");
 
 	Params::TsGameSplineActor_C_GetPointRotatorByIndex Parms{};
+
+	Parms.index = index;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function TsGameSplineActor.TsGameSplineActor_C.GetPatrolSpeedByIndex
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   index                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+float ATsGameSplineActor_C::GetPatrolSpeedByIndex(int32 index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TsGameSplineActor_C", "GetPatrolSpeedByIndex");
+
+	Params::TsGameSplineActor_C_GetPatrolSpeedByIndex Parms{};
 
 	Parms.index = index;
 

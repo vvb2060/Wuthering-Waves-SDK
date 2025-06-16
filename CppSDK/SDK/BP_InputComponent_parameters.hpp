@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "SInputHoldConfig_structs.hpp"
-#include "GameplayTags_structs.hpp"
-#include "sInputCommand_structs.hpp"
 #include "ERoleInteractType_structs.hpp"
-#include "ECharViewDirectionState_structs.hpp"
 #include "SInputCaches_structs.hpp"
+#include "sInputCommand_structs.hpp"
+#include "GameplayTags_structs.hpp"
+#include "SInputHoldConfig_structs.hpp"
+#include "ECharViewDirectionState_structs.hpp"
 #include "SVisionData_structs.hpp"
 
 

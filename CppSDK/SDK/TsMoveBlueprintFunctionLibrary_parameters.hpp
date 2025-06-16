@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "EEnterClimb_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "SClimbState_structs.hpp"
+#include "EEnterClimb_structs.hpp"
 #include "EMovementDirection_structs.hpp"
+#include "SClimbState_structs.hpp"
 #include "SMovementSetting_structs.hpp"
 #include "EExitClimb_structs.hpp"
 #include "EClimbState_structs.hpp"

@@ -17,51 +17,21 @@
 namespace SDK
 {
 
-// Function BP_ActorBulletPreview.BP_ActorBulletPreview_C.中心位置偏移
+// Function BP_ActorBulletPreview.BP_ActorBulletPreview_C.开始
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_ActorBulletPreview_C::中心位置偏移()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActorBulletPreview_C", "中心位置偏移");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ActorBulletPreview.BP_ActorBulletPreview_C.OnTick
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_ActorBulletPreview_C::OnTick()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActorBulletPreview_C", "OnTick");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ActorBulletPreview.BP_ActorBulletPreview_C.初始化
-// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FSReBulletDataMain&        配置_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-// class AActor*                           发射者_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USkeletalMeshComponent*           meshComp                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ActorBulletPreview_C::初始化(const struct FSReBulletDataMain& 配置_0, class AActor* 发射者_0)
+void ABP_ActorBulletPreview_C::开始(class USkeletalMeshComponent* meshComp)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActorBulletPreview_C", "初始化");
+		Func = Class->GetFunction("BP_ActorBulletPreview_C", "开始");
 
-	Params::BP_ActorBulletPreview_C_初始化 Parms{};
+	Params::BP_ActorBulletPreview_C_开始 Parms{};
 
-	Parms.配置_0 = std::move(配置_0);
-	Parms.发射者_0 = 发射者_0;
+	Parms.meshComp = meshComp;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -87,23 +57,53 @@ void ABP_ActorBulletPreview_C::形状初始化(EBulletShape 形状)
 }
 
 
-// Function BP_ActorBulletPreview.BP_ActorBulletPreview_C.开始
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_ActorBulletPreview.BP_ActorBulletPreview_C.初始化
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USkeletalMeshComponent*           meshComp                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSReBulletDataMain&        配置_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// class AActor*                           发射者_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ActorBulletPreview_C::开始(class USkeletalMeshComponent* meshComp)
+void ABP_ActorBulletPreview_C::初始化(const struct FSReBulletDataMain& 配置_0, class AActor* 发射者_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActorBulletPreview_C", "开始");
+		Func = Class->GetFunction("BP_ActorBulletPreview_C", "初始化");
 
-	Params::BP_ActorBulletPreview_C_开始 Parms{};
+	Params::BP_ActorBulletPreview_C_初始化 Parms{};
 
-	Parms.meshComp = meshComp;
+	Parms.配置_0 = std::move(配置_0);
+	Parms.发射者_0 = 发射者_0;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ActorBulletPreview.BP_ActorBulletPreview_C.OnTick
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_ActorBulletPreview_C::OnTick()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ActorBulletPreview_C", "OnTick");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ActorBulletPreview.BP_ActorBulletPreview_C.中心位置偏移
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_ActorBulletPreview_C::中心位置偏移()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ActorBulletPreview_C", "中心位置偏移");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

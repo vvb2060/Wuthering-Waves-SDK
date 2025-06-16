@@ -57,21 +57,21 @@ public:
 	float                                         SeqLifeCycle;                                      // 0x0358(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_Fx_Scanning(int32 EntryPoint);
-	void ReceiveBeginPlay();
-	void ReceiveTick(float DeltaSeconds);
-	void Timeline_0__UpdateFunc();
-	void Timeline_0__FinishedFunc();
-	void 衰退范围__UpdateFunc();
-	void 衰退范围__FinishedFunc();
-	void 轮廓强度__UpdateFunc();
-	void 轮廓强度__FinishedFunc();
-	void 扫描带强度__UpdateFunc();
-	void 扫描带强度__FinishedFunc();
-	void 扫描范围__UpdateFunc();
-	void 扫描范围__FinishedFunc();
-	void SetRevert();
 	void StartScanEffect();
+	void SetRevert();
+	void 扫描范围__FinishedFunc();
+	void 扫描范围__UpdateFunc();
+	void 扫描带强度__FinishedFunc();
+	void 扫描带强度__UpdateFunc();
+	void 轮廓强度__FinishedFunc();
+	void 轮廓强度__UpdateFunc();
+	void 衰退范围__FinishedFunc();
+	void 衰退范围__UpdateFunc();
+	void Timeline_0__FinishedFunc();
+	void Timeline_0__UpdateFunc();
+	void ReceiveTick(float DeltaSeconds);
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_Fx_Scanning(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

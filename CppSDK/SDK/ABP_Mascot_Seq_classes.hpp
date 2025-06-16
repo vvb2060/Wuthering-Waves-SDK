@@ -46,9 +46,9 @@ public:
 	struct FVector2D                              LookXY;                                            // 0x0EA0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_ABP_Mascot_Seq(int32 EntryPoint);
-	void BlueprintUpdateAnimation(float DeltaTimeX);
 	void AnimGraph(const struct FPoseLink& InPose, struct FPoseLink* AnimGraph_0);
+	void BlueprintUpdateAnimation(float DeltaTimeX);
+	void ExecuteUbergraph_ABP_Mascot_Seq(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

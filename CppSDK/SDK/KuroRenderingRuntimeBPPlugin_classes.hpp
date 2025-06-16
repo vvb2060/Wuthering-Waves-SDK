@@ -1678,7 +1678,7 @@ static_assert(offsetof(UKuroFloatLightPreset, JumpHeight) == 0x00017C, "Member '
 
 // Class KuroRenderingRuntimeBPPlugin.KuroFloatLightActor
 // 0x0068 (0x0318 - 0x02B0)
-class AKuroFloatLightActor : public AActor
+class AKuroFloatLightActor final : public AActor
 {
 public:
 	class UKuroFloatLightPreset*                  Preset;                                            // 0x02B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2764,7 +2764,7 @@ static_assert(offsetof(AKuroHighResLandscapeActor, bUseProxyEvent) == 0x0002B1, 
 
 // Class KuroRenderingRuntimeBPPlugin.KuroInteractionPlacement
 // 0x0010 (0x02D0 - 0x02C0)
-class AKuroInteractionPlacement : public AStaticMeshActor
+class AKuroInteractionPlacement final : public AStaticMeshActor
 {
 public:
 	uint8                                         Pad_2C0[0x10];                                     // 0x02C0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -3874,7 +3874,7 @@ static_assert(offsetof(AKuroRenderQualitySettingVolume, PCVolumeLightCullDistanc
 static_assert(offsetof(AKuroRenderQualitySettingVolume, MobileVolumeLightCullDistance) == 0x000320, "Member 'AKuroRenderQualitySettingVolume::MobileVolumeLightCullDistance' has a wrong offset!");
 
 // Class KuroRenderingRuntimeBPPlugin.KuroLocalRenderQualitySetting
-// 0x00A8 (0x00E0 - 0x0038)
+// 0x00C0 (0x00F8 - 0x0038)
 class UKuroLocalRenderQualitySetting final : public UDataAsset
 {
 public:
@@ -3908,12 +3908,19 @@ public:
 	int32                                         PCLocalRenderSettingIndexMedium;                   // 0x0074(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         PCLocalRenderSettingIndexHigh;                     // 0x0078(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         PCLocalRenderSettingIndexUltra;                    // 0x007C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class FString>                         InBoundLocalCmdPC;                                 // 0x0080(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<class FString>                         OutBoundLocalCmdPC;                                // 0x0090(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<class FString>                         InBoundLocalCmdMobile;                             // 0x00A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<class FString>                         OutBoundLocalCmdMobile;                            // 0x00B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<class FString>                         InBoundLocalCmdScalabilityPC;                      // 0x00C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<class FString>                         InBoundLocalCmdScalabilityMobile;                  // 0x00D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	bool                                          EnableResetLocalRenderSettingPCLowMemory;          // 0x0080(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_81[0x3];                                       // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         PCLowMemoryLocalRenderSettingIndexLowest;          // 0x0084(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PCLowMemoryLocalRenderSettingIndexLow;             // 0x0088(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PCLowMemoryLocalRenderSettingIndexMedium;          // 0x008C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PCLowMemoryLocalRenderSettingIndexHigh;            // 0x0090(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PCLowMemoryLocalRenderSettingIndexUltra;           // 0x0094(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class FString>                         InBoundLocalCmdPC;                                 // 0x0098(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<class FString>                         OutBoundLocalCmdPC;                                // 0x00A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<class FString>                         InBoundLocalCmdMobile;                             // 0x00B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<class FString>                         OutBoundLocalCmdMobile;                            // 0x00C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<class FString>                         InBoundLocalCmdScalabilityPC;                      // 0x00D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<class FString>                         InBoundLocalCmdScalabilityMobile;                  // 0x00E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -3926,7 +3933,7 @@ public:
 	}
 };
 static_assert(alignof(UKuroLocalRenderQualitySetting) == 0x000008, "Wrong alignment on UKuroLocalRenderQualitySetting");
-static_assert(sizeof(UKuroLocalRenderQualitySetting) == 0x0000E0, "Wrong size on UKuroLocalRenderQualitySetting");
+static_assert(sizeof(UKuroLocalRenderQualitySetting) == 0x0000F8, "Wrong size on UKuroLocalRenderQualitySetting");
 static_assert(offsetof(UKuroLocalRenderQualitySetting, EnableResetLocalRenderSettingMobile) == 0x00003C, "Member 'UKuroLocalRenderQualitySetting::EnableResetLocalRenderSettingMobile' has a wrong offset!");
 static_assert(offsetof(UKuroLocalRenderQualitySetting, MobileLocalRenderSettingIndexLowest) == 0x000040, "Member 'UKuroLocalRenderQualitySetting::MobileLocalRenderSettingIndexLowest' has a wrong offset!");
 static_assert(offsetof(UKuroLocalRenderQualitySetting, MobileLocalRenderSettingIndexLow) == 0x000044, "Member 'UKuroLocalRenderQualitySetting::MobileLocalRenderSettingIndexLow' has a wrong offset!");
@@ -3943,12 +3950,18 @@ static_assert(offsetof(UKuroLocalRenderQualitySetting, PCLocalRenderSettingIndex
 static_assert(offsetof(UKuroLocalRenderQualitySetting, PCLocalRenderSettingIndexMedium) == 0x000074, "Member 'UKuroLocalRenderQualitySetting::PCLocalRenderSettingIndexMedium' has a wrong offset!");
 static_assert(offsetof(UKuroLocalRenderQualitySetting, PCLocalRenderSettingIndexHigh) == 0x000078, "Member 'UKuroLocalRenderQualitySetting::PCLocalRenderSettingIndexHigh' has a wrong offset!");
 static_assert(offsetof(UKuroLocalRenderQualitySetting, PCLocalRenderSettingIndexUltra) == 0x00007C, "Member 'UKuroLocalRenderQualitySetting::PCLocalRenderSettingIndexUltra' has a wrong offset!");
-static_assert(offsetof(UKuroLocalRenderQualitySetting, InBoundLocalCmdPC) == 0x000080, "Member 'UKuroLocalRenderQualitySetting::InBoundLocalCmdPC' has a wrong offset!");
-static_assert(offsetof(UKuroLocalRenderQualitySetting, OutBoundLocalCmdPC) == 0x000090, "Member 'UKuroLocalRenderQualitySetting::OutBoundLocalCmdPC' has a wrong offset!");
-static_assert(offsetof(UKuroLocalRenderQualitySetting, InBoundLocalCmdMobile) == 0x0000A0, "Member 'UKuroLocalRenderQualitySetting::InBoundLocalCmdMobile' has a wrong offset!");
-static_assert(offsetof(UKuroLocalRenderQualitySetting, OutBoundLocalCmdMobile) == 0x0000B0, "Member 'UKuroLocalRenderQualitySetting::OutBoundLocalCmdMobile' has a wrong offset!");
-static_assert(offsetof(UKuroLocalRenderQualitySetting, InBoundLocalCmdScalabilityPC) == 0x0000C0, "Member 'UKuroLocalRenderQualitySetting::InBoundLocalCmdScalabilityPC' has a wrong offset!");
-static_assert(offsetof(UKuroLocalRenderQualitySetting, InBoundLocalCmdScalabilityMobile) == 0x0000D0, "Member 'UKuroLocalRenderQualitySetting::InBoundLocalCmdScalabilityMobile' has a wrong offset!");
+static_assert(offsetof(UKuroLocalRenderQualitySetting, EnableResetLocalRenderSettingPCLowMemory) == 0x000080, "Member 'UKuroLocalRenderQualitySetting::EnableResetLocalRenderSettingPCLowMemory' has a wrong offset!");
+static_assert(offsetof(UKuroLocalRenderQualitySetting, PCLowMemoryLocalRenderSettingIndexLowest) == 0x000084, "Member 'UKuroLocalRenderQualitySetting::PCLowMemoryLocalRenderSettingIndexLowest' has a wrong offset!");
+static_assert(offsetof(UKuroLocalRenderQualitySetting, PCLowMemoryLocalRenderSettingIndexLow) == 0x000088, "Member 'UKuroLocalRenderQualitySetting::PCLowMemoryLocalRenderSettingIndexLow' has a wrong offset!");
+static_assert(offsetof(UKuroLocalRenderQualitySetting, PCLowMemoryLocalRenderSettingIndexMedium) == 0x00008C, "Member 'UKuroLocalRenderQualitySetting::PCLowMemoryLocalRenderSettingIndexMedium' has a wrong offset!");
+static_assert(offsetof(UKuroLocalRenderQualitySetting, PCLowMemoryLocalRenderSettingIndexHigh) == 0x000090, "Member 'UKuroLocalRenderQualitySetting::PCLowMemoryLocalRenderSettingIndexHigh' has a wrong offset!");
+static_assert(offsetof(UKuroLocalRenderQualitySetting, PCLowMemoryLocalRenderSettingIndexUltra) == 0x000094, "Member 'UKuroLocalRenderQualitySetting::PCLowMemoryLocalRenderSettingIndexUltra' has a wrong offset!");
+static_assert(offsetof(UKuroLocalRenderQualitySetting, InBoundLocalCmdPC) == 0x000098, "Member 'UKuroLocalRenderQualitySetting::InBoundLocalCmdPC' has a wrong offset!");
+static_assert(offsetof(UKuroLocalRenderQualitySetting, OutBoundLocalCmdPC) == 0x0000A8, "Member 'UKuroLocalRenderQualitySetting::OutBoundLocalCmdPC' has a wrong offset!");
+static_assert(offsetof(UKuroLocalRenderQualitySetting, InBoundLocalCmdMobile) == 0x0000B8, "Member 'UKuroLocalRenderQualitySetting::InBoundLocalCmdMobile' has a wrong offset!");
+static_assert(offsetof(UKuroLocalRenderQualitySetting, OutBoundLocalCmdMobile) == 0x0000C8, "Member 'UKuroLocalRenderQualitySetting::OutBoundLocalCmdMobile' has a wrong offset!");
+static_assert(offsetof(UKuroLocalRenderQualitySetting, InBoundLocalCmdScalabilityPC) == 0x0000D8, "Member 'UKuroLocalRenderQualitySetting::InBoundLocalCmdScalabilityPC' has a wrong offset!");
+static_assert(offsetof(UKuroLocalRenderQualitySetting, InBoundLocalCmdScalabilityMobile) == 0x0000E8, "Member 'UKuroLocalRenderQualitySetting::InBoundLocalCmdScalabilityMobile' has a wrong offset!");
 
 // Class KuroRenderingRuntimeBPPlugin.KuroRuntimeTransientActor
 // 0x0010 (0x02C0 - 0x02B0)

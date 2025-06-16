@@ -21,38 +21,38 @@ namespace SDK
 class UBulletBlueprintFunctionLibrary_C final : public UBlueprintFunctionLibrary
 {
 public:
-	static void DestroySpecifiedBullet(int32 ownerId, class FName bulletName, bool summonChild, int32 includeTeammate, float interval, class UObject* __WorldContext);
-	static int32 GetSpecifiedBulletCount(int32 ownerId, class FName bulletName, class UObject* __WorldContext);
-	static class FString GetSpecialBulletToSkillId(const class FString& bulletRowName, const class FString& skillId, class UObject* __WorldContext);
-	static float CreateBulletForDebug(class ATsBaseCharacter_C* owner, const class FString& bulletRowName, class UObject* __WorldContext);
-	static int32 CreateBulletFromGA(class ATsBaseCharacter_C* owner, const class FString& bulletRowName, const struct FTransformDouble& initialTransform, const class FString& skillId, bool needSync, const struct FVectorDouble& targetLocation, class UObject* __WorldContext);
-	static void DestroyAllBullet(bool summonChild, class UObject* __WorldContext);
-	static struct FVectorDouble CalcBulletLocation(const struct FSReBulletDataMain& dataMain, class AActor* bulletActor, float delta, class UObject* __WorldContext);
-	static struct FRotator CalcBulletRotator(const struct FSReBulletDataMain& dataMain, class AActor* bulletActor, class AActor* attacker, const struct FVectorDouble& target, float delta, class UObject* __WorldContext);
-	static struct FRotator CalcBulletInitRotator(const struct FSReBulletDataMain& dataMain, class AActor* bulletActor, class AActor* attacker, const struct FTransformDouble& target, class AActor* parentBulletActor, class UObject* __WorldContext);
-	static void AttachToBone(class USkeletalMeshComponent* meshComp, class AActor* bulletActor, const struct FSReBulletDataMain& dataMain, class UObject* __WorldContext);
-	static struct FVectorDouble CalcBulletInitLocation(const struct FSReBulletDataMain& dataMain, class AActor* attacker, const struct FTransformDouble& target, class UObject* __WorldContext);
-	static void CalcSector(const struct FVector& centerPoint, const struct FVector& forward, const struct FVector& up, float inAngle, float radius, float height, int32 sectionNum, TArray<struct FVector>& verticesArrayRef, TArray<int32>& trianglesArrayRef, class UObject* __WorldContext);
-	static void CalcPipe(const struct FVector& centerPoint, const struct FVector& forward, const struct FVector& up, float outsideRadius, float insideRadius, float height, int32 sectionNum, TArray<struct FVector>& outVerticesRef, TArray<int32>& outTrianglesRef, class UObject* __WorldContext);
-	static bool GetIsShowBulletCollision(int32 entityId, class UObject* __WorldContext);
-	static bool GetIsShowBulletTrace(int32 entityId, class UObject* __WorldContext);
-	static void DebugShowBulletCollision(bool isShow, int32 entityId, class UObject* __WorldContext);
-	static void SetBeginSpeed(int32 id, float newSpeed, class UObject* __WorldContext);
-	static void SetBulletTransform(int32 id, const struct FTransformDouble& newTransform, class UObject* __WorldContext);
-	static void SetBulletSummon(int32 id, class UObject* __WorldContext);
-	static void SetBulletTarget(int32 id, class ATsBaseCharacter_C* character, class UObject* __WorldContext);
-	static void SetBulletStopHitTrue(int32 id, class UObject* __WorldContext);
-	static class FString GetBulletName(int32 id, class UObject* __WorldContext);
-	static class UPrimitiveComponent* GetBulletCollision(int32 id, class UObject* __WorldContext);
-	static class ATsBaseCharacter_C* GetBulletAttacker(int32 id, class UObject* __WorldContext);
-	static struct FTransformDouble GetBulletTransform(int32 id, class UObject* __WorldContext);
-	static TArray<int32> GetCharacterLaunchedBulletIds(int32 characterId, class UObject* __WorldContext);
-	static void DebugShowBulletTrace(bool isShow, int32 entityId1, class UObject* __WorldContext);
-	static TArray<int32> GetAllBullet(class UObject* __WorldContext);
-	static void SetEntityIdByCustomKey(int32 attackerId, const class FString& customKey, int32 targetId, class UObject* __WorldContext);
-	static void FrozenBulletTimeByBulletName(class ATsBaseCharacter_C* character, const class FString& bulletDataName, float time, class UObject* __WorldContext);
-	static bool DestroyBullet(int32 id, bool isSummonChildBullet, class UObject* __WorldContext);
 	static class AActor* GetBulletActorById(int32 id, class UObject* __WorldContext);
+	static bool DestroyBullet(int32 id, bool isSummonChildBullet, class UObject* __WorldContext);
+	static void FrozenBulletTimeByBulletName(class ATsBaseCharacter_C* character, const class FString& bulletDataName, float time, class UObject* __WorldContext);
+	static void SetEntityIdByCustomKey(int32 attackerId, const class FString& customKey, int32 targetId, class UObject* __WorldContext);
+	static TArray<int32> GetAllBullet(class UObject* __WorldContext);
+	static void DebugShowBulletTrace(bool isShow, int32 entityId1, class UObject* __WorldContext);
+	static TArray<int32> GetCharacterLaunchedBulletIds(int32 characterId, class UObject* __WorldContext);
+	static struct FTransformDouble GetBulletTransform(int32 id, class UObject* __WorldContext);
+	static class ATsBaseCharacter_C* GetBulletAttacker(int32 id, class UObject* __WorldContext);
+	static class UPrimitiveComponent* GetBulletCollision(int32 id, class UObject* __WorldContext);
+	static class FString GetBulletName(int32 id, class UObject* __WorldContext);
+	static void SetBulletStopHitTrue(int32 id, class UObject* __WorldContext);
+	static void SetBulletTarget(int32 id, class ATsBaseCharacter_C* character, class UObject* __WorldContext);
+	static void SetBulletSummon(int32 id, class UObject* __WorldContext);
+	static void SetBulletTransform(int32 id, const struct FTransformDouble& newTransform, class UObject* __WorldContext);
+	static void SetBeginSpeed(int32 id, float newSpeed, class UObject* __WorldContext);
+	static void DebugShowBulletCollision(bool isShow, int32 entityId, class UObject* __WorldContext);
+	static bool GetIsShowBulletTrace(int32 entityId, class UObject* __WorldContext);
+	static bool GetIsShowBulletCollision(int32 entityId, class UObject* __WorldContext);
+	static void CalcPipe(const struct FVector& centerPoint, const struct FVector& forward, const struct FVector& up, float outsideRadius, float insideRadius, float height, int32 sectionNum, TArray<struct FVector>& outVerticesRef, TArray<int32>& outTrianglesRef, class UObject* __WorldContext);
+	static void CalcSector(const struct FVector& centerPoint, const struct FVector& forward, const struct FVector& up, float inAngle, float radius, float height, int32 sectionNum, TArray<struct FVector>& verticesArrayRef, TArray<int32>& trianglesArrayRef, class UObject* __WorldContext);
+	static struct FVectorDouble CalcBulletInitLocation(const struct FSReBulletDataMain& dataMain, class AActor* attacker, const struct FTransformDouble& target, class UObject* __WorldContext);
+	static void AttachToBone(class USkeletalMeshComponent* meshComp, class AActor* bulletActor, const struct FSReBulletDataMain& dataMain, class UObject* __WorldContext);
+	static struct FRotator CalcBulletInitRotator(const struct FSReBulletDataMain& dataMain, class AActor* bulletActor, class AActor* attacker, const struct FTransformDouble& target, class AActor* parentBulletActor, class UObject* __WorldContext);
+	static struct FRotator CalcBulletRotator(const struct FSReBulletDataMain& dataMain, class AActor* bulletActor, class AActor* attacker, const struct FVectorDouble& target, float delta, class UObject* __WorldContext);
+	static struct FVectorDouble CalcBulletLocation(const struct FSReBulletDataMain& dataMain, class AActor* bulletActor, float delta, class UObject* __WorldContext);
+	static void DestroyAllBullet(bool summonChild, class UObject* __WorldContext);
+	static int32 CreateBulletFromGA(class ATsBaseCharacter_C* owner, const class FString& bulletRowName, const struct FTransformDouble& initialTransform, const class FString& skillId, bool needSync, const struct FVectorDouble& targetLocation, class UObject* __WorldContext);
+	static float CreateBulletForDebug(class ATsBaseCharacter_C* owner, const class FString& bulletRowName, class UObject* __WorldContext);
+	static class FString GetSpecialBulletToSkillId(const class FString& bulletRowName, const class FString& skillId, class UObject* __WorldContext);
+	static int32 GetSpecifiedBulletCount(int32 ownerId, class FName bulletName, class UObject* __WorldContext);
+	static void DestroySpecifiedBullet(int32 ownerId, class FName bulletName, bool summonChild, int32 includeTeammate, float interval, class UObject* __WorldContext);
 
 public:
 	static class UClass* StaticClass()

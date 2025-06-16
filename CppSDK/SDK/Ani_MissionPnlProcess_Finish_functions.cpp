@@ -17,6 +17,26 @@
 namespace SDK
 {
 
+// Function Ani_MissionPnlProcess_Finish.SequenceDirector_C.ExecuteUbergraph_SequenceDirector
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Ani_MissionPnlProcess_Finish::USequenceDirector_C::ExecuteUbergraph_SequenceDirector(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SequenceDirector_C", "ExecuteUbergraph_SequenceDirector");
+
+	Params::SequenceDirector_C_ExecuteUbergraph_SequenceDirector Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function Ani_MissionPnlProcess_Finish.SequenceDirector_C.SequenceEvent__ENTRYPOINTSequenceDirector_2
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -116,26 +136,6 @@ void Ani_MissionPnlProcess_Finish::USequenceDirector_C::PnlSubTitle_Event_0(clas
 	Params::SequenceDirector_C_PnlSubTitle_Event_0 Parms{};
 
 	Parms.PnlSubTitle = PnlSubTitle;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Ani_MissionPnlProcess_Finish.SequenceDirector_C.ExecuteUbergraph_SequenceDirector
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Ani_MissionPnlProcess_Finish::USequenceDirector_C::ExecuteUbergraph_SequenceDirector(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SequenceDirector_C", "ExecuteUbergraph_SequenceDirector");
-
-	Params::SequenceDirector_C_ExecuteUbergraph_SequenceDirector Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

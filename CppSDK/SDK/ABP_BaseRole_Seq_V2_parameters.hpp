@@ -17,6 +17,78 @@
 namespace SDK::Params
 {
 
+// Function ABP_BaseRole_Seq_V2.ABP_BaseRole_Seq_V2_C.修型层
+// 0x0020 (0x0020 - 0x0000)
+struct ABP_BaseRole_Seq_V2_C_修型层 final
+{
+public:
+	struct FPoseLink                              InPose_0;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              修型层_0;                                          // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
+};
+static_assert(alignof(ABP_BaseRole_Seq_V2_C_修型层) == 0x000008, "Wrong alignment on ABP_BaseRole_Seq_V2_C_修型层");
+static_assert(sizeof(ABP_BaseRole_Seq_V2_C_修型层) == 0x000020, "Wrong size on ABP_BaseRole_Seq_V2_C_修型层");
+static_assert(offsetof(ABP_BaseRole_Seq_V2_C_修型层, InPose_0) == 0x000000, "Member 'ABP_BaseRole_Seq_V2_C_修型层::InPose_0' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_Seq_V2_C_修型层, 修型层_0) == 0x000010, "Member 'ABP_BaseRole_Seq_V2_C_修型层::修型层_0' has a wrong offset!");
+
+// Function ABP_BaseRole_Seq_V2.ABP_BaseRole_Seq_V2_C.面部层
+// 0x0020 (0x0020 - 0x0000)
+struct ABP_BaseRole_Seq_V2_C_面部层 final
+{
+public:
+	struct FPoseLink                              InPose;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              面部层_0;                                          // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
+};
+static_assert(alignof(ABP_BaseRole_Seq_V2_C_面部层) == 0x000008, "Wrong alignment on ABP_BaseRole_Seq_V2_C_面部层");
+static_assert(sizeof(ABP_BaseRole_Seq_V2_C_面部层) == 0x000020, "Wrong size on ABP_BaseRole_Seq_V2_C_面部层");
+static_assert(offsetof(ABP_BaseRole_Seq_V2_C_面部层, InPose) == 0x000000, "Member 'ABP_BaseRole_Seq_V2_C_面部层::InPose' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_Seq_V2_C_面部层, 面部层_0) == 0x000010, "Member 'ABP_BaseRole_Seq_V2_C_面部层::面部层_0' has a wrong offset!");
+
+// Function ABP_BaseRole_Seq_V2.ABP_BaseRole_Seq_V2_C.肢体层
+// 0x0010 (0x0010 - 0x0000)
+struct ABP_BaseRole_Seq_V2_C_肢体层 final
+{
+public:
+	struct FPoseLink                              肢体层_0;                                          // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
+};
+static_assert(alignof(ABP_BaseRole_Seq_V2_C_肢体层) == 0x000008, "Wrong alignment on ABP_BaseRole_Seq_V2_C_肢体层");
+static_assert(sizeof(ABP_BaseRole_Seq_V2_C_肢体层) == 0x000010, "Wrong size on ABP_BaseRole_Seq_V2_C_肢体层");
+static_assert(offsetof(ABP_BaseRole_Seq_V2_C_肢体层, 肢体层_0) == 0x000000, "Member 'ABP_BaseRole_Seq_V2_C_肢体层::肢体层_0' has a wrong offset!");
+
+// Function ABP_BaseRole_Seq_V2.ABP_BaseRole_Seq_V2_C.计算层
+// 0x0020 (0x0020 - 0x0000)
+struct ABP_BaseRole_Seq_V2_C_计算层 final
+{
+public:
+	struct FPoseLink                              InPose_0;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              计算层_0;                                          // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
+};
+static_assert(alignof(ABP_BaseRole_Seq_V2_C_计算层) == 0x000008, "Wrong alignment on ABP_BaseRole_Seq_V2_C_计算层");
+static_assert(sizeof(ABP_BaseRole_Seq_V2_C_计算层) == 0x000020, "Wrong size on ABP_BaseRole_Seq_V2_C_计算层");
+static_assert(offsetof(ABP_BaseRole_Seq_V2_C_计算层, InPose_0) == 0x000000, "Member 'ABP_BaseRole_Seq_V2_C_计算层::InPose_0' has a wrong offset!");
+static_assert(offsetof(ABP_BaseRole_Seq_V2_C_计算层, 计算层_0) == 0x000010, "Member 'ABP_BaseRole_Seq_V2_C_计算层::计算层_0' has a wrong offset!");
+
+// Function ABP_BaseRole_Seq_V2.ABP_BaseRole_Seq_V2_C.AnimGraph
+// 0x0010 (0x0010 - 0x0000)
+struct ABP_BaseRole_Seq_V2_C_AnimGraph final
+{
+public:
+	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
+};
+static_assert(alignof(ABP_BaseRole_Seq_V2_C_AnimGraph) == 0x000008, "Wrong alignment on ABP_BaseRole_Seq_V2_C_AnimGraph");
+static_assert(sizeof(ABP_BaseRole_Seq_V2_C_AnimGraph) == 0x000010, "Wrong size on ABP_BaseRole_Seq_V2_C_AnimGraph");
+static_assert(offsetof(ABP_BaseRole_Seq_V2_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'ABP_BaseRole_Seq_V2_C_AnimGraph::AnimGraph_0' has a wrong offset!");
+
+// Function ABP_BaseRole_Seq_V2.ABP_BaseRole_Seq_V2_C.BlueprintUpdateAnimation
+// 0x0004 (0x0004 - 0x0000)
+struct ABP_BaseRole_Seq_V2_C_BlueprintUpdateAnimation final
+{
+public:
+	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(ABP_BaseRole_Seq_V2_C_BlueprintUpdateAnimation) == 0x000004, "Wrong alignment on ABP_BaseRole_Seq_V2_C_BlueprintUpdateAnimation");
+static_assert(sizeof(ABP_BaseRole_Seq_V2_C_BlueprintUpdateAnimation) == 0x000004, "Wrong size on ABP_BaseRole_Seq_V2_C_BlueprintUpdateAnimation");
+static_assert(offsetof(ABP_BaseRole_Seq_V2_C_BlueprintUpdateAnimation, DeltaTimeX) == 0x000000, "Member 'ABP_BaseRole_Seq_V2_C_BlueprintUpdateAnimation::DeltaTimeX' has a wrong offset!");
+
 // Function ABP_BaseRole_Seq_V2.ABP_BaseRole_Seq_V2_C.ExecuteUbergraph_ABP_BaseRole_Seq_V2
 // 0x0050 (0x0050 - 0x0000)
 struct ABP_BaseRole_Seq_V2_C_ExecuteUbergraph_ABP_BaseRole_Seq_V2 final
@@ -52,78 +124,6 @@ static_assert(offsetof(ABP_BaseRole_Seq_V2_C_ExecuteUbergraph_ABP_BaseRole_Seq_V
 static_assert(offsetof(ABP_BaseRole_Seq_V2_C_ExecuteUbergraph_ABP_BaseRole_Seq_V2, CallFunc_IsValid_ReturnValue) == 0x00003C, "Member 'ABP_BaseRole_Seq_V2_C_ExecuteUbergraph_ABP_BaseRole_Seq_V2::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ABP_BaseRole_Seq_V2_C_ExecuteUbergraph_ABP_BaseRole_Seq_V2, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000040, "Member 'ABP_BaseRole_Seq_V2_C_ExecuteUbergraph_ABP_BaseRole_Seq_V2::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
 static_assert(offsetof(ABP_BaseRole_Seq_V2_C_ExecuteUbergraph_ABP_BaseRole_Seq_V2, CallFunc_MakeVector2D_ReturnValue) == 0x000044, "Member 'ABP_BaseRole_Seq_V2_C_ExecuteUbergraph_ABP_BaseRole_Seq_V2::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
-
-// Function ABP_BaseRole_Seq_V2.ABP_BaseRole_Seq_V2_C.BlueprintUpdateAnimation
-// 0x0004 (0x0004 - 0x0000)
-struct ABP_BaseRole_Seq_V2_C_BlueprintUpdateAnimation final
-{
-public:
-	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(ABP_BaseRole_Seq_V2_C_BlueprintUpdateAnimation) == 0x000004, "Wrong alignment on ABP_BaseRole_Seq_V2_C_BlueprintUpdateAnimation");
-static_assert(sizeof(ABP_BaseRole_Seq_V2_C_BlueprintUpdateAnimation) == 0x000004, "Wrong size on ABP_BaseRole_Seq_V2_C_BlueprintUpdateAnimation");
-static_assert(offsetof(ABP_BaseRole_Seq_V2_C_BlueprintUpdateAnimation, DeltaTimeX) == 0x000000, "Member 'ABP_BaseRole_Seq_V2_C_BlueprintUpdateAnimation::DeltaTimeX' has a wrong offset!");
-
-// Function ABP_BaseRole_Seq_V2.ABP_BaseRole_Seq_V2_C.AnimGraph
-// 0x0010 (0x0010 - 0x0000)
-struct ABP_BaseRole_Seq_V2_C_AnimGraph final
-{
-public:
-	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
-};
-static_assert(alignof(ABP_BaseRole_Seq_V2_C_AnimGraph) == 0x000008, "Wrong alignment on ABP_BaseRole_Seq_V2_C_AnimGraph");
-static_assert(sizeof(ABP_BaseRole_Seq_V2_C_AnimGraph) == 0x000010, "Wrong size on ABP_BaseRole_Seq_V2_C_AnimGraph");
-static_assert(offsetof(ABP_BaseRole_Seq_V2_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'ABP_BaseRole_Seq_V2_C_AnimGraph::AnimGraph_0' has a wrong offset!");
-
-// Function ABP_BaseRole_Seq_V2.ABP_BaseRole_Seq_V2_C.计算层
-// 0x0020 (0x0020 - 0x0000)
-struct ABP_BaseRole_Seq_V2_C_计算层 final
-{
-public:
-	struct FPoseLink                              InPose_0;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              计算层_0;                                          // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
-};
-static_assert(alignof(ABP_BaseRole_Seq_V2_C_计算层) == 0x000008, "Wrong alignment on ABP_BaseRole_Seq_V2_C_计算层");
-static_assert(sizeof(ABP_BaseRole_Seq_V2_C_计算层) == 0x000020, "Wrong size on ABP_BaseRole_Seq_V2_C_计算层");
-static_assert(offsetof(ABP_BaseRole_Seq_V2_C_计算层, InPose_0) == 0x000000, "Member 'ABP_BaseRole_Seq_V2_C_计算层::InPose_0' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_Seq_V2_C_计算层, 计算层_0) == 0x000010, "Member 'ABP_BaseRole_Seq_V2_C_计算层::计算层_0' has a wrong offset!");
-
-// Function ABP_BaseRole_Seq_V2.ABP_BaseRole_Seq_V2_C.肢体层
-// 0x0010 (0x0010 - 0x0000)
-struct ABP_BaseRole_Seq_V2_C_肢体层 final
-{
-public:
-	struct FPoseLink                              肢体层_0;                                          // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
-};
-static_assert(alignof(ABP_BaseRole_Seq_V2_C_肢体层) == 0x000008, "Wrong alignment on ABP_BaseRole_Seq_V2_C_肢体层");
-static_assert(sizeof(ABP_BaseRole_Seq_V2_C_肢体层) == 0x000010, "Wrong size on ABP_BaseRole_Seq_V2_C_肢体层");
-static_assert(offsetof(ABP_BaseRole_Seq_V2_C_肢体层, 肢体层_0) == 0x000000, "Member 'ABP_BaseRole_Seq_V2_C_肢体层::肢体层_0' has a wrong offset!");
-
-// Function ABP_BaseRole_Seq_V2.ABP_BaseRole_Seq_V2_C.面部层
-// 0x0020 (0x0020 - 0x0000)
-struct ABP_BaseRole_Seq_V2_C_面部层 final
-{
-public:
-	struct FPoseLink                              InPose;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              面部层_0;                                          // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
-};
-static_assert(alignof(ABP_BaseRole_Seq_V2_C_面部层) == 0x000008, "Wrong alignment on ABP_BaseRole_Seq_V2_C_面部层");
-static_assert(sizeof(ABP_BaseRole_Seq_V2_C_面部层) == 0x000020, "Wrong size on ABP_BaseRole_Seq_V2_C_面部层");
-static_assert(offsetof(ABP_BaseRole_Seq_V2_C_面部层, InPose) == 0x000000, "Member 'ABP_BaseRole_Seq_V2_C_面部层::InPose' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_Seq_V2_C_面部层, 面部层_0) == 0x000010, "Member 'ABP_BaseRole_Seq_V2_C_面部层::面部层_0' has a wrong offset!");
-
-// Function ABP_BaseRole_Seq_V2.ABP_BaseRole_Seq_V2_C.修型层
-// 0x0020 (0x0020 - 0x0000)
-struct ABP_BaseRole_Seq_V2_C_修型层 final
-{
-public:
-	struct FPoseLink                              InPose_0;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              修型层_0;                                          // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
-};
-static_assert(alignof(ABP_BaseRole_Seq_V2_C_修型层) == 0x000008, "Wrong alignment on ABP_BaseRole_Seq_V2_C_修型层");
-static_assert(sizeof(ABP_BaseRole_Seq_V2_C_修型层) == 0x000020, "Wrong size on ABP_BaseRole_Seq_V2_C_修型层");
-static_assert(offsetof(ABP_BaseRole_Seq_V2_C_修型层, InPose_0) == 0x000000, "Member 'ABP_BaseRole_Seq_V2_C_修型层::InPose_0' has a wrong offset!");
-static_assert(offsetof(ABP_BaseRole_Seq_V2_C_修型层, 修型层_0) == 0x000010, "Member 'ABP_BaseRole_Seq_V2_C_修型层::修型层_0' has a wrong offset!");
 
 }
 

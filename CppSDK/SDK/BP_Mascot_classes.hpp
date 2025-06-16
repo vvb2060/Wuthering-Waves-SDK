@@ -36,18 +36,18 @@ public:
 	int32                                         TalkID_SP;                                         // 0x038C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UserConstructionScript();
-	void GetFixValue(float inValue, float* FixValue);
-	void HasFixCurve(class FName CheckName, bool* Ret, class FName* FixName);
-	void CalcAllCurve(TArray<struct FNamedCurveValue>* Ret);
-	void CalcAllCurve_2(TArray<struct FNamedCurveValue>* Ret);
-	bool SetAnimDataVector(const TMap<class FName, struct FVector>& VectorCurveData);
-	bool SetAnimDataFloat(const TArray<struct FNamedCurveValue>& FloatCurveData);
-	TArray<class FName> GetSupportGroupNames();
-	bool GetAnimDataVector(TMap<class FName, struct FVector>* VectorCurveData);
-	bool GetAnimDataFloat(TArray<struct FNamedCurveValue>* FloatCurveData);
-	void GetAddSpineValue(struct FRotator* AddSpine);
 	void GetAddSpineHeadValue(struct FRotator* AddSpineHead);
+	void GetAddSpineValue(struct FRotator* AddSpine);
+	bool GetAnimDataFloat(TArray<struct FNamedCurveValue>* FloatCurveData);
+	bool GetAnimDataVector(TMap<class FName, struct FVector>* VectorCurveData);
+	TArray<class FName> GetSupportGroupNames();
+	bool SetAnimDataFloat(const TArray<struct FNamedCurveValue>& FloatCurveData);
+	bool SetAnimDataVector(const TMap<class FName, struct FVector>& VectorCurveData);
+	void CalcAllCurve_2(TArray<struct FNamedCurveValue>* Ret);
+	void CalcAllCurve(TArray<struct FNamedCurveValue>* Ret);
+	void HasFixCurve(class FName CheckName, bool* Ret, class FName* FixName);
+	void GetFixValue(float inValue, float* FixValue);
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()

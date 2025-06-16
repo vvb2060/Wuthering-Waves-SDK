@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
+#include "ECharState_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
 #include "Engine_structs.hpp"
 #include "KuroAnim_structs.hpp"
 #include "KuroAnim_classes.hpp"
-#include "EWalkingPosture_structs.hpp"
-#include "ECharState_structs.hpp"
+#include "ECharParentMoveState_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "EMovementDirection_structs.hpp"
-#include "ECharParentMoveState_structs.hpp"
+#include "EWalkingPosture_structs.hpp"
 
 
 namespace SDK

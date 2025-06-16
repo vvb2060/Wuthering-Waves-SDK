@@ -12,8 +12,8 @@
 
 #include "AnimGraphRuntime_structs.hpp"
 #include "Engine_structs.hpp"
-#include "KuroAnim_structs.hpp"
 #include "ABP_MonsterCommon_classes.hpp"
+#include "KuroAnim_structs.hpp"
 
 
 namespace SDK
@@ -42,8 +42,8 @@ public:
 	void ExecuteUbergraph_ABP_ML1MiuwuMd00501_Vision(int32 EntryPoint);
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ML1MiuwuMd00501_Vision_AnimGraphNode_Feedback_160B928D4ACF6CD875FCAAB6BA31E5C5();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_ML1MiuwuMd00501_Vision_AnimGraphNode_BoneRotateToLocation_70BFD0544F5ABBF2C8673793051A8B7B();
-	void AnimGraph(struct FPoseLink* Param_AnimGraph_0);
 	void IKAndFk_Clone(const struct FPoseLink& InPose, struct FPoseLink* IKAndFk_Clone_0);
+	void AnimGraph(struct FPoseLink* Param_AnimGraph_0);
 
 public:
 	static class UClass* StaticClass()

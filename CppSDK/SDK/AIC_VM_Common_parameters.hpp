@@ -16,39 +16,6 @@
 namespace SDK::Params
 {
 
-// Function AIC_VM_Common.AIC_VM_Common_C.添加生命周期
-// 0x0001 (0x0001 - 0x0000)
-struct AIC_VM_Common_C_添加生命周期 final
-{
-public:
-	bool                                          bContent;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(AIC_VM_Common_C_添加生命周期) == 0x000001, "Wrong alignment on AIC_VM_Common_C_添加生命周期");
-static_assert(sizeof(AIC_VM_Common_C_添加生命周期) == 0x000001, "Wrong size on AIC_VM_Common_C_添加生命周期");
-static_assert(offsetof(AIC_VM_Common_C_添加生命周期, bContent) == 0x000000, "Member 'AIC_VM_Common_C_添加生命周期::bContent' has a wrong offset!");
-
-// Function AIC_VM_Common.AIC_VM_Common_C.取消定时
-// 0x0001 (0x0001 - 0x0000)
-struct AIC_VM_Common_C_取消定时 final
-{
-public:
-	bool                                          bContent;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(AIC_VM_Common_C_取消定时) == 0x000001, "Wrong alignment on AIC_VM_Common_C_取消定时");
-static_assert(sizeof(AIC_VM_Common_C_取消定时) == 0x000001, "Wrong size on AIC_VM_Common_C_取消定时");
-static_assert(offsetof(AIC_VM_Common_C_取消定时, bContent) == 0x000000, "Member 'AIC_VM_Common_C_取消定时::bContent' has a wrong offset!");
-
-// Function AIC_VM_Common.AIC_VM_Common_C.免疫子弹
-// 0x0001 (0x0001 - 0x0000)
-struct AIC_VM_Common_C_免疫子弹 final
-{
-public:
-	bool                                          bContent;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(AIC_VM_Common_C_免疫子弹) == 0x000001, "Wrong alignment on AIC_VM_Common_C_免疫子弹");
-static_assert(sizeof(AIC_VM_Common_C_免疫子弹) == 0x000001, "Wrong size on AIC_VM_Common_C_免疫子弹");
-static_assert(offsetof(AIC_VM_Common_C_免疫子弹, bContent) == 0x000000, "Member 'AIC_VM_Common_C_免疫子弹::bContent' has a wrong offset!");
-
 // Function AIC_VM_Common.AIC_VM_Common_C.ExecuteUbergraph_AIC_VM_Common
 // 0x0110 (0x0110 - 0x0000)
 struct AIC_VM_Common_C_ExecuteUbergraph_AIC_VM_Common final
@@ -98,6 +65,39 @@ static_assert(offsetof(AIC_VM_Common_C_ExecuteUbergraph_AIC_VM_Common, CallFunc_
 static_assert(offsetof(AIC_VM_Common_C_ExecuteUbergraph_AIC_VM_Common, K2Node_CustomEvent_bContent_1) == 0x0000F8, "Member 'AIC_VM_Common_C_ExecuteUbergraph_AIC_VM_Common::K2Node_CustomEvent_bContent_1' has a wrong offset!");
 static_assert(offsetof(AIC_VM_Common_C_ExecuteUbergraph_AIC_VM_Common, CallFunc___AIC___ReturnValue_2) == 0x000100, "Member 'AIC_VM_Common_C_ExecuteUbergraph_AIC_VM_Common::CallFunc___AIC___ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(AIC_VM_Common_C_ExecuteUbergraph_AIC_VM_Common, K2Node_CustomEvent_bContent) == 0x000108, "Member 'AIC_VM_Common_C_ExecuteUbergraph_AIC_VM_Common::K2Node_CustomEvent_bContent' has a wrong offset!");
+
+// Function AIC_VM_Common.AIC_VM_Common_C.免疫子弹
+// 0x0001 (0x0001 - 0x0000)
+struct AIC_VM_Common_C_免疫子弹 final
+{
+public:
+	bool                                          bContent;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(AIC_VM_Common_C_免疫子弹) == 0x000001, "Wrong alignment on AIC_VM_Common_C_免疫子弹");
+static_assert(sizeof(AIC_VM_Common_C_免疫子弹) == 0x000001, "Wrong size on AIC_VM_Common_C_免疫子弹");
+static_assert(offsetof(AIC_VM_Common_C_免疫子弹, bContent) == 0x000000, "Member 'AIC_VM_Common_C_免疫子弹::bContent' has a wrong offset!");
+
+// Function AIC_VM_Common.AIC_VM_Common_C.取消定时
+// 0x0001 (0x0001 - 0x0000)
+struct AIC_VM_Common_C_取消定时 final
+{
+public:
+	bool                                          bContent;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(AIC_VM_Common_C_取消定时) == 0x000001, "Wrong alignment on AIC_VM_Common_C_取消定时");
+static_assert(sizeof(AIC_VM_Common_C_取消定时) == 0x000001, "Wrong size on AIC_VM_Common_C_取消定时");
+static_assert(offsetof(AIC_VM_Common_C_取消定时, bContent) == 0x000000, "Member 'AIC_VM_Common_C_取消定时::bContent' has a wrong offset!");
+
+// Function AIC_VM_Common.AIC_VM_Common_C.添加生命周期
+// 0x0001 (0x0001 - 0x0000)
+struct AIC_VM_Common_C_添加生命周期 final
+{
+public:
+	bool                                          bContent;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(AIC_VM_Common_C_添加生命周期) == 0x000001, "Wrong alignment on AIC_VM_Common_C_添加生命周期");
+static_assert(sizeof(AIC_VM_Common_C_添加生命周期) == 0x000001, "Wrong size on AIC_VM_Common_C_添加生命周期");
+static_assert(offsetof(AIC_VM_Common_C_添加生命周期, bContent) == 0x000000, "Member 'AIC_VM_Common_C_添加生命周期::bContent' has a wrong offset!");
 
 }
 

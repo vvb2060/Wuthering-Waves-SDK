@@ -44,13 +44,13 @@ public:
 	float                                         SeqRHandWeight;                                    // 0x0178(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetAnimDataVectorByOwner(TMap<class FName, struct FVector>& VectorMap);
-	void SetAnimDataFloatByOwner(TArray<struct FNamedCurveValue>& InCurves);
 	void ProcessEye(const struct FVector& EyeLookAt, float AngleScale);
+	void SetAnimDataFloatByOwner(TArray<struct FNamedCurveValue>& InCurves);
+	void SetAnimDataVectorByOwner(TMap<class FName, struct FVector>& VectorMap);
 
-	float GetCurveValue(class FName CurveName) const;
-	void GetCurves(TArray<struct FNamedCurveValue>* OutValues) const;
 	class FName GetBindingName() const;
+	void GetCurves(TArray<struct FNamedCurveValue>* OutValues) const;
+	float GetCurveValue(class FName CurveName) const;
 
 public:
 	static class UClass* StaticClass()

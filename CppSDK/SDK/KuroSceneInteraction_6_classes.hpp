@@ -16,22 +16,22 @@
 namespace SDK
 {
 
-// BlueprintGeneratedClass KuroSceneInteraction_6.TPrefab_SM_Pro_Mine_8_C
+// BlueprintGeneratedClass KuroSceneInteraction_6.TPrefab_SM_MingJing_C
 // 0x0000 (0x02B8 - 0x02B8)
-class KuroSceneInteraction_6::ATPrefab_SM_Pro_Mine_8_C final : public ALevelScriptActor
+class KuroSceneInteraction_6::ATPrefab_SM_MingJing_C final : public ALevelScriptActor
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BlueprintGeneratedClass KuroSceneInteraction_6.TPrefab_SM_Pro_Mine_8_C", true, "TPrefab_SM_Pro_Mine_8_C">();
+		return StaticBPGeneratedClassImpl<"BlueprintGeneratedClass KuroSceneInteraction_6.TPrefab_SM_MingJing_C", true, "TPrefab_SM_MingJing_C">();
 	}
-	static class KuroSceneInteraction_6::ATPrefab_SM_Pro_Mine_8_C* GetDefaultObj()
+	static class KuroSceneInteraction_6::ATPrefab_SM_MingJing_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<KuroSceneInteraction_6::ATPrefab_SM_Pro_Mine_8_C>();
+		return GetDefaultObjImpl<KuroSceneInteraction_6::ATPrefab_SM_MingJing_C>();
 	}
 };
-static_assert(alignof(KuroSceneInteraction_6::ATPrefab_SM_Pro_Mine_8_C) == 0x000008, "Wrong alignment on KuroSceneInteraction_6::ATPrefab_SM_Pro_Mine_8_C");
-static_assert(sizeof(KuroSceneInteraction_6::ATPrefab_SM_Pro_Mine_8_C) == 0x0002B8, "Wrong size on KuroSceneInteraction_6::ATPrefab_SM_Pro_Mine_8_C");
+static_assert(alignof(KuroSceneInteraction_6::ATPrefab_SM_MingJing_C) == 0x000008, "Wrong alignment on KuroSceneInteraction_6::ATPrefab_SM_MingJing_C");
+static_assert(sizeof(KuroSceneInteraction_6::ATPrefab_SM_MingJing_C) == 0x0002B8, "Wrong size on KuroSceneInteraction_6::ATPrefab_SM_MingJing_C");
 
 }
 

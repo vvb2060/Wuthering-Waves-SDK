@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function TsActionHandle.TsActionHandle_C.OnPressAction
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FKey&                      key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
-void UTsActionHandle_C::OnPressAction(const struct FKey& key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TsActionHandle_C", "OnPressAction");
-
-	Params::TsActionHandle_C_OnPressAction Parms{};
-
-	Parms.key = std::move(key);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function TsActionHandle.TsActionHandle_C.OnReleaseAction
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -50,6 +30,26 @@ void UTsActionHandle_C::OnReleaseAction(const struct FKey& key)
 		Func = Class->GetFunction("TsActionHandle_C", "OnReleaseAction");
 
 	Params::TsActionHandle_C_OnReleaseAction Parms{};
+
+	Parms.key = std::move(key);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function TsActionHandle.TsActionHandle_C.OnPressAction
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FKey&                      key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+
+void UTsActionHandle_C::OnPressAction(const struct FKey& key)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("TsActionHandle_C", "OnPressAction");
+
+	Params::TsActionHandle_C_OnPressAction Parms{};
 
 	Parms.key = std::move(key);
 

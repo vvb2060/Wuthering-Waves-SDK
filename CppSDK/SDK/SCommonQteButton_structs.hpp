@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "ECommonQteInputAction_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "LGUI_structs.hpp"
-#include "ECommonQteInputAction_structs.hpp"
 
 
 namespace SDK

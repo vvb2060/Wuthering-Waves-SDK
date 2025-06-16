@@ -35,31 +35,6 @@ static_assert(offsetof(PlotBlueprintFunctionLibrary_C_ShowBgIcon, texture) == 0x
 static_assert(offsetof(PlotBlueprintFunctionLibrary_C_ShowBgIcon, obj) == 0x000010, "Member 'PlotBlueprintFunctionLibrary_C_ShowBgIcon::obj' has a wrong offset!");
 static_assert(offsetof(PlotBlueprintFunctionLibrary_C_ShowBgIcon, __WorldContext) == 0x000018, "Member 'PlotBlueprintFunctionLibrary_C_ShowBgIcon::__WorldContext' has a wrong offset!");
 
-// Function PlotBlueprintFunctionLibrary.PlotBlueprintFunctionLibrary_C.TriggerTagToInteractingGravityMachine
-// 0x0018 (0x0018 - 0x0000)
-struct PlotBlueprintFunctionLibrary_C_TriggerTagToInteractingGravityMachine final
-{
-public:
-	struct FGameplayTag                           Tag;                                               // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PlotBlueprintFunctionLibrary_C_TriggerTagToInteractingGravityMachine) == 0x000008, "Wrong alignment on PlotBlueprintFunctionLibrary_C_TriggerTagToInteractingGravityMachine");
-static_assert(sizeof(PlotBlueprintFunctionLibrary_C_TriggerTagToInteractingGravityMachine) == 0x000018, "Wrong size on PlotBlueprintFunctionLibrary_C_TriggerTagToInteractingGravityMachine");
-static_assert(offsetof(PlotBlueprintFunctionLibrary_C_TriggerTagToInteractingGravityMachine, Tag) == 0x000000, "Member 'PlotBlueprintFunctionLibrary_C_TriggerTagToInteractingGravityMachine::Tag' has a wrong offset!");
-static_assert(offsetof(PlotBlueprintFunctionLibrary_C_TriggerTagToInteractingGravityMachine, __WorldContext) == 0x000010, "Member 'PlotBlueprintFunctionLibrary_C_TriggerTagToInteractingGravityMachine::__WorldContext' has a wrong offset!");
-
-// Function PlotBlueprintFunctionLibrary.PlotBlueprintFunctionLibrary_C.RemoveInteractTagFromInteractingGravityMachine
-// 0x0008 (0x0008 - 0x0000)
-struct PlotBlueprintFunctionLibrary_C_RemoveInteractTagFromInteractingGravityMachine final
-{
-public:
-	class UObject*                                __WorldContext;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(PlotBlueprintFunctionLibrary_C_RemoveInteractTagFromInteractingGravityMachine) == 0x000008, "Wrong alignment on PlotBlueprintFunctionLibrary_C_RemoveInteractTagFromInteractingGravityMachine");
-static_assert(sizeof(PlotBlueprintFunctionLibrary_C_RemoveInteractTagFromInteractingGravityMachine) == 0x000008, "Wrong size on PlotBlueprintFunctionLibrary_C_RemoveInteractTagFromInteractingGravityMachine");
-static_assert(offsetof(PlotBlueprintFunctionLibrary_C_RemoveInteractTagFromInteractingGravityMachine, __WorldContext) == 0x000000, "Member 'PlotBlueprintFunctionLibrary_C_RemoveInteractTagFromInteractingGravityMachine::__WorldContext' has a wrong offset!");
-
 // Function PlotBlueprintFunctionLibrary.PlotBlueprintFunctionLibrary_C.AddInteractTagToInteractingGravityMachine
 // 0x0008 (0x0008 - 0x0000)
 struct PlotBlueprintFunctionLibrary_C_AddInteractTagToInteractingGravityMachine final
@@ -453,6 +428,31 @@ static_assert(alignof(PlotBlueprintFunctionLibrary_C_IsInSequence) == 0x000008, 
 static_assert(sizeof(PlotBlueprintFunctionLibrary_C_IsInSequence) == 0x000010, "Wrong size on PlotBlueprintFunctionLibrary_C_IsInSequence");
 static_assert(offsetof(PlotBlueprintFunctionLibrary_C_IsInSequence, __WorldContext) == 0x000000, "Member 'PlotBlueprintFunctionLibrary_C_IsInSequence::__WorldContext' has a wrong offset!");
 static_assert(offsetof(PlotBlueprintFunctionLibrary_C_IsInSequence, ReturnValue) == 0x000008, "Member 'PlotBlueprintFunctionLibrary_C_IsInSequence::ReturnValue' has a wrong offset!");
+
+// Function PlotBlueprintFunctionLibrary.PlotBlueprintFunctionLibrary_C.TriggerTagToInteractingGravityMachine
+// 0x0018 (0x0018 - 0x0000)
+struct PlotBlueprintFunctionLibrary_C_TriggerTagToInteractingGravityMachine final
+{
+public:
+	struct FGameplayTag                           Tag;                                               // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                __WorldContext;                                    // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PlotBlueprintFunctionLibrary_C_TriggerTagToInteractingGravityMachine) == 0x000008, "Wrong alignment on PlotBlueprintFunctionLibrary_C_TriggerTagToInteractingGravityMachine");
+static_assert(sizeof(PlotBlueprintFunctionLibrary_C_TriggerTagToInteractingGravityMachine) == 0x000018, "Wrong size on PlotBlueprintFunctionLibrary_C_TriggerTagToInteractingGravityMachine");
+static_assert(offsetof(PlotBlueprintFunctionLibrary_C_TriggerTagToInteractingGravityMachine, Tag) == 0x000000, "Member 'PlotBlueprintFunctionLibrary_C_TriggerTagToInteractingGravityMachine::Tag' has a wrong offset!");
+static_assert(offsetof(PlotBlueprintFunctionLibrary_C_TriggerTagToInteractingGravityMachine, __WorldContext) == 0x000010, "Member 'PlotBlueprintFunctionLibrary_C_TriggerTagToInteractingGravityMachine::__WorldContext' has a wrong offset!");
+
+// Function PlotBlueprintFunctionLibrary.PlotBlueprintFunctionLibrary_C.RemoveInteractTagFromInteractingGravityMachine
+// 0x0008 (0x0008 - 0x0000)
+struct PlotBlueprintFunctionLibrary_C_RemoveInteractTagFromInteractingGravityMachine final
+{
+public:
+	class UObject*                                __WorldContext;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(PlotBlueprintFunctionLibrary_C_RemoveInteractTagFromInteractingGravityMachine) == 0x000008, "Wrong alignment on PlotBlueprintFunctionLibrary_C_RemoveInteractTagFromInteractingGravityMachine");
+static_assert(sizeof(PlotBlueprintFunctionLibrary_C_RemoveInteractTagFromInteractingGravityMachine) == 0x000008, "Wrong size on PlotBlueprintFunctionLibrary_C_RemoveInteractTagFromInteractingGravityMachine");
+static_assert(offsetof(PlotBlueprintFunctionLibrary_C_RemoveInteractTagFromInteractingGravityMachine, __WorldContext) == 0x000000, "Member 'PlotBlueprintFunctionLibrary_C_RemoveInteractTagFromInteractingGravityMachine::__WorldContext' has a wrong offset!");
 
 }
 

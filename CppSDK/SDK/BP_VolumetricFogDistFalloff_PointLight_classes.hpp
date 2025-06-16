@@ -34,12 +34,12 @@ public:
 	float                                         currentDistance;                                   // 0x02FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void PointFunction();
-	void UserConstructionScript();
-	void ReceiveBeginPlay();
-	void ReceiveTick(float DeltaSeconds);
-	void TimerEvent();
 	void ExecuteUbergraph_BP_VolumetricFogDistFalloff_PointLight(int32 EntryPoint);
+	void TimerEvent();
+	void ReceiveTick(float DeltaSeconds);
+	void ReceiveBeginPlay();
+	void UserConstructionScript();
+	void PointFunction();
 
 public:
 	static class UClass* StaticClass()

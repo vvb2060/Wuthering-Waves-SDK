@@ -16,22 +16,6 @@
 namespace SDK::Params
 {
 
-// Function BP_BulletLogicBase.BP_BulletLogicBase_C.子弹范围内吸附
-// 0x0018 (0x0018 - 0x0000)
-struct BP_BulletLogicBase_C_子弹范围内吸附 final
-{
-public:
-	class UObject*                                子弹;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         吸附速度;                                          // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ATsBaseCharacter_C*                     当前角色;                                          // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_BulletLogicBase_C_子弹范围内吸附) == 0x000008, "Wrong alignment on BP_BulletLogicBase_C_子弹范围内吸附");
-static_assert(sizeof(BP_BulletLogicBase_C_子弹范围内吸附) == 0x000018, "Wrong size on BP_BulletLogicBase_C_子弹范围内吸附");
-static_assert(offsetof(BP_BulletLogicBase_C_子弹范围内吸附, 子弹) == 0x000000, "Member 'BP_BulletLogicBase_C_子弹范围内吸附::子弹' has a wrong offset!");
-static_assert(offsetof(BP_BulletLogicBase_C_子弹范围内吸附, 吸附速度) == 0x000008, "Member 'BP_BulletLogicBase_C_子弹范围内吸附::吸附速度' has a wrong offset!");
-static_assert(offsetof(BP_BulletLogicBase_C_子弹范围内吸附, 当前角色) == 0x000010, "Member 'BP_BulletLogicBase_C_子弹范围内吸附::当前角色' has a wrong offset!");
-
 // Function BP_BulletLogicBase.BP_BulletLogicBase_C.执行
 // 0x02D8 (0x02D8 - 0x0000)
 struct BP_BulletLogicBase_C_执行 final
@@ -48,6 +32,22 @@ static_assert(offsetof(BP_BulletLogicBase_C_执行, 攻击者) == 0x000000, "Mem
 static_assert(offsetof(BP_BulletLogicBase_C_执行, 受击者) == 0x000008, "Member 'BP_BulletLogicBase_C_执行::受击者' has a wrong offset!");
 static_assert(offsetof(BP_BulletLogicBase_C_执行, 子弹数据) == 0x000010, "Member 'BP_BulletLogicBase_C_执行::子弹数据' has a wrong offset!");
 static_assert(offsetof(BP_BulletLogicBase_C_执行, 子弹) == 0x0002D0, "Member 'BP_BulletLogicBase_C_执行::子弹' has a wrong offset!");
+
+// Function BP_BulletLogicBase.BP_BulletLogicBase_C.子弹范围内吸附
+// 0x0018 (0x0018 - 0x0000)
+struct BP_BulletLogicBase_C_子弹范围内吸附 final
+{
+public:
+	class UObject*                                子弹;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         吸附速度;                                          // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ATsBaseCharacter_C*                     当前角色;                                          // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_BulletLogicBase_C_子弹范围内吸附) == 0x000008, "Wrong alignment on BP_BulletLogicBase_C_子弹范围内吸附");
+static_assert(sizeof(BP_BulletLogicBase_C_子弹范围内吸附) == 0x000018, "Wrong size on BP_BulletLogicBase_C_子弹范围内吸附");
+static_assert(offsetof(BP_BulletLogicBase_C_子弹范围内吸附, 子弹) == 0x000000, "Member 'BP_BulletLogicBase_C_子弹范围内吸附::子弹' has a wrong offset!");
+static_assert(offsetof(BP_BulletLogicBase_C_子弹范围内吸附, 吸附速度) == 0x000008, "Member 'BP_BulletLogicBase_C_子弹范围内吸附::吸附速度' has a wrong offset!");
+static_assert(offsetof(BP_BulletLogicBase_C_子弹范围内吸附, 当前角色) == 0x000010, "Member 'BP_BulletLogicBase_C_子弹范围内吸附::当前角色' has a wrong offset!");
 
 }
 
